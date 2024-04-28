@@ -9,9 +9,8 @@ description: "Write an awesome description for your new site here. You can edit 
 
 # Team names, titles and social links
 people:
-- name: Yuting Weng
-  pic: 1
-  position: MPP Student
+- pic: 1
+  position: Chicago, IL, USA
   social:
     - title: linkedin
       url: #

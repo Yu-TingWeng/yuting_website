@@ -11,9 +11,10 @@
                 <!--{% for member in site.people %}-->
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <p class="text-muted">Chicago, IL, USA</p>
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <p class="text-muted">{{ member.position }}</p>
                         <ul class="list-inline social-buttons">
+                            {% for network in site.social %}
                             <li>
                                 <a href="{{ network.url }}">
                                     <i class="fa fa-{{ network.title }}"></i>
