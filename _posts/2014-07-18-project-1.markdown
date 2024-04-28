@@ -3,13 +3,15 @@ title: Dreams
 subtitle: Website Design
 layout: default
 modal-id: 1
-date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+date: 2024-03-15
+img: dashboard.png
+thumbnail: WBEZ Final Video Presentation.mp4
 alt: image-alt
 project-date: April 2014
-client: Start Bootstrap
+#client: Start Bootstrap
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: WBEZ investigated police traffic stop data in Illinois from 2004-2022. Our team explored the data solely from a racial perspective and enlisted the Data Science Institute to build on their analysis of the relationship between traffic stops and race as well as between additional demographics such as age, gender, and location.
+To increase engagement and accessibility to the data, this group created two interactive dashboards consisting of visualizations and driver-to-driver comparisons across selected demographics. Users can view choropleth maps to see county-level differences, scatterplots to contrast demographic groups at the individual agency level, and sunburst charts to visualize likelihood breakdowns, shown below.
+
 
 ---
