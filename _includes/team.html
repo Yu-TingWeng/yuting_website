@@ -3,18 +3,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 text-center"> <!-- Picture on the left -->
-                    <img src="img/team/{{ site.people[0].pic}}.jpg" class="img-responsive img-circle" alt="">
-                    <p class="text-muted">{{ site.people[0].position}}</p>
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li>
-                            <a href="{{ network.url }}">
-                                <i class="fa fa-{{ network.title }}"></i>
-                            </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+                <img src="img/team/{{ site.people[0].pic}}.jpg" class="img-responsive img-circle" alt="">
+                <p class="text-muted">{{ site.people[0].position}}</p>
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}">
+                            <i class="fa fa-{{ network.title }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
             <div class="col-lg-6"> <!-- Text on the right -->
                 <h2 class="section-heading">Yuting Weng</h2>
