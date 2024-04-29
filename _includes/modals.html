@@ -41,7 +41,7 @@
                             {% if post.img %}
                             <!-- If post has image(s) -->
                             {% for image in post.img %}
-                                <img src="img/portfolio/{{ image }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                                 {% if post.link %}
                                 <!-- If post has a link -->
                                 <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to {{ post.title }}</a>
