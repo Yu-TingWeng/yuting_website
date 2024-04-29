@@ -42,13 +42,10 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#gform').on('submit', function(e) {
-            $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Your submission has been processed...');
             setTimeout(function() {
-                if (!submitted) {
-                    $('#gform').prepend('<div class="alert alert-danger">Submission failed. Please try again later.</div>');
-                }
-            }, 5000); // Adjust the timeout as needed
+                $('#gform *').fadeOut(2000);
+                $('#gform').prepend('Your submission has been processed...');
+            }, 500); // Adjust the timeout as needed
         });
     });
 </script>
