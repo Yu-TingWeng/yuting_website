@@ -1,12 +1,12 @@
 ---
-title: "Porject on the Way :rocket:"
-subtitle: Website Design
+title: "Porject on the Way \U0001F680"
+subtitle: "Coming Soon...\U00002728"
 layout: default
 modal-id: 5
 project-date: September 2023
 img: startup-framework.png
 thumbnail: startup-framework-thumbnail.png
 alt: image-alt
-description: "Coming Soon...:sparkles:"
+description: "Coming Soon...\U00002728"
 
 ---
