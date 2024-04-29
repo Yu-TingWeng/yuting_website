@@ -22,9 +22,10 @@
                             {% if post.video %}
                             <!-- If post has a video -->
                             <video width="100%" height="auto" controls>
-                                <source src="img/portfolio/{{ post.video[0] }}" type="video/mp4">
+                                <source src="img/portfolio/{{ post.video }}" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+                            <br>
                             {% if post.link %}
                             <!-- If post has a link -->
                             <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to Github Repository</a>
