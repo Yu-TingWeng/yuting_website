@@ -9,6 +9,6 @@ thumbnail: wallstreetbets.png
 alt: image-alt
 skill: Keywords - Web Scraping, Dashboards, Python, Data Analysis
 link: https://github.com/Yu-TingWeng/Final_Project_Redditpower
-description: • Applied sentiment analysis and NLP techniques to examine the correlation between online discussions on Reddit and official FOMC statements with stock market movements. <br> • Demonstrated proficiency in web scraping, utilizing tools such as the selenium package for FOMC statements, praw for Reddit posts, and yfinance for stock prices.
+description: In this project, we applied *sentiment analysis* and *natural language processing (NLP)* techniques to investigate the relationship between online discussions on Reddit and official Federal Open Market Committee (FOMC) statements with movements in the stock market. <br> This endeavor showcased our adeptness in *web scraping* methodologies, where we utilized various tools including the *Selenium* package for retrieving FOMC statements, *PRAW* for collecting Reddit posts, and *yfinance* for obtaining stock prices. <br> We also created two apps, with *Dash* and *Shiny*, to craft dynamic dashboards showcasing our findings and interactive graphs. This hands-on experience not only honed our analytical skills but also deepened our understanding of market dynamics and the intersection of online discourse with financial trends.
 
 ---

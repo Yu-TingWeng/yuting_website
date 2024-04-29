@@ -9,6 +9,6 @@ html: img/portfolio/text_classification_gpt.html
 paragraph: Code Demonstration
 thumbnail: stress.jpg
 alt: image-alt
-description: • Dataset - "Stress Detection from Social Media Articles," from Kaggle. <br> • Utilized GPT models with three different techniques, Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model to classify stress-related posts. 
+description: "I focused on analyzing the 'Stress Detection from Social Media Articles' dataset obtained from Kaggle. I utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse."
 
 ---
