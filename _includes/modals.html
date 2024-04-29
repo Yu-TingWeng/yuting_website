@@ -13,23 +13,24 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
-                            <h5>{{ post.project-date }}</h5>
+                            <h4>{{ post.project-date }}</h4>
                             <br>
                             <h5>Introduction</h5>
                             <p style="text-align: left;">{{ post.description }}</p>
                             <p style="text-align: left;">{{ post.skill }}</p>
                             <hr class="star-primary">
                             {% if post.video %}
+                            {% if post.link %}
+                            <!-- If post has a link -->
+                            <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to Github Repository</a>
+                            {% endif %}
+                            <br>
                             <!-- If post has a video -->
                             <video width="100%" height="auto" controls>
                                 <source src="img/portfolio/{{ post.video }}" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             <br>
-                            {% if post.link %}
-                            <!-- If post has a link -->
-                            <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to Github Repository</a>
-                            {% endif %}
                             {% endif %}
 
                             {% if post.pdf %}
@@ -50,7 +51,7 @@
                                 {% endif %}
                                 {% if post.html %}
                                     <!-- If post has an HTML file -->
-                                    <h5>{{ post.paragraph }}</h5>
+                                    <h4>{{ post.paragraph }}</h4>
                                     <iframe src="{{ post.html }}" width="100%" height="600" frameborder="0"></iframe>
                                 {% endif %}
                             {% endif %}
@@ -58,11 +59,11 @@
                             {% if post.img %}
                             <!-- If post has image(s) -->
                             {% for image in post.img %}
-                                <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                                 {% if post.link %}
                                 <!-- If post has a link -->
                                 <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to {{ post.title }}</a>
                                 {% endif %}
+                                <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                                 <br> <!-- Add a line break after each image -->
                             {% endfor %}
                             {% endif %}
