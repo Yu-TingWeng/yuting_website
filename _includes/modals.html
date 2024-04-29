@@ -32,14 +32,15 @@
                             {% endif %}
 
                             {% if post.img %}
-                                <!-- If post has image(s) -->
-                                {% for image in post.img %}
-                                    <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                                {% endfor %}
-                            {% endif %}
-                            {% if post.link %}
+                            <!-- If post has image(s) -->
+                            {% for image in post.img %}
+                                <img src="img/portfolio/{{ image }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                {% if post.link %}
                                 <!-- If post has a link -->
                                 <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to {{ post.title }}</a>
+                                {% endif %}
+                                <br> <!-- Add a line break after each image -->
+                            {% endfor %}
                             {% endif %}
                             <br>
                             <!--<ul class="list-inline item-details">
