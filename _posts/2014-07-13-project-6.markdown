@@ -1,12 +1,12 @@
 ---
-title: Round Icons
-subtitle: Graphic Design
+title: "Porject on the Way \U0001F92B"
+subtitle: "Coming Soon...\U0001F60F"
 layout: default
 modal-id: 6
 project-date: September 2023
-img: roundicons.png
-thumbnail: roundicons-thumbnail.png
+img: image6.jpg
+thumbnail: image6.jpg
 alt: image-alt
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: "Coming Soon...\U0001F60F"
 
 ---
