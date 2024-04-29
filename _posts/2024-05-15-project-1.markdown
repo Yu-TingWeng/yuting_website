@@ -2,7 +2,7 @@
 title: Yu-Ting Weng
 subtitle: Resume
 layout: default
-modal-id: 1
+modal-id: 4
 project-date: May 2024
 pdf: https://Yu-TingWeng.github.io/YutingWeng_Resume.pdf
 thumbnail: resume_image.png
