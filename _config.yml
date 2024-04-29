@@ -12,6 +12,8 @@ people:
 - pic: 1
   position: Chicago, IL, USA
   social:
+    - title: gmail
+      url: #
     - title: linkedin
       url: #
     - title: github
@@ -19,6 +21,8 @@ people:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: gmail
+    url: mailto:jessicaweng91717@gmail.com
   - title: linkedin
     url: https://www.linkedin.com/in/yuting17/
   - title: github
