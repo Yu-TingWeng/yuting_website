@@ -4,8 +4,8 @@ subtitle: Website Design
 layout: default
 modal-id: 1
 date: 2024-03-15
-img: dashboard.png
-thumbnail: WBEZ_Final_Video_Presentation.mp4
+img: WBEZ_Final_Video_Presentation.mp4
+thumbnail: dashboard.png
 alt: image-alt
 project-date: April 2014
 #client: Start Bootstrap
