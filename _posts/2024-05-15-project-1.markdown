@@ -7,5 +7,5 @@ project-date: May 2024
 pdf: YutingWeng_Resume.pdf
 thumbnail: resume_image.png
 alt: image-alt
-description: N/A
+description: None
 ---
