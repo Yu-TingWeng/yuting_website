@@ -4,7 +4,7 @@ subtitle: Resume
 layout: default
 modal-id: 1
 project-date: April 2024
-pdf: https://github.com/Yu-TingWeng/yuting_website.github.io/blob/gh-pages/img/portfolio/YutingWeng_Resume.pdf
+pdf: img/portfolio/YutingWeng_Resume.pdf
 thumbnail: resume_image.png
 alt: image-alt
 description:
