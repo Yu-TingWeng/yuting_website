@@ -18,11 +18,11 @@
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group form-group">
-                        <input type="email" class="form-control" placeholder="Your Email *" name="entry.859642003" id="entry.859642003" required data-validation-required-message="Please enter your email address.">
+                        <input type="text" class="form-control" placeholder="Your Email *" name="entry.859642003" id="entry.859642003" required data-validation-required-message="Please enter your email address.">
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group form-group">
-                        <input type="tel" class="form-control" placeholder="Your Phone *" name="entry.1325421677" id="entry.1325421677" required data-validation-required-message="Please enter your phone number.">
+                        <input type="text" class="form-control" placeholder="Your Phone *" name="entry.1325421677" id="entry.1325421677" required data-validation-required-message="Please enter your phone number.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -34,24 +34,20 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
-                    <input type="submit" value="Submit">
+                    <input class="btn btn-xl" type="submit" value="Submit">
                 </div>
             </form>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
     </div>
 </section>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
-    var submitted=false;
-    $('#gform').on('submit', function(e) {
-        if (!submitted) {
-            submitted = true;
-            $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Your submission has been processed...');
-        } else {
-            e.preventDefault(); // Prevent form submission
-        }
-    });
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
 </script>
 
                 <!--<div class="col-lg-12">
