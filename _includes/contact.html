@@ -7,11 +7,11 @@
             </div>
         </div>
         <div class="row">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeni7PS7CinfokZEdFDqK6P-BONCtIewcT03TPJ6Z_iRy6Spg/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeni7PS7CinfokZEdFDqK6P-BONCtIewcT03TPJ6Z_iRy6Spg/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
     </div>
-</section>
-            <!--<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14G_tjHSie08rtJrsj6LLr63Ys_mm8K5BvOTZZmcduT4/formResponse?" target="hidden_iframe" method="POST">
+</section>-->
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeni7PS7CinfokZEdFDqK6P-BONCtIewcT03TPJ6Z_iRy6Spg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="col-md-6">
                     <div class="control-group form-group">
                         <input type="text" class="form-control" placeholder="Your Name *" name="entry.1836944277" id="entry.1836944277" required data-validation-required-message="Please enter your name.">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="control-group form-group">
-                        <textarea class="form-control" placeholder="Your Message *" name="entry.858195574" id="entry.858195574" required data-validation-required-message="Please enter a message."></textarea>
+                        <input class="form-control" placeholder="Your Message *" name="entry.858195574" id="entry.858195574" required data-validation-required-message="Please enter a message.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -37,17 +37,18 @@
                     <input class="btn btn-xl" type="submit" value="Submit">
                 </div>
             </form>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
     </div>
 </section>
 
-<script>
-    document.getElementById('gform').addEventListener('submit', function() {
-        setTimeout(function() {
-            document.getElementById('gform').reset();
-        }, 2000);
-    });
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
 </script>
 
                 <!--<div class="col-lg-12">
