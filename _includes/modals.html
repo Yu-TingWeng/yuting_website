@@ -13,7 +13,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
-                            <h5>{{ post.date }}</h5>
+                            <h5>{{ post.project-date }}</h5>
                             <hr class="star-primary">
                             {% if post.video %}
                             <!-- If post has a video -->
@@ -26,7 +26,7 @@
                                 <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             {% elsif post.link %}
                                 <!-- If post has a link -->
-                                <a href="{{ post.link }}" target="_blank">Link to {{ post.title }}</a>
+                                <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to {{ post.title }}</a>
                             {% endif %}
                             <p>{{ post.description }}</p>
                             <!--<ul class="list-inline item-details">
