@@ -8,6 +8,6 @@ link: https://public.tableau.com/app/profile/yuting.weng7987/viz/AFocusonTaiwans
 img: trade_image.png
 thumbnail: trade_image.png
 alt: image-alt
-skill: "#Data Visualization" "#Tableau"
+skill: Data Visualization, Tableau
 description: This Dashboard provides a comprehensive understanding of Taiwan's economic and trade landscape.
 ---
