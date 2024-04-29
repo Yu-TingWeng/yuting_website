@@ -14,19 +14,14 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <h5>{{ post.project-date }}</h5>
+                            <h5>{{ post.description }}</h5>
                             <hr class="star-primary">
                             {% if post.video %}
                             <!-- If post has video(s) -->
                             {% for video in post.video %}
                                 <video width="100%" height="auto" controls>
                                     {% if post.video %}
-                                        {% if post.video contains '.mp4' %}
-                                            <source src="img/portfolio/{{ post.video }}" type="video/mp4">
-                                        {% elsif post.video contains '.mov' %}
-                                            <source src="img/portfolio/{{ post.video }}" type="video/quicktime">
-                                        {% else %}
-                                            <source src="img/portfolio/{{ post.video }}">
-                                        {% endif %}
+                                        <source src="img/portfolio/{{ post.video }}" type="video/mp4">
                                     {% endif %}
                                     Your browser does not support the video tag.
                              </video>
@@ -42,7 +37,6 @@
                                 <!-- If post has a link -->
                                 <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to {{ post.title }}</a>
                             {% endif %}
-                            <p>{{ post.description }}</p>
                             <!--<ul class="list-inline item-details">
                                 <li>Client: <strong><a href="http://startbootstrap.com">{{ post.client }}</a></strong></li>
                                 <li>Date: <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a></strong></li>
