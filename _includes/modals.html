@@ -34,7 +34,7 @@
 
                             {% if post.pdf %}
                             <!-- If post has a PDF file -->
-                            <a href="img/portfolio/{{ post.pdf }}" target="_blank" style="font-size: 18px;">View PDF</a>
+                            <embed src="{{ post.pdf }}" type="application/pdf" />
                             <br>
                             {% endif %}
 
