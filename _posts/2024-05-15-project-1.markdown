@@ -8,5 +8,5 @@ project-date: May 2024
 img: resume_image.png 
 thumbnail: resume_image.png
 alt: image-alt
-description: None
+description: Updated Resume
 ---
