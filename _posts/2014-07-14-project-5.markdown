@@ -7,7 +7,7 @@ project-date: April 2024
 pdf: img/portfolio/text_classification_gpt.pdf
 html: img/portfolio/text_classification_gpt.html
 paragraph: Code Demonstration
-skill: LLMs for Text Classification
+skill: Keywords - LLMs for Text Classification
 thumbnail: stress.jpg
 alt: image-alt
 description: "I focused on analyzing the 'Stress Detection from Social Media Articles' dataset obtained from Kaggle. I utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse."
