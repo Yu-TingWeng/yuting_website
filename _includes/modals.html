@@ -34,7 +34,7 @@
 
                             {% if post.pdf %}
                             <!-- If post has a PDF file -->
-                            <embed src="{{ post.pdf }}" type="application/pdf" />
+                            <embed src="https://docs.google.com/viewer?url=${{ post.pdf }}" type="application/pdf" />
                             <br>
                             {% endif %}
 
