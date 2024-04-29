@@ -38,15 +38,11 @@
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#gform').on('submit', function(e) {
-            setTimeout(function() {
-                $('#gform *').fadeOut(2000);
-                $('#gform').prepend('Your submission has been processed...');
-            }, 500); // Adjust the timeout as needed
-        });
+<script>
+    document.getElementById('gform').addEventListener('submit', function() {
+        setTimeout(function() {
+            document.getElementById('gform').reset();
+        }, 2000);
     });
 </script>
 
