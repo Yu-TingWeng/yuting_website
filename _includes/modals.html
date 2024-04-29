@@ -22,9 +22,7 @@
                             <!-- If post has video(s) -->
                             {% for video in post.video %}
                                 <video width="100%" height="auto" controls>
-                                    {% if post.video %}
-                                        <source src="img/portfolio/{{ post.video }}" type="video/mp4">
-                                    {% endif %}
+                                    <source src="img/portfolio/{{ post.video }}" type="video/mp4">
                                     Your browser does not support the video tag.
                              </video>
                             {% endfor %}
