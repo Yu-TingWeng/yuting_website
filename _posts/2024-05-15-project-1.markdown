@@ -4,7 +4,8 @@ subtitle: Resume
 layout: default
 modal-id: 1
 project-date: May 2024
-pdf: img/portfolio/YutingWeng_Resume.pdf
+#pdf: img/portfolio/YutingWeng_Resume.pdf
+img: resume_image.png 
 thumbnail: resume_image.png
 alt: image-alt
 description: None
