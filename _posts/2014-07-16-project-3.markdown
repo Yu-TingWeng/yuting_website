@@ -4,12 +4,11 @@ subtitle: Data Analysis & Dashboard Design
 layout: default
 modal-id: 3
 project-date: 2023-12-11
-video: 
-  - Dash_App_Display.mp4
-  - Shiny_App_Display.mp4
+video: Dash_App_Display.mp4
 thumbnail: wallstreetbets.png
 alt: image-alt
 skill: Keywords - Web Scraping, Dashboards, Python, Data Analysis
+link: https://github.com/Yu-TingWeng/Final_Project_Redditpower
 description: • Applied sentiment analysis and NLP techniques to examine the correlation between online discussions on Reddit and official FOMC statements with stock market movements. <br> • Demonstrated proficiency in web scraping, utilizing tools such as the selenium package for FOMC statements, praw for Reddit posts, and yfinance for stock prices.
 
 ---
