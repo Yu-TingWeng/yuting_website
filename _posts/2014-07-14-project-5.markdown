@@ -1,12 +1,13 @@
 ---
-title: "Porject on the Way \U0001F680"
-subtitle: "Coming Soon...\U00002728"
+title: Text Classification and Generation Using GPT - Stress Detection from Social Media Articles
+subtitle: Deep Learning
 layout: default
 modal-id: 5
-project-date: September 2023
-img: image5.png
-thumbnail: image5.png
+project-date: April 2024
+pdf: img/portfolio/text_classification_gpt.pdf
+link: https://colab.research.google.com/drive/1QlAg54YS2MjupoPi4PwXGGjdqR63NY7n?usp=sharing
+thumbnail: stress.jpg
 alt: image-alt
-description: "Coming Soon...\U00002728"
+description: • Dataset - "Stress Detection from Social Media Articles," from Kaggle. <br> • Utilized GPT models with three different techniques, Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model to classify stress-related posts. 
 
 ---

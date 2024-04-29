@@ -1,12 +1,12 @@
 ---
-title: "Porject on the Way \U0001F92B"
-subtitle: "Coming Soon...\U0001F60F"
+title: "Project on the Way \U0001F680"
+subtitle: "Coming Soon...\U00002728"
 layout: default
 modal-id: 6
 project-date: September 2023
-img: image6.jpg
-thumbnail: image6.jpg
+img: image5.png
+thumbnail: image5.png
 alt: image-alt
-description: "Coming Soon...\U0001F60F"
+description: "Coming Soon...\U00002728"
 
 ---

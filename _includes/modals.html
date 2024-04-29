@@ -41,6 +41,10 @@
                                 </object>
                             </div>
                             <br>
+                            {% if post.link %}
+                            <!-- If post has a link -->
+                            <a href="{{ post.link }}" target="_blank" style="font-size: 18px;">Link to Google Colab</a>
+                            {% endif %}
                             {% endif %}
 
                             {% if post.img %}
