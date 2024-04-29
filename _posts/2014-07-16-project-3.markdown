@@ -1,15 +1,14 @@
 ---
-title: Golden
-subtitle: Website Design
+title: Sentiment Analysis of Reddit's Wallstreetbets Subreddit and FOMC Statements
+subtitle: Data Analysis & Dashboard Design
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: golden.png
-thumbnail: golden-thumbnail.png
+project-date: 2023-12-11
+video: 
+  - Dash_App_Display.mov
+  - Shiny_App_Display.mov
+thumbnail: wallstreetbets.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: • Applied sentiment analysis and NLP techniques to examine the correlation between online discussions on Reddit and official FOMC statements with stock market movements. <br> • Demonstrated proficiency in web scraping, utilizing tools such as the selenium package for FOMC statements, praw for Reddit posts, and yfinance for stock prices.
 
 ---
