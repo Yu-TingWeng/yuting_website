@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="row">
-            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14G_tjHSie08rtJrsj6LLr63Ys_mm8K5BvOTZZmcduT4/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14G_tjHSie08rtJrsj6LLr63Ys_mm8K5BvOTZZmcduT4/formResponse?" target="hidden_iframe" method="POST">
                 <div class="col-md-6">
                     <div class="control-group form-group">
                         <input type="text" class="form-control" placeholder="Your Name *" name="entry.1836944277" id="entry.1836944277" required data-validation-required-message="Please enter your name.">
@@ -30,28 +30,26 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
-                    <!--<button type="submit" class="btn btn-xl">Send Message</button>-->
                     <input class="btn btn-xl" type="submit" value="Submit">
                 </div>
             </form>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;">onload="if(submitted) {}"></iframe></iframe>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
     </div>
 </section>
 
-
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
-    var submitted=false;
-    $('#gform').on('submit', function(e) {
-        $('#gform *').fadeOut(2000);
-        $('#gform').prepend('Your submission has been processed...');
-        setTimeout(function() {
-            if (!submitted) {
-                $('#gform').prepend('<div class="alert alert-danger">Submission failed. Please try again later.</div>');
-            }
-        }, 5000); // Adjust the timeout as needed
+    $(document).ready(function() {
+        $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+            setTimeout(function() {
+                if (!submitted) {
+                    $('#gform').prepend('<div class="alert alert-danger">Submission failed. Please try again later.</div>');
+                }
+            }, 5000); // Adjust the timeout as needed
+        });
     });
 </script>
 
