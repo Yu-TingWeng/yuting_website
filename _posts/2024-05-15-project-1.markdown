@@ -1,0 +1,11 @@
+---
+title: Yu-Ting Weng
+subtitle: Resume
+layout: default
+modal-id: 1
+project-date: May 2024
+pdf: YutingWeng_Resume.pdf
+thumbnail: resume_image.png
+alt: image-alt
+description: N/A
+---

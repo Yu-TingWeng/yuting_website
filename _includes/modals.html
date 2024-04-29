@@ -32,6 +32,12 @@
                             {% endif %}
                             {% endif %}
 
+                            {% if post.pdf %}
+                            <!-- If post has a PDF file -->
+                            <a href="img/portfolio/{{ post.pdf }}" target="_blank" style="font-size: 18px;">View PDF</a>
+                            <br>
+                            {% endif %}
+
                             {% if post.img %}
                             <!-- If post has image(s) -->
                             {% for image in post.img %}
