@@ -9,4 +9,5 @@ img: resume_image.png
 thumbnail: resume_image.png
 alt: image-alt
 description: Updated Resume
+skill: N/A
 ---
