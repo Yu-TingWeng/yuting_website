@@ -25,7 +25,12 @@
                         <a class="page-scroll" href="#about">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="portfolio_page.html">Portfolio</a>
+                        {% for page in site.pages %}
+                            <a class="page-scroll" href= "{{page.filename}}" >{{page.title}}</a>
+                        {% endfor %}
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio_grid">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>

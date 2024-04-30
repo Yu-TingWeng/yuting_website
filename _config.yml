@@ -41,3 +41,4 @@ permalink: pretty
 pages:
   - title: Portfolio
     permalink: /portfolio/
+    filename: portfolio_page.html
