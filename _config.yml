@@ -38,6 +38,6 @@ markdown: kramdown
 permalink: pretty
 
 # Additional page settings
-page:
+pages:
   - title: Portfolio
-  - permalink: /portfolio/
+    permalink: /portfolio/
