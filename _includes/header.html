@@ -24,11 +24,9 @@
                     <li>
                         <a class="page-scroll" href="#about">Experience</a>
                     </li>
-                    {% for collection in site.collections %}
-                        <li>
-                        <a class="page-scroll" href="{{ collection.permalink }}">{{ collection.title }}</a>
-                        </li>
-                    {% endfor %}
+                    <li>
+                        <a class="page-scroll" href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>

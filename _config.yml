@@ -39,6 +39,6 @@ permalink: pretty
 
 # Additional page settings
 collections:
-  - title: Portfolio
-    permalink: /portfolio/
-    filename: portfolio_page.html
+  portfolio:
+    output: true
+    permalink: /portfolio/:name
