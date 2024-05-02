@@ -269,8 +269,8 @@ fieldset[disabled] .btn-xl.active {
     background-color: black;
 }
 
-.dropdown-backdrop{
-    position: static;
+.dropdown-backdrop {
+    z-index:0;
 }
 
 header {
