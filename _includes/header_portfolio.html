@@ -32,8 +32,19 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="{{ site.github.url }}/portfolio" class="menu-link">Portfolio</a>
+                <li class="dropdown custom">
+                    <a href="{{ site.github.url }}/portfolio" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="page-scroll" href="{{ site.github.url }}/portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="{% if page.url == '/portfolio' %}#programming{% else %}https://yu-tingweng.github.io/yuting_website/portfolio#programming{% endif %}">Programming</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="{% if page.url == '/portfolio' %}#policy{% else %}https://yu-tingweng.github.io/yuting_website/portfolio#policy{% endif %}">Public Policy</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="page-scroll" href="{% if page.url == '/home' %}#contact{% else %}https://yu-tingweng.github.io/yuting_website/home#contact{% endif %}">Contact</a>
