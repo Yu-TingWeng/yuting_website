@@ -3,7 +3,7 @@ title: Shuiyuan Market
 subtitle: Data Analysis & Data Visualization
 layout: default
 modal-id: 2
-category: policy
+tags: policy
 project-date: March 2022
 thumbnail: shuiyuan_market.jpg
 alt: image-alt

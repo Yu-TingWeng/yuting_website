@@ -40,8 +40,3 @@ permalink: pretty
 # jekyll-paginate configuration
 paginate:  2
 
-
-# Define the categories for your posts
-collections:
-  categories:
-    output: true

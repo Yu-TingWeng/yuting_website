@@ -3,7 +3,7 @@ title: WBEZ Project
 subtitle: Data Analysis & Data Visualization
 layout: default
 modal-id: 2
-category: programming
+tags: programming
 project-date: March 2024
 video: WBEZ_Final_Video_Presentation.mp4
 thumbnail: dashboard.png
