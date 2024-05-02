@@ -17,6 +17,7 @@ The Shuiyuan Public Market in Taipei holds a significant place in the city's his
 One of the most notable renovations occurred in 2010 when the Taipei City Government invited Israeli artist Yaacov Agam to create a large-scale public art piece titled 'Heart of Shuiyuan.' This art installation, situated within the modernized building, has since become a distinctive landmark in the Gongguan district.
 
 
+
 ## Market Offerings
 
 The market, spanning two floors, offers a diverse array of goods, including fresh produce, vegetables, snacks, daily necessities, beverages, and clothing alterations.  
@@ -24,9 +25,11 @@ The market, spanning two floors, offers a diverse array of goods, including fres
 **The second floor of the market caters to shoppers seeking a range of products**, from clothing to household items. With its affordable prices and diverse offerings, the market attracts locals and tourists alike.
 
 
+
 ## Conclusion
 
 The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and vibrant culinary scene. Its blend of tradition and modernity makes it a must-visit destination for anyone exploring the city.
+
 
 
 ## Photos
@@ -48,6 +51,7 @@ The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and
 |  大吉利元寶水餃 (Dumplings) |  大山東 (Steamed Bun) |
 |:-------------------------:|:--------------------------:|
 | ![Shuiyuan Market](img/portfolio/dumpling.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/bao.jpeg){: width="320" height="250"}  |
+
 
 
 ## Related Links
