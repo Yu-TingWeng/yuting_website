@@ -11,4 +11,5 @@ font:
   secondary: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
 
 menu:
+- {name: 'Home',  url: 'home'}
 - {name: 'Portfolio',  url: 'portfolio'}

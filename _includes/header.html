@@ -19,7 +19,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="dropdown">
-                    <a href="/" class="dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></a>
+                    <a href="{{ site.github.url }}/home" class="dropdown-toggle menu-link" data-toggle="dropdown">Home <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a class="page-scroll" href="#team">About Me</a>
@@ -30,8 +30,7 @@
                     </ul>
                 </li>
                 <li>
-                    {% for item in site.data.template.menu %}
-                    <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">Portfolio</a>
+                    <a href="{{ site.github.url }}/portfolio" class="menu-link">Portfolio</a>
                     {% endfor %}
                 </li>
                 <li>
