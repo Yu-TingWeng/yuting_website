@@ -33,17 +33,17 @@ The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and
 
 | 1:12莊園精品咖啡 (Coffee Shop )  | 1:12莊園精品咖啡 (Coffee Shop )   |
 |:-------------------------------:|:--------------------------------:|
-| ![Shuiyuan Market](img/portfolio/coffee_shop.jpg){: width="350" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/coffee2.jpg){: width="350" height="250"}    |
+| ![Shuiyuan Market](img/portfolio/coffee_shop.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/coffee2.jpg){: width="320" height="250"}    |
 
 
 |  賢夫美食 (Hong Kong Food) |  賢夫美食 (Hong Kong Food) |
 |:-------------------------:|:--------------------------:|
-| ![Shuiyuan Market](img/portfolio/hongkong1.jpg){: width="350" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/hongkong2.jpg){: width="350" height="250"}  |
+| ![Shuiyuan Market](img/portfolio/hongkong1.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/hongkong2.jpg){: width="320" height="250"}  |
 
 
 |  樂樂韓食 (Korean Food) |  不一樣炒飯 (Taiwanese Food) |
 |:-------------------------:|:--------------------------:|
-| ![Shuiyuan Market](img/portfolio/koreanfood.jpg){: width="350" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/taiwanfood.jpg){: width="350" height="250"}  |
+| ![Shuiyuan Market](img/portfolio/koreanfood.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/taiwanfood.jpg){: width="320" height="200"}  |
 
 
 ## Related Links
