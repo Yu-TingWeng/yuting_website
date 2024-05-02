@@ -8,9 +8,10 @@ project-date: March 2022
 thumbnail: shuiyuan_market.jpg
 alt: image-alt
 ---
-<p style="text-align: center;">
+
+<center>
 ![Shuiyuan Market](img/portfolio/shuiyuan_market.jpg)
-</p>
+</center>
 
 ## Background
 
