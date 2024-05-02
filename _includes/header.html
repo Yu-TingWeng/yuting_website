@@ -19,10 +19,22 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="dropdown">
-                    <a href="{% if page.url == '/' %}#team{% else %}https://yu-tingweng.github.io/yuting_website/#team{% endif %}" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
+                    <a href="https://yu-tingweng.github.io/yuting_website/" class="dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="page-scroll" href="{% if page.url == '/' %}#team{% else %}https://yu-tingweng.github.io/yuting_website/#team{% endif %}">Introduction</a></li>
-                        <li><a class="page-scroll" href="{% if page.url == '/' %}#about{% else %}https://yu-tingweng.github.io/yuting_website/#about{% endif %}">Experience</a></li>
+                        <li>
+                            {% if page.url == '/' %}
+                            <a href="#team">About Me</a>
+                            {% else %}
+                            <a href="https://yu-tingweng.github.io/yuting_website/#team">Aboue Me</a>
+                            {% endif %}
+                        </li>
+                        <li>
+                            {% if page.url == '/' %}
+                            <a href="#about">Experience</a>
+                            {% else %}
+                            <a href="https://yu-tingweng.github.io/yuting_website/#about">Experience</a>
+                            {% endif %}
+                        </li>
                     </ul>
                 </li>
                 <li>
