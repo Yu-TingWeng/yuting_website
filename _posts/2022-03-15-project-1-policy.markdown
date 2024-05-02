@@ -43,11 +43,11 @@ The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and
 
 |  樂樂韓食 (Korean Food) |  索菲烤布蕾 (Dessert Shop) |
 |:-------------------------:|:--------------------------:|
-| ![Shuiyuan Market](img/portfolio/koreanfood.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/desssert.jpg){: width="320" height="250"}  |
+| ![Shuiyuan Market](img/portfolio/koreanfood.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/dessert.jpg){: width="320" height="250"}  |
 
 |  大吉利元寶水餃 (Dumplings) |  大山東 (Steamed Bun) |
 |:-------------------------:|:--------------------------:|
-| ![Shuiyuan Market](img/portfolio/dunpling.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/bao.jpg){: width="320" height="250"}  |
+| ![Shuiyuan Market](img/portfolio/dumpling.jpg){: width="320" height="250"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/bao.jpeg){: width="320" height="250"}  |
 
 
 ## Related Links
