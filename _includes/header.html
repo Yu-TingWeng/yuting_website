@@ -25,6 +25,11 @@
                         <a class="page-scroll" href="#about">Experience</a>
                     </li>
                     <li>
+                        {% for item in site.data.template.menu %}
+                        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">Portfolio</a>
+                        {% endfor %}
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>

@@ -36,3 +36,6 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# jekyll-paginate configuration
+paginate:            2
