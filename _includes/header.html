@@ -18,11 +18,12 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#team">About Me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#about">Experience</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                            <li><a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#team">Team</a></li>
+                            <li><a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#about">Experience</a></li>
+                        </ul>
                     </li>
                     <li>
                         {% for item in site.data.template.menu %}
@@ -38,9 +39,6 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
 
     <!-- Header -->
     <header>
