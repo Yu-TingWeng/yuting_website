@@ -1,5 +1,5 @@
 url: https://yuting_website.github.io
-baseurl: 
+baseurl: https://yu-tingweng.github.io/yuting_website/
 
 # Site settings
 title: Hello, I'm Yuting Weng
@@ -38,4 +38,4 @@ markdown: kramdown
 permalink: pretty
 
 # jekyll-paginate configuration
-paginate:            2
+paginate:  2
