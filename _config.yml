@@ -39,3 +39,9 @@ permalink: pretty
 
 # jekyll-paginate configuration
 paginate:  2
+
+
+# Define the tags for your posts
+collections:
+  tags:
+    output: true
