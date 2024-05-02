@@ -8,6 +8,9 @@ project-date: March 2022
 thumbnail: shuiyuan_market.jpg
 alt: image-alt
 ---
+
+<div style="text-align: left;">
+
 # Shuiyuan Market: A Historical Landmark in Taipei
 
 The Shuiyuan Public Market in Taipei holds a significant place in the city's history and culture. Originally constructed in 1990 to enhance the cityscape and accommodate nearby vendors, the market has undergone several renovations over the years. 
@@ -31,3 +34,4 @@ The second floor of the market caters to shoppers seeking a range of products, f
 ## Conclusion
 
 The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and vibrant culinary scene. Its blend of tradition and modernity makes it a must-visit destination for anyone exploring the city.
+</div>
