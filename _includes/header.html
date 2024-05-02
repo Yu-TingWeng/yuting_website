@@ -1,44 +1,46 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
-            </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">{{ site.title }}</a>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
-                         <ul class="dropdown-menu">
-                            <li><a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#team">Team</a></li>
-                            <li><a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#about">Experience</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        {% for item in site.data.template.menu %}
-                        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">Portfolio</a>
-                        {% endfor %}
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#team">Introduction</a></li>
+                        <li><a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#about">Experience</a></li>
+                    </ul>
+                </li>
+                <li>
+                    {% for item in site.data.template.menu %}
+                    <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">Portfolio</a>
+                    {% endfor %}
+                </li>
+                <li>
+                    <a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
 
     <!-- Header -->
     <header>
