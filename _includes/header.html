@@ -25,10 +25,10 @@
                             <a class="page-scroll" href="{{ site.github.url }}/home">Home</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="{{ site.github.url }}/home#team">About Me</a>
+                            <a class="page-scroll" href="{% if page.url == '/home' %}#team{% else %}https://yu-tingweng.github.io/yuting_website/home#team{% endif %}">About Me</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="{{ site.github.url }}/home#about">Experience</a>
+                            <a class="page-scroll" href="{% if page.url == '/home' %}#about{% else %}https://yu-tingweng.github.io/yuting_website/home#about{% endif %}">Experience</a>
                         </li>
                     </ul>
                 </li>
@@ -45,7 +45,7 @@
 </nav>
 
     <!-- Header -->
-    <header>
+    <header style="background-image: url('{{ site.baseurl }}/img/header_bg.jpeg');">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To My Personal Website!</div>
