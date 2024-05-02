@@ -269,7 +269,14 @@ fieldset[disabled] .btn-xl.active {
     background-color: black;
 }
 
-
+@media (max-width: 767px) { 
+    .dropdown.custom:hover .dropdown-menu {
+      visibility: visible;
+      display:block;
+      border-radius:0;
+    
+    }
+    }
 
 header {
     text-align: center;
