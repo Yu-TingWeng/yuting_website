@@ -41,7 +41,7 @@ permalink: pretty
 paginate:  2
 
 
-# Define the tags for your posts
+# Define the categories for your posts
 collections:
-  tags:
+  categories:
     output: true

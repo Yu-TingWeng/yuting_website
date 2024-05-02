@@ -3,7 +3,7 @@ title: Text Classification and Generation Using GPT - Stress Detection from Soci
 subtitle: Deep Learning
 layout: default
 modal-id: 5
-tags: programming
+category: programming
 project-date: April 2024
 pdf: img/portfolio/text_classification_gpt.pdf
 html: img/portfolio/text_classification_gpt.html

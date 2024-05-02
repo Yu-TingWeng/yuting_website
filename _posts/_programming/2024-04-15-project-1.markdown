@@ -3,7 +3,7 @@ title: Yu-Ting Weng
 subtitle: Resume
 layout: default
 modal-id: 1
-tags: programming
+category: programming
 project-date: April 2024
 pdf: img/portfolio/YutingWeng_Resume.pdf
 thumbnail: resume_image.png
