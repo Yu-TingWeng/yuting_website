@@ -32,8 +32,9 @@ The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and
 ## Photos
 
 | ![Shuiyuan Market](img/portfolio/coffee_shop.jpg){: width="300" height="200"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/coffee2.jpg){: width="300" height="200"}    |
-|          1:12莊園精品咖啡 (Coffee Shop )           |          1:12莊園精品咖啡 (Coffee Shop )          |
-|:-------------------------------------------------:|:------------------------------------------------:|
+|:-------------------------------:|:--------------------------------:|
+| 1:12莊園精品咖啡 (Coffee Shop )  | 1:12莊園精品咖啡 (Coffee Shop )   |
+
 | ![Shuiyuan Market](img/portfolio/hongkong1.jpg){: width="300" height="200"} &nbsp; | &nbsp; ![Shuiyuan Market](img/portfolio/hongkong2.jpg){: width="300" height="200"}  |
-|              賢夫美食 (Hong Kong Food)             |              賢夫美食 (Hong Kong Food)            |
-|:-------------------------------------------------:|:------------------------------------------------:|
+|:-------------------------:|:--------------------------:|
+|  賢夫美食 (Hong Kong Food) |  賢夫美食 (Hong Kong Food) |
