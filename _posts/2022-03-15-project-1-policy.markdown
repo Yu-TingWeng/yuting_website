@@ -1,5 +1,5 @@
 ---
-title: Shuiyuan Market
+title: Shuiyuan Market (水源市場)
 subtitle: An Introduction to the Market
 layout: default
 modal-id: 7
@@ -53,6 +53,5 @@ The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and
 ## Related Links
 
 1. [Blogger's Introduction to Shuiuan Market's Must-Have Food](https://www.popdaily.com.tw/food/1253649)
-
 2. [Yahoo News: Shuiuan Market's Must-Have Food](https://tw.news.yahoo.com/%E5%8F%B0%E5%A4%A7%E4%BA%BA%E5%8F%A3%E8%A2%8B%E5%90%8D%E5%96%AE-%E6%B0%B4%E6%BA%90%E5%B8%82%E5%A0%B4-%E5%A5%BD%E8%A9%95%E5%BF%85%E5%90%83-%E9%99%90%E9%87%8F300%E9%A1%86%E7%83%A4%E8%82%89%E5%8C%85-%E6%9A%B4%E7%B4%85-000000360.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAACSZI-h5cbHUI7owauRj3ssRfqY45vdvzfwzG8zKL8u5QyZFSU0AjtzIH5HIRN_gcCfVmnXl9nmZHDBoZwfpUs_ZXU4HlXIDajfkSf_fQPPW-ZfiB06mi2mmOyjBmT70zYw21v7X9pEtHkHvV7LC1jiz-gkkgzFV8L7BwhrQozpb)
 

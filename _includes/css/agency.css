@@ -266,7 +266,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .dropdown-menu {
-    background-color: black;
+    background-color: #222;
 }
 
 @media (max-width: 767px) { 
