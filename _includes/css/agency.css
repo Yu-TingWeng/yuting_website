@@ -269,11 +269,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: black;
 }
 
-@media only screen and (max-width: 768px) {
-    .dropdown-menu {
-        position: absolute;
-    }
- }
+
 
 header {
     text-align: center;
