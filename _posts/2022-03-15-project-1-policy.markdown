@@ -9,9 +9,7 @@ thumbnail: shuiyuan_market.jpg
 alt: image-alt
 ---
 
-
 ![Shuiyuan Market](img/portfolio/shuiyuan_market.jpg)
-
 
 ## Background
 
@@ -32,3 +30,10 @@ The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and
 
 
 ## Photos
+
+| ![Shuiyuan Market](img/portfolio/coffee_shop.jpg) | ![Shuiyuan Market](img/portfolio/coffee2.jpg)    |
+|:-------------------------------------------------:|:------------------------------------------------:|
+|          1:12莊園精品咖啡 (Coffee Shop )           |          1:12莊園精品咖啡 (Coffee Shop )          |
+| ![Shuiyuan Market](img/portfolio/hongkong1.jpg)   | ![Shuiyuan Market](img/portfolio/hongkong2.jpg)  |
+|:-------------------------------------------------:|:------------------------------------------------:|
+|              賢夫美食 (Hong Kong Food)             |              賢夫美食 (Hong Kong Food)            |
