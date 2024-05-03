@@ -24,11 +24,11 @@ alt: image-alt
 </head>
 <body>
     <h3>1. Assist over 90% of Stalls in Adopting Online Payment Methods</h3>
+    <h5>Related Links</h5>
+    <li><a href="https://www.chinatimes.com/newspapers/20211111000972-260210?chdtv">News from Chinatimes: Shuiyuan Market's Collaboration with Taiwan Bank - Use Taiwan Pay to Receive 20% Cash Back</a></li>
     <div style="text-align: center;">
         <img src="img/portfolio/contactless_pay.jpg" alt="online_pay" style="max-width: 80%; height: auto;">
     </div>
-    <h5>Related Links</h5>
-    <li><a href="https://www.chinatimes.com/newspapers/20211111000972-260210?chdtv">News from Chinatimes: Shuiyuan Market's Collaboration with Taiwan Bank - Use Taiwan Pay to Receive 20% Cash Back</a></li>
     <br>
     <br>
     <h3>2. Resolve Building's Safety Concerns</h3>
@@ -46,6 +46,7 @@ alt: image-alt
     <br>
     <br>
     <h3>4. Provide Essential Guidelines for Hygienic Practices</h3>
+    <p>Offering essential guidelines for hygienic practices ensures a safe and healthy environment for both vendors and customers. Alongside emphasizing proper handwashing techniques, sanitization protocols, and maintaining cleanliness in shared spaces, adhering to guidelines for handling meat and food products, regular maintenance of equipment such as exhaust hoods are also advised and promoted in the market.</p>
     <table>
         <tr>
             <td><img src="img/portfolio/pay2.jpg" alt="hygienic_practice" style="max-width: 100%; height: auto;"></td>
