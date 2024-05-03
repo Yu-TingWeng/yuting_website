@@ -1,10 +1,9 @@
 ---
-title: Piano
-subtitle: music
+title: Piano Covers
+subtitle: Music
 layout: default
 modal-id: 13
 tags: blog
-project-date: March 2024
 thumbnail: piano.jpeg
 alt: image-alt
 ---
@@ -34,9 +33,10 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/1wF7HRHfqUN3DBWr0k73CSlzYGSMDq9Lg/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
     <br>
-    <h3>1. ZICO(지코) _ Any song(아무노래) </h3>
-    <p>A lovely and cheerful song.</p>
+    <h3>2. Ben(벤) - 像夢一般(꿈처럼) </h3>
+    <p>A song from one of my favorite Korean drama "Another Miss Oh"</p>
     <div style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1Jt4x4bnNxLM2IopHTZ-340nRnyOi2kjg/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
 
    
