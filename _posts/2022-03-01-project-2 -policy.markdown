@@ -31,8 +31,8 @@ alt: image-alt
     <h3>Provide Essential Guidelines for Hygienic Practices</h3>
     <table>
         <tr>
-            <td><img src="img/portfolio/pay2.jpg" alt="hygienic_practice" style="max-width: 80%; height: auto;"></td>
-            <td><img src="img/portfolio/pay4.jpg" alt="hygienic_practice" style="max-width: 80%; height: auto;"></td>
+            <td><img src="img/portfolio/pay2.jpg" alt="hygienic_practice" style="max-width: 100%; height: auto;"></td>
+            <td><img src="img/portfolio/pay4.jpg" alt="hygienic_practice" style="max-width: 100%; height: auto;"></td>
         </tr>
     </table>
     <br>
