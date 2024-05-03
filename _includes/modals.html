@@ -79,7 +79,16 @@
                                 <br>
                             {% endif %} 
                             <br>
-                            {% if post.tags contains 'blog' %}
+                            {% if post.tags contains 'music' %}
+                                <h2>{{ post.title }}</h2>
+                                <h4>{{ post.project-date }}</h4>
+                                <br>
+                                <p>{{ post.content | markdownify }}</p>
+                                <!-- Add the rest of your content rendering logic here -->
+                                <br>
+                            {% endif %} 
+                            <br>  
+                            {% if post.tags contains 'travel' %}
                                 <h2>{{ post.title }}</h2>
                                 <h4>{{ post.project-date }}</h4>
                                 <br>
