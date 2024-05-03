@@ -78,7 +78,3 @@ alt: image-alt
     </ol>
 </body>
 </html>
-
-
-
-
