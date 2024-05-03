@@ -11,13 +11,18 @@ alt: image-alt
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        table {
-            border-collapse: separate;
-            border-spacing: 10px;
+        .gdrive-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
         }
-        table img {
-            max-width: 100%;
-            height: auto;
+        .gdrive-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -27,11 +32,11 @@ alt: image-alt
     </div>
     <p>Here are some of my favorite photos from Washington DC.</p>
     <br>
-    <div style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/1W0mm267PGhEuq6TEDE6lZ9DMy7lrUTb_/preview?controls=0"  width="80%" height="480"  allow="autoplay"></iframe>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1W0mm267PGhEuq6TEDE6lZ9DMy7lrUTb_/preview"  width="80%" height="400"  allow="autoplay"></iframe>
     </div>
-    <div style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/12LIRt_0P1XQrjRqSBADHh0Q9DBueakqI/preview?controls=0"  width="80%" height="480"  allow="autoplay"></iframe>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/12LIRt_0P1XQrjRqSBADHh0Q9DBueakqI/preview"  width="80%" height="400"  allow="autoplay"></iframe>
     </div>
     <br>
    
