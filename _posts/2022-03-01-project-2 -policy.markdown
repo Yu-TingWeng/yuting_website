@@ -1,10 +1,10 @@
 ---
-title: Shuiyuan Market (水源市場)
-subtitle: What I have Done
+title: What I've Done for Shuiyuan Market
+subtitle: From 2020 to 2022
 layout: default
 modal-id: 8
 tags: policy
-project-date: March 2022
+project-date: 2020 - 2022
 thumbnail: shuiyuan_market.jpg
 alt: image-alt
 ---
@@ -24,8 +24,10 @@ alt: image-alt
 </head>
 <body>
     <h3>1. Assist over 90% of Stalls in Adopting Online Payment Methods</h3>
+    <br>
     <h5>Related Links</h5>
     <li><a href="https://www.chinatimes.com/newspapers/20211111000972-260210?chdtv">News from Chinatimes: Shuiyuan Market's Collaboration with Taiwan Bank - Use Taiwan Pay to Receive 20% Cash Back</a></li>
+    <br>
     <div style="text-align: center;">
         <img src="img/portfolio/contactless_pay.jpg" alt="online_pay" style="max-width: 80%; height: auto;">
     </div>
