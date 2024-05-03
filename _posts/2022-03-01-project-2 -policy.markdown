@@ -1,5 +1,5 @@
 ---
-title: What I've Done for Shuiyuan Market
+title: What I've Done for Shuiyuan
 subtitle: From 2020 to 2022
 layout: default
 modal-id: 8
@@ -24,7 +24,6 @@ alt: image-alt
 </head>
 <body>
     <h3>1. Assist over 90% of Stalls in Adopting Online Payment Methods</h3>
-    <br>
     <h5>Related Links</h5>
     <li><a href="https://www.chinatimes.com/newspapers/20211111000972-260210?chdtv">News from Chinatimes: Shuiyuan Market's Collaboration with Taiwan Bank - Use Taiwan Pay to Receive 20% Cash Back</a></li>
     <br>
@@ -40,7 +39,7 @@ alt: image-alt
     </div>
     <br>
     <br>
-    <h3>3. Assist Markets in Achieving a 98% Full Vaccination Rate within a Remarkably Brief Timeframe</h3>
+    <h3>3. Assist the Market in Achieving a 98% Full Vaccination Rate within a Remarkably Brief Timeframe</h3>
     <p>To prevent the spread of the virus within the market, vaccination efforts were prioritized. Additionally, measures such as mandatory mask-wearing, QR code registration for contact tracing, temperature checks, and hand sanitization were enforced. Adequate resources were allocated to ensure effective Covid-19 prevention measures across the markets.</p>
     <div style="text-align: center;">
         <img src="img/portfolio/covid19.JPG" alt="covid19" style="max-width: 100%; height: auto;">
