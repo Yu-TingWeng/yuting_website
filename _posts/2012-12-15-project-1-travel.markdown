@@ -28,10 +28,10 @@ alt: image-alt
     <p>Here are some of my favorite photos from Washington DC.</p>
     <br>
     <div style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/1W0mm267PGhEuq6TEDE6lZ9DMy7lrUTb_/preview?controls=0"  width="80%" height="auto"  allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1W0mm267PGhEuq6TEDE6lZ9DMy7lrUTb_/preview?controls=0"  width="80%" height="480"  allow="autoplay"></iframe>
     </div>
     <div style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/12LIRt_0P1XQrjRqSBADHh0Q9DBueakqI/preview?controls=0"  width="80%" height="auto"  allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/12LIRt_0P1XQrjRqSBADHh0Q9DBueakqI/preview?controls=0"  width="80%" height="480"  allow="autoplay"></iframe>
     </div>
     <br>
    
