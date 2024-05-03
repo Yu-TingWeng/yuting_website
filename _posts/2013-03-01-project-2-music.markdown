@@ -3,7 +3,7 @@ title: Performance
 subtitle: Music
 layout: default
 modal-id: 14
-tags: blog
+tags: music
 thumbnail: piano.jpeg
 alt: image-alt
 ---

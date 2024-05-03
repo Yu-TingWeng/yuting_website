@@ -3,7 +3,7 @@ title: Piano Covers
 subtitle: Music
 layout: default
 modal-id: 13
-tags: blog
+tags: music
 thumbnail: piano.jpeg
 alt: image-alt
 ---

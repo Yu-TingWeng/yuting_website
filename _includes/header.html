@@ -49,8 +49,19 @@
                 <!--<li>
                     <a href="{{ site.github.url }}/portfolio" class="menu-link">Portfolio</a>
                 </li>-->
-                <li>
-                    <a class="page-scroll" href="https://yu-tingweng.github.io/yuting_website/blog" class="menu-link">Blog</a>
+                <li class="dropdown custom">
+                    <a href="{{ site.github.url }}/blog" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="page-scroll" href="{{ site.github.url }}/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="{% if page.url == '/blog' %}#music{% else %}https://yu-tingweng.github.io/yuting_website/blog#music{% endif %}">  - Music</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="{% if page.url == '/blog' %}#travel{% else %}https://yu-tingweng.github.io/yuting_website/blog#travel{% endif %}">  - Travelling</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="page-scroll" href="{% if page.url == '/home' %}#contact{% else %}https://yu-tingweng.github.io/yuting_website/home#contact{% endif %}">Contact</a>
