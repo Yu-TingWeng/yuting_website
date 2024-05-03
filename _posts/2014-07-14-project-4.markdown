@@ -2,7 +2,7 @@
 title: Text Classification and Generation Using GPT - Stress Detection from Social Media Articles
 subtitle: Deep Learning
 layout: default
-modal-id: 5
+modal-id: 4
 tags: programming
 project-date: April 2024
 pdf: img/portfolio/text_classification_gpt.pdf

@@ -1,0 +1,10 @@
+---
+title: Project On the Way...
+subtitle: Coming Soon...
+layout: default
+modal-id: 6
+tags: programming
+project-date: 
+thumbnail: image6.png
+alt: image-alt
+---

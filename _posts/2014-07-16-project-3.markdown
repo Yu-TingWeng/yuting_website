@@ -2,7 +2,7 @@
 title: Sentiment Analysis of Reddit's Wallstreetbets Subreddit and FOMC Statements
 subtitle: Data Analysis & Dashboard Design
 layout: default
-modal-id: 4
+modal-id: 3
 tags: programming
 project-date: December 2023
 video: Dash_App_Display.mp4
