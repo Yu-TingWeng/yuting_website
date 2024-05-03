@@ -1,10 +1,10 @@
 ---
-title: Project On the Way...
-subtitle: Coming Soon...
+title: "Project On the Way... \U0001F4BB"
+subtitle: "Coming Soon... \U0001F3C3"
 layout: default
 modal-id: 6
 tags: programming
 project-date: 
-thumbnail: image6.png
+thumbnail: image6.jpg
 alt: image-alt
 ---

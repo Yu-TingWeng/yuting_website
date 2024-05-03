@@ -5,6 +5,6 @@ layout: default
 modal-id: 12
 tags: policy
 project-date: 
-thumbnail: project12.png
+thumbnail: project12.jpg
 alt: image-alt
 ---
