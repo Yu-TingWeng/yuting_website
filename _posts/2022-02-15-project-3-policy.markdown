@@ -5,7 +5,7 @@ layout: default
 modal-id: 9
 tags: policy
 thumbnail: hebin_market.png
-alt: Hebin Market
+alt: image-alt
 ---
 <html>
 <head>
@@ -23,7 +23,7 @@ alt: Hebin Market
 </head>
 <body>
     <div style="text-align: center;">
-        <img src="img/portfolio/hebin_market.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/portfolio/hebin_market.png" alt="market" style="max-width: 100%; height: auto;">
     </div>
     <h2>Background</h2>
     <p>The Hebin Market opened in 1975, initially serving as a resettlement area for residents displaced by the demolition of Taipei's rear railway station. Over time, it gained renown for its plethora of hardware and electrical appliance stores, contributing to the establishment of a bustling hardware business district along Huanhe South Road.</p>
