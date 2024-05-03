@@ -13,3 +13,4 @@ font:
 menu:
 - {name: 'Home',  url: 'home'}
 - {name: 'Portfolio',  url: 'portfolio'}
+- {name: 'Blog',  url: 'blog'}
