@@ -29,8 +29,8 @@ alt: image-alt
     <br>
     <table>
         <tr>
-            <td><iframe src="https://drive.google.com/file/d/1W0mm267PGhEuq6TEDE6lZ9DMy7lrUTb_/preview" width="640" height="480" allow="autoplay"></iframe></td>
-            <td><iframe src="https://drive.google.com/file/d/12LIRt_0P1XQrjRqSBADHh0Q9DBueakqI/preview" width="640" height="480" allow="autoplay"></iframe></td>
+            <td><iframe src="https://drive.google.com/file/d/1W0mm267PGhEuq6TEDE6lZ9DMy7lrUTb_/preview"  width="100%" height="auto"  allow="autoplay"></iframe></td>
+            <td><iframe src="https://drive.google.com/file/d/12LIRt_0P1XQrjRqSBADHh0Q9DBueakqI/preview" width="100%" height="auto" allow="autoplay"></iframe></td>
         </tr>
     </table>
 
