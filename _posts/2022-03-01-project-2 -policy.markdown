@@ -24,7 +24,7 @@ alt: image-alt
 </head>
 <body>
     <h3>Assist over 90% of Stalls in Adopting Online Payment Methods</h3>
-    <img src="img/portfolio/contactless_pay.jpg" alt="online_pay" style="max-width: 80%; height: auto;">
+    <img src="img/portfolio/contactless_pay.jpg" alt="online_pay" style="max-width: 100%; height: auto;">
     <h5>Related Links</h5>
     <li><a href="https://www.chinatimes.com/newspapers/20211111000972-260210?chdtv">News from Chinatimes: Shuiyuan Market's Collaboration with Taiwan Bank - Use Taiwan Pay to Receive 20% Cash Back</a></li>
     <br>
@@ -35,6 +35,11 @@ alt: image-alt
             <td><img src="img/portfolio/pay4.jpg" alt="hygienic_practice" style="max-width: 100%; height: auto;"></td>
         </tr>
     </table>
+    <br>
+    <h3>Resolve Building's Safety Concerns at Shuiyuan Market</h3>
+    <p>In 2021, Shuiyuan Market faced public safety concerns due to the absence of 12 cm RC walls, as mandated by the original construction permit license, to separate the first and second floors and prevent fire damage.</p> 
+    <p>Vendors disputed their existence since the market's inception, leading to reluctance in their installation. Collaborating with architects, my office and I sought an alternative solution acceptable to all vendors and regulations. After extensive discussions involving construction and management offices, scholars, experts, and vendors, an agreement was reached to install rolling fire doors next to the escalators, ensuring safety without disrupting vendors' operations.</p>
+    <img src="img/portfolio/firewall.png" alt="safty_concern" style="max-width: 100%; height: auto;">
     <br>
     <h2>Conclusion</h2>
     <p>The Shuiyuan Market stands as a testament to Taipei's rich cultural heritage and vibrant culinary scene. Its blend of tradition and modernity makes it a must-visit destination for anyone exploring the city.</p>
