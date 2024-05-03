@@ -45,14 +45,9 @@ alt: image-alt
     </div>
     <br>
     <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/17r9xEL5x8cqarGD2SxRnHgNM5W99579I/preview" allow="autoplay"></iframe>
-    </div>
-    <br>
-    <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1F7jFBiquNPHF_2IL5bi6B0VpPWP9UQ8K/preview" allow="autoplay"></iframe>
     </div>
-    <br>
-   
+    <br>  
 </body>
 </html>
 

@@ -46,7 +46,7 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/1wF7HRHfqUN3DBWr0k73CSlzYGSMDq9Lg/preview" allow="autoplay"></iframe>
     </div>
     <br>
-    <h3>2. Ben(벤) - 像夢一般(꿈처럼) </h3>
+    <h3>2. Ben(벤) - Like a Dream(꿈처럼) </h3>
     <p>A song from one of my favorite Korean drama "Another Miss Oh"</p>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1Jt4x4bnNxLM2IopHTZ-340nRnyOi2kjg/preview" allow="autoplay"></iframe>
