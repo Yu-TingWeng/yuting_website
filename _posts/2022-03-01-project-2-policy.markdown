@@ -8,12 +8,19 @@ project-date: March 2022
 thumbnail: shuiyuan_market.jpg
 alt: image-alt
 ---
-
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shuiyuan Market</title>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+        table img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <h2>Background</h2>
@@ -31,37 +38,37 @@ alt: image-alt
     <h2>Photos</h2>
     <table>
         <tr>
+            <td>1:12莊園精品咖啡 (Coffee Shop )</td>
+            <td>1:12莊園精品咖啡 (Coffee Shop )</td>
+        </tr>
+        <tr>
             <td><img src="img/portfolio/coffee_shop.jpg" alt="Coffee Shop" style="max-width: 100%; height: auto;"></td>
             <td><img src="img/portfolio/coffee2.jpg" alt="Coffee Shop" style="max-width: 100%; height: auto;"></td>
         </tr>
         <tr>
-            <td>1:12莊園精品咖啡 (Coffee Shop )</td>
-            <td>1:12莊園精品咖啡 (Coffee Shop )</td>
+            <td>賢夫美食 (Hong Kong Food)</td>
+            <td>賢夫美食 (Hong Kong Food)</td>
         </tr>
         <tr>
             <td><img src="img/portfolio/hongkong1.jpg" alt="Hong Kong Food" style="max-width: 100%; height: auto;"></td>
             <td><img src="img/portfolio/hongkong2.jpg" alt="Hong Kong Food" style="max-width: 100%; height: auto;"></td>
         </tr>
         <tr>
-            <td>賢夫美食 (Hong Kong Food)</td>
-            <td>賢夫美食 (Hong Kong Food)</td>
+            <td>樂樂韓食 (Korean Food)</td>
+            <td>索菲烤布蕾 (Dessert Shop)</td>
         </tr>
         <tr>
             <td><img src="img/portfolio/koreanfood.jpg" alt="Korean Food" style="max-width: 100%; height: auto;"></td>
             <td><img src="img/portfolio/dessert.jpg" alt="Dessert Shop" style="max-width: 100%; height: auto;"></td>
         </tr>
         <tr>
-            <td>樂樂韓食 (Korean Food)</td>
-            <td>索菲烤布蕾 (Dessert Shop)</td>
+            <td>大吉利元寶水餃 (Dumplings)</td>
+            <td>大山東 (Steamed Bun)</td>
         </tr>
         <tr>
             <td><img src="img/portfolio/dumpling.jpg" alt="Dumplings" style="max-width: 100%; height: auto;"></td>
             <td><img src="img/portfolio/bao.jpeg" alt="Steamed Bun" style="max-width: 100%; height: auto;"></td>
-        </tr>
-        <tr>
-            <td>大吉利元寶水餃 (Dumplings)</td>
-            <td>大山東 (Steamed Bun)</td>
-        </tr>
+        </tr>  
     </table>
     <br>
     <h2>Related Links</h2>
