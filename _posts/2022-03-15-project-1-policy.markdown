@@ -23,7 +23,9 @@ alt: image-alt
     </style>
 </head>
 <body>
-    <img src="img/portfolio/shuiyuan_market.jpg" alt="market" style="max-width: 100%; height: auto;">
+    <div style="text-align: center;">
+        <img src="img/portfolio/shuiyuan_market.jpg" alt="market" style="max-width: 80%; height: auto;">
+    </div>
     <h2>Background</h2>
     <p>The Shuiyuan Public Market in Taipei holds a significant place in the city's history and culture. Originally constructed in 1990 to enhance the cityscape and accommodate nearby vendors, the market has undergone several renovations over the years.</p>
     <p>One of the most notable renovations occurred in 2010 when the Taipei City Government invited Israeli artist Yaacov Agam to create a large-scale public art piece titled 'Heart of Shuiyuan.' This art installation, situated within the modernized building, has since become a distinctive landmark in the Gongguan district.</p>
