@@ -13,7 +13,7 @@ alt: image-alt
     <style>
         table {
             border-collapse: separate;
-            border-spacing: 20px;
+            border-spacing: 10px;
         }
         table img {
             max-width: 100%;
