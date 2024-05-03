@@ -1,5 +1,5 @@
 ---
-title: Text Classification and Generation Using GPT - Stress Detection from Social Media Articles
+title: Utilizing GPT Model- Stress Detection from Social Media Articles
 subtitle: Deep Learning
 layout: default
 modal-id: 4
