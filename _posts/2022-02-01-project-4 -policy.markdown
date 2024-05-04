@@ -31,7 +31,16 @@ alt: image-alt
     </div>
     <br>
     <br>
-    <h3>2. Supervise and Assist the Re-Election of The Market's Committee Members</h3>
+    <h3>2. Facilitate the Construction Process of the Temporary Market</h3>
+    <p>To ensure a streamlined construction process for the temporary market, I continuously verify requirements with market vendors, confirming equipment and building needs such as second-floor mezzanines.</p>
+    <p>Additionally, I assist in small procurements for tasks like air conditioning and internet installation. Collaborating closely with the construction department and architects, I supervise construction activities to maintain standards of quality and efficiency.</p>
+    <div style="text-align: center;">
+        <img src="img/portfolio/temporary.JPG" alt="Temporary Market" style="max-width: 80%; height: auto;">
+        <img src="img/portfolio/temporary2.png" alt="Temporary Market" style="max-width: 80%; height: auto;">
+    </div>
+    <br>
+    <br>
+    <h3>3. Supervise and Assist the Re-Election of The Market's Committee Members</h3>
     <p>To ensure transparency and fairness in governance and foster market development, my responsibility includes overseeing the integrity and smoothness of the voting and ballot counting process.</p>
     <table>
         <tr>
