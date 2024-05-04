@@ -20,6 +20,7 @@ alt: image-alt
         padding-bottom: 56.25%; /* Aspect ratio 16:9 */
         position: relative;
         overflow: hidden;
+         background-color: #bfbfbf; /* Set your desired background color here */
     }
     .gdrive-container iframe, 
     .gdrive-container img {
