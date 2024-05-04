@@ -34,36 +34,30 @@ alt: image-alt
     <h3>September 2022: My First time to the US</h3>
     <h4>University of Chicago</h4>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/campus2.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/campus2.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
-    <br>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/campus3.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/campus3.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
-    <br>
     <div style="text-align: center;">
         <img src="img/blog/chicago/campus4.jpg" alt="market" style="max-width: 100%; height: auto;">
     </div>
-    <br>
     <div style="text-align: center;">
         <img src="img/blog/chicago/econ.jpg" alt="market" style="max-width: 100%; height: auto;">
     </div>
-    <br>
     <div style="text-align: center;">
         <img src="img/blog/chicago/keller.jpg" alt="market" style="max-width: 100%; height: auto;">
     </div>
-    <br>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/card.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/card.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
     <br>
     <h4>First Day of School</h4>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/school0.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/school0.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
-    <br>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/school.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/school.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
     <br>
     <h4>Museum of Science and Industry</h4>
@@ -75,9 +69,8 @@ alt: image-alt
     <div style="text-align: center;">
         <img src="img/blog/chicago/lake.jpg" alt="market" style="max-width: 100%; height: auto;">
     </div>
-    <br>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/lake3.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/lake3.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
     <br>
     <h4>Field Musuem</h4>
@@ -91,7 +84,7 @@ alt: image-alt
     <br>
     <h4>My First Deep Dish</h4>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/deep.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/deep.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
     <br>
     <h4>The Cloud Gate & Millennium Park</h4>
@@ -100,12 +93,12 @@ alt: image-alt
     </div>
     <br>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/park.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/park.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
     <br>
     <h4>Dowtown City</h4>
     <div style="text-align: center;">
-        <img src="img/blog/chicago/city.jpg" alt="market" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/city.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
     <br>
 
