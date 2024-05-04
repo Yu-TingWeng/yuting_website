@@ -1,6 +1,6 @@
 ---
 title: Washington DC
-subtitle: December 2023
+subtitle: December 2022
 layout: default
 modal-id: 20
 tags: travel

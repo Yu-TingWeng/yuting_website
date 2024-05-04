@@ -59,7 +59,6 @@ alt: image-alt
     </div>
     <br>
     <h3>4. AKMU - How can I love the heartbreak, you’re the one I love </h3>
-    <p>Another song from one of my favorite Korean dramas "Another Miss Oh"</p>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1SbEwleGev-vU21yTjERPQ2m-rP9fAqVZ/preview" allow="autoplay"></iframe>
     </div>

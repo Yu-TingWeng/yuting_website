@@ -1,5 +1,5 @@
 ---
-title: Chicago
+title: Life in Chicago
 subtitle: 2022
 layout: default
 modal-id: 19
