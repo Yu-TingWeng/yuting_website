@@ -34,7 +34,7 @@ alt: image-alt
     <h2>September 2022: My First time to the US</h2>
     <h4>University of Chicago</h4>
     <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/11yCfAZy4qE9gNe4FQTB5dGDq5EuTMCxK/preview" allow="autoplay"></iframe>
+        <img src="img/blog/chicago/keller.jpg" alt="Keller Center" style="max-width: 100%; height: auto;">
     </div>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/10O1HQfr2lvZdJvtwd9oDBxzxchwkVlHw/preview" allow="autoplay"></iframe>
