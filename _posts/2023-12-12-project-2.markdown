@@ -12,3 +12,24 @@ alt: image-alt
 skill: Keywords - Data Visualization, Tableau
 description: This Dashboard provides a comprehensive understanding of Taiwan's economic and trade landscape.
 ---
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>A Focus on Taiwan's Trade</h2>
+    <h4>December 2023</h4>
+    <br>
+    <h4>Introduction</h4>
+    <p>This Dashboard provides a comprehensive understanding of Taiwan's economic and trade landscape.</p>
+    <br>
+    <p>Keywords - Data Visualization, Tableau</p>
+    <hr class="star-primary">
+    <a href="https://public.tableau.com/app/profile/yuting.weng7987/viz/AFocusonTaiwansTrade/DatavizProject" target="_blank" style="font-size: 18px;">Link to A Focus on Taiwan's Trade</a>
+    <img src="img/portfolio/trade_image.png" class="img-responsive img-centered" alt="A Focus on Taiwan's Trade">
+    <br>
+    
+</body>
+</html>
+

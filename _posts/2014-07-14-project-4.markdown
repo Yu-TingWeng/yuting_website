@@ -14,3 +14,56 @@ alt: image-alt
 description: "I focused on analyzing the 'Stress Detection from Social Media Articles' dataset obtained from Kaggle. I utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse."
 
 ---
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Center align the content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure full height of viewport */
+            margin: 0; /* Remove default margin */
+        }
+        /* Style for the PDF container */
+        .pdf-container {
+            overflow-y: auto;
+            max-height: 500px;
+            margin-top: 20px; /* Add margin to separate from the text */
+        }
+        /* Style for the iframe container */
+        .iframe-container {
+            width: 100%;
+            max-width: 1000px; /* Limit maximum width */
+            margin-top: 20px; /* Add margin to separate from the text */
+        }
+    </style>
+</head>
+<body>
+    <h2>Stress Detection from Social Media</h2>
+    <h4>April 2024</h4>
+    <br>
+    <h4>Introduction</h4>
+    <p>I focused on analyzing the "Stress Detection from Social Media Articles" dataset obtained from Kaggle. In addition to traditional LSTM, CNN, and CNN-LSTM models, I also utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse.</p>
+    <br>
+    <p>Keywords - LLMs for Text Classification</p>
+    <hr class="star-primary">
+    <!-- PDF container -->
+    <div class="pdf-container">
+        <object data="img/portfolio/text_classification_gpt.pdf" width="1000" height="1000" type="application/pdf">
+            <!-- Fallback message if the browser doesn't support PDF embedding -->
+            Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/text_classification_gpt.pdf">download</a> the PDF instead.
+        </object>
+    </div>
+    <br>
+    <!-- HTML iframe container -->
+    <h4>Code Demonstration</h4>
+    <div class="iframe-container">
+        <iframe src="img/portfolio/text_classification_gpt.html" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <br>
+</body>
+</html>
