@@ -31,7 +31,7 @@ alt: image-alt
         <img src="img/blog/chicago.jpg" alt="market" style="max-width: 100%; height: auto;">
     </div>
     <br>
-    <h3>September 2022: My First time to the US</h3>
+    <h2>September 2022: My First time to the US</h2>
     <h4>University of Chicago</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/11yCfAZy4qE9gNe4FQTB5dGDq5EuTMCxK/preview" allow="autoplay"></iframe>
@@ -56,7 +56,8 @@ alt: image-alt
     </div>
     <br>
     <br>
-    <h3>October 2022: Fall</h3>
+    <br>
+    <h2>October 2022: Fall</h2>
     <h4>Colorful Street</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1q3pT-xqex6p376FgWIun8rIRX3syq-2d/preview" allow="autoplay"></iframe>
@@ -67,7 +68,8 @@ alt: image-alt
     </div>
     <br>
     <br>
-    <h3>November 2022: Thanksgiving Break</h3>
+    <br>
+    <h2>November 2022: Thanksgiving Break</h2>
     <h4>Chinatown</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1es4zh9ahQc5TRERECAjb11lYwFI42fqk/preview" allow="autoplay"></iframe>
@@ -95,7 +97,8 @@ alt: image-alt
     </div>
     <br>
     <br>
-    <h3>December 2022: End of the First Quarter</h3>
+    <br>
+    <h2>December 2022: End of the First Quarter</h2>
     <h4>Last Statisitc Class</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1zVkscnFSLzLYxoLnsbAou1KtutO1Uxm2/preview" allow="autoplay"></iframe>
@@ -111,7 +114,6 @@ alt: image-alt
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1l6E__LJoPAstcS4ArFrzP6YvGB8y3ihG/preview" allow="autoplay"></iframe>
     </div>
-
 
 
 
