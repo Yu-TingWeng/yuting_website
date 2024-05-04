@@ -35,10 +35,6 @@ alt: image-alt
     </style>
 </head>
 <body>
-    <div style="text-align: center;">
-        <img src="img/blog/whitehouse.jpg" alt="market" style="max-width: 100%; height: auto;">
-    </div>
-    <br>
     <h2>December 16-19, 2022</h2>
     <h4>Union Station</h4>
     <div class="photo-container" style="text-align: center;">

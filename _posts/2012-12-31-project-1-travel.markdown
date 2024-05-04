@@ -35,10 +35,6 @@ alt: image-alt
     </style>
 </head>
 <body>
-    <div style="text-align: center;">
-        <img src="img/blog/chicago.jpg" alt="market" style="max-width: 100%; height: auto;">
-    </div>
-    <br>
     <h2>September 2022: My First time to the U.S.</h2>
     <h4>Harris School of Public Policy, University of Chicago</h4>
     <div class="photo-container" style="text-align: center;">
