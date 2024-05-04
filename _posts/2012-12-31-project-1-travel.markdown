@@ -11,20 +11,26 @@ alt: image-alt
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .gdrive-container {
-        position: relative;
+    .gdrive-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 0;
         padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-        }
-        .gdrive-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+        position: relative;
+        overflow: hidden;
+    }
+    .gdrive-container iframe, 
+    .gdrive-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
 </head>
 <body>
     <div style="text-align: center;">
