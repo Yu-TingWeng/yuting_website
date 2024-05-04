@@ -37,11 +37,10 @@ alt: image-alt
             <td><img src="img/blog/chicago/campus4.jpg" alt="Campus" style="max-width: 100%; height: auto;"></td>
             <td><img src="img/blog/chicago/econ.jpg" alt="Campus" style="max-width: 100%; height: auto;"></td>
         </tr>
-        <tr>
-            <td><img src="img/blog/chicago/campus.jpg" alt="Keller Center" style="max-width: 100%; height: auto;"></td>
-            <td><img src="img/blog/chicago/keller.jpg" alt="Student ID" style="max-width: 100%; height: auto;"></td>
-        </tr>
     </table>
+    <div style="text-align: center;">
+        <img src="img/blog/chicago/keller.jpg" alt="Keller Center" style="max-width: 60%; height: auto;">
+    </div>
     <h4>First Day of School</h4>
     <table style="text-align: center;">
         <tr>
@@ -68,11 +67,6 @@ alt: image-alt
     <div style="text-align: center;">
         <img src="img/blog/chicago/bean.jpg" alt="market" style="max-width: 80%; height: auto;">
     </div>
-    <h4>Dowtown City</h4>
-    <div style="text-align: center;">
-        <img src="img/blog/chicago/city.jpg" alt="market" style="max-width: 60%; height: auto;">
-    </div>
-    <br>
 
 </body>
 </html>
