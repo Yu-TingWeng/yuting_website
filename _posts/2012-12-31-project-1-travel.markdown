@@ -17,10 +17,10 @@ alt: image-alt
         align-items: center;
         width: 100%;
         height: 0;
-        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+        padding-bottom: 75%; /* Aspect ratio 4:3 */
         position: relative;
         overflow: hidden;
-         background-color: #bfbfbf; /* Set your desired background color here */
+         background-color: #363636; /* Set your desired background color here */
     }
     .gdrive-container iframe, 
     .gdrive-container img {
@@ -38,11 +38,12 @@ alt: image-alt
         <img src="img/blog/chicago.jpg" alt="market" style="max-width: 100%; height: auto;">
     </div>
     <br>
-    <h2>September 2022: My First time to the US</h2>
+    <h2>September 2022: My First time to the U.S.</h2>
     <h4>University of Chicago</h4>
     <div class="gdrive-container" style="text-align: center;">
         <img src="img/blog/chicago/keller.jpg" alt="Keller Center" style="max-width: auto; height: 100%;">
     </div>
+    <br>
     <div class="gdrive-container" style="text-align: center;">
         <img src="img/blog/chicago/card.jpg" alt="Keller Center" style="max-width: auto; height: 100%;">
     </div>
