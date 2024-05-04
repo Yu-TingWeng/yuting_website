@@ -40,10 +40,10 @@ alt: image-alt
     <h2>September 2022: My First time to the US</h2>
     <h4>University of Chicago</h4>
     <div class="gdrive-container" style="text-align: center;">
-        <img src="img/blog/chicago/keller.jpg" alt="Keller Center" style="max-width: 100%; height: auto;">
+        <img src="img/blog/chicago/keller.jpg" alt="Keller Center" style="max-width: auto; height: 100%;">
     </div>
     <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/10O1HQfr2lvZdJvtwd9oDBxzxchwkVlHw/preview" allow="autoplay"></iframe>
+        <img src="img/blog/chicago/card.jpg" alt="Keller Center" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <h4>Museum of Science and Industry</h4>
