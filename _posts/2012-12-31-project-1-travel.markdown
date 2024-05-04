@@ -17,7 +17,7 @@ alt: image-alt
         align-items: center;
         width: 100%;
         height: 0;
-        padding-bottom: 75%; /* Aspect ratio 4:3 */
+        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
         position: relative;
         overflow: hidden;
         background-color: #222222; /* Set your desired background color here */
@@ -76,7 +76,7 @@ alt: image-alt
     </div>
     <br>
     <h4>Volunteer</h4>
-    <div class="photo-containerr" style="text-align: center;">
+    <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/volunteer.jpg" alt="Volunteer" style="max-width: auto; height: 100%;">
     </div>
     <br>
@@ -85,7 +85,7 @@ alt: image-alt
     <h2>November 2022: Thanksgiving Break</h2>
     <h4>Chinatown</h4>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/boba.jpg" alt="Boba Tea" style="max-width: auto; height: 100%;">
+        <img src="img/blog/chicago/boba.JPG" alt="Boba Tea" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <h4>Christmas Market</h4>
@@ -94,7 +94,7 @@ alt: image-alt
     </div>
     <br>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/group.jpg" alt="Group Photo" style="max-width: auto; height: 100%;">
+        <img src="img/blog/chicago/group.JPG" alt="Group Photo" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <h4>Lincoln Zoo & Zoolight</h4>
