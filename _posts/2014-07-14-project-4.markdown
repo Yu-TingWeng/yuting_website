@@ -8,7 +8,6 @@ project-date: April 2024
 thumbnail: stress.jpg
 alt: Stress Detection
 ---
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +28,7 @@ alt: Stress Detection
 </head>
 <body>
     <h4>Introduction</h4>
-    <p>I focused on analyzing the "Stress Detection from Social Media Articles" dataset obtained from Kaggle. In addition to traditional LSTM, CNN, and CNN-LSTM models, I also utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse.</p>
+    <p>I focused on analyzing the "Stress Detection from Social Media Articles" dataset obtained from Kaggle. I utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse.</p>
     <p>Keywords - LLMs for Text Classification</p>
     <hr class="star-primary">
     <h4>Slides</h4>
