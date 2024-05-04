@@ -58,13 +58,13 @@ alt: image-alt
     <h3>3. Supervise and Assist the Re-Election of The Market's Committee Members</h3>
     <p>To ensure transparency and fairness in governance and foster market development, my responsibility includes overseeing the integrity and smoothness of the voting and ballot counting process.</p>
     <div class="photo-container" style="text-align: center;">  
-        <img src="img/portfolio/vote.jpg" alt="Re-Election" style="max-width: auto; height: 100%;">
+        <img src="img/portfolio/vote.jpg" alt="Re-Election" style="max-width: 100%; height: auto;">
     </div>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/portfolio/vote2.jpg" alt="Re-Election" style="max-width: auto; height: 100%;">
+        <img src="img/portfolio/vote2.jpg" alt="Re-Election" style="max-width: 100%; height: auto;">
     </div>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/portfolio/vote3.JPG" alt="Re-Election"style="max-width: auto; height: 100%;">
+        <img src="img/portfolio/vote3.JPG" alt="Re-Election" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <br>

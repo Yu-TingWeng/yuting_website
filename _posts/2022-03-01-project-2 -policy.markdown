@@ -55,17 +55,17 @@ alt: image-alt
     <h3>3. Assist the Market in Achieving a 98% Full Vaccination Rate within a Remarkably Brief Timeframe</h3>
     <p>To prevent the spread of the virus within the market, vaccination efforts were prioritized. Additionally, measures such as mandatory mask-wearing, QR code registration for contact tracing, temperature checks, and hand sanitization were enforced. Adequate resources were allocated to ensure effective Covid-19 prevention measures across the markets.</p>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/portfolio/covid19.JPG" alt="covid19" style="max-width: auto; height: 100%;">
+        <img src="img/portfolio/covid19.JPG" alt="covid19" style="max-width: 100%; height: auto;">
     </div>
     <br>
     <br>
     <h3>4. Provide Essential Guidelines for Hygienic Practices</h3>
     <p>Offering essential guidelines for hygienic practices ensures a safe and healthy environment for both vendors and customers. Alongside emphasizing proper handwashing techniques, sanitization protocols, and maintaining cleanliness in shared spaces, adhering to guidelines for handling meat and food products, regular maintenance of equipment such as exhaust hoods are also advised and promoted in the market.</p>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/portfolio/pay2.jpg" alt="hygienic_practice" style="max-width: auto; height: 100%;">
+        <img src="img/portfolio/pay2.jpg" alt="hygienic_practice" style="max-width: 100%; height: auto;">
     </div>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/portfolio/pay4.jpg" alt="hygienic_practice" style="max-width: auto; height: 100%;">
+        <img src="img/portfolio/pay4.jpg" alt="hygienic_practice" style="max-width: 100%; height: auto;">
     </div>
     <br>
     <br>
