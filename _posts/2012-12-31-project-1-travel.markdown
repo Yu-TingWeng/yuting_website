@@ -24,6 +24,14 @@ alt: image-alt
             width: 100%;
             height: 100%;
         }
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        table img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -33,6 +41,12 @@ alt: image-alt
     <br>
     <h3>September 2022: My First time to the US</h3>
     <h4>University of Chicago</h4>
+    <table class="gdrive-container">
+        <tr>
+            <td><iframe src="https://drive.google.com/file/d/1sSX_21M9FQZN2CU72QSZ21wd_ry_q-aI/preview"  allow="autoplay"></iframe></td>
+            <td><iframe src="https://drive.google.com/file/d/169g4wGBVwKey-KsEKotLLBCDqNEJ_ekt/preview" allow="autoplay"></iframe></td>
+        </tr>
+    </table>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1sSX_21M9FQZN2CU72QSZ21wd_ry_q-aI/preview"  allow="autoplay"></iframe>
     </div>
@@ -45,10 +59,12 @@ alt: image-alt
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/11yCfAZy4qE9gNe4FQTB5dGDq5EuTMCxK/preview" allow="autoplay"></iframe>
     </div>
+    <br>
     <h4>Museum of Science and Industry</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1K7i_GunkinrOpXwUXK1vVGWMub-tjPwF/preview" allow="autoplay"></iframe>
     </div>
+    <br>
     <h4>Field Musuem</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1eaZ771iq_rB2aPMIj5pzP3OwRujWdOPr/preview" allow="autoplay"></iframe>
@@ -56,10 +72,12 @@ alt: image-alt
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1raMB907fpRxEEw1UZq9-PifrOEQyKvau/preview" allow="autoplay"></iframe>
     </div>
+    <br>
     <h4>My First Deep Dish</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1XsPnTsBRJzrobJObLiellfoIpPU2CVoE/preview" allow="autoplay"></iframe>
     </div>
+    <br>
     <h4>City View</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1EA88csOd_IFrwIOoBsntbMjcAM-r3Uvb/preview" allow="autoplay"></iframe>
