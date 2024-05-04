@@ -81,12 +81,12 @@ alt: Philadelphia
     <br>
     <h4>Eastern State Penitentiary</h4>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/dc/jail.jpg" alt="Eastern State Penitentiary" style="max-width: auto; height: 100%;">
+        <img src="img/blog/philly/jail.jpg" alt="Eastern State Penitentiary" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <h4>Franklin Fountain - Ice Cream</h4>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/dc/icecream.jpg" alt="Franklin Fountain" style="max-width: auto; height: 100%;">
+        <img src="img/blog/philly/icecream.jpg" alt="Franklin Fountain" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <h4>Elfreth's Alley</h4>
