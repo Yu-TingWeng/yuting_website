@@ -24,14 +24,6 @@ alt: image-alt
             width: 100%;
             height: 100%;
         }
-        table {
-            border-collapse: separate;
-            border-spacing: 10px;
-        }
-        table img {
-            max-width: 100%;
-            height: auto;
-        }
     </style>
 </head>
 <body>
@@ -41,12 +33,6 @@ alt: image-alt
     <br>
     <h3>September 2022: My First time to the US</h3>
     <h4>University of Chicago</h4>
-    <table class="gdrive-container">
-        <tr>
-            <td><iframe src="https://drive.google.com/file/d/1sSX_21M9FQZN2CU72QSZ21wd_ry_q-aI/preview"  allow="autoplay"></iframe></td>
-            <td><iframe src="https://drive.google.com/file/d/169g4wGBVwKey-KsEKotLLBCDqNEJ_ekt/preview" allow="autoplay"></iframe></td>
-        </tr>
-    </table>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1sSX_21M9FQZN2CU72QSZ21wd_ry_q-aI/preview"  allow="autoplay"></iframe>
     </div>
@@ -54,10 +40,10 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/169g4wGBVwKey-KsEKotLLBCDqNEJ_ekt/preview" allow="autoplay"></iframe>
     </div>
     <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/10O1HQfr2lvZdJvtwd9oDBxzxchwkVlHw/preview" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/11yCfAZy4qE9gNe4FQTB5dGDq5EuTMCxK/preview" allow="autoplay"></iframe>
     </div>
     <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/11yCfAZy4qE9gNe4FQTB5dGDq5EuTMCxK/preview" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/10O1HQfr2lvZdJvtwd9oDBxzxchwkVlHw/preview" allow="autoplay"></iframe>
     </div>
     <br>
     <h4>Museum of Science and Industry</h4>
@@ -78,11 +64,32 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/1XsPnTsBRJzrobJObLiellfoIpPU2CVoE/preview" allow="autoplay"></iframe>
     </div>
     <br>
-    <h4>City View</h4>
+    <h3>October 2022: Fall</h3>
+    <h4>Colorful Street</h4>
     <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/1EA88csOd_IFrwIOoBsntbMjcAM-r3Uvb/preview" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1q3pT-xqex6p376FgWIun8rIRX3syq-2d/preview" allow="autoplay"></iframe>
+    </div>
+    <h4>Volunteer</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1qKioP_Yne6PyVBq8Pdbee3seBQu8PZU4/preview" allow="autoplay"></iframe>
     </div>
     <br>
+    <h3>November 2022: Thanksgiving Break</h3>
+    <h4>Chinatown</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1es4zh9ahQc5TRERECAjb11lYwFI42fqk/preview" allow="autoplay"></iframe>
+    </div>
+    <h4>Christmas Market</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1SquBKGpIaPFqk2xx1EMUpFJw7brEpbra/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1U4iilkTnEeZwK3polvAlDbDBiU29AgVr/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1vcuxi4RdI_mXnOInhfmDNL6qrn4T16uv/preview" allow="autoplay"></iframe>
+    </div>
+
 
 
 </body>
