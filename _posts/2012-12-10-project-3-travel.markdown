@@ -20,8 +20,8 @@ alt: Philadelphia
         padding-bottom: 56.25%; /* Aspect ratio 16:9 */
         position: relative;
         overflow: hidden;
-        background-color: #222222; /* Set your desired background color here */
-        border: 2px solid #f2f2f2; /* Set your desired border color here */
+        background-color: #222222; /* Set desired background color here */
+        border: 2px solid #f2f2f2; /* Set desired border color here */
     }
     .photo-container iframe, 
     .photo-container img {
