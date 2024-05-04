@@ -5,11 +5,11 @@ layout: default
 modal-id: 1
 tags: programming
 project-date: March 2024
-video: WBEZ_Final_Video_Presentation.mp4
+#video: WBEZ_Final_Video_Presentation.mp4
 thumbnail: dashboard.png
 alt: image-alt
-skill: Keywords - Python, SQL, User Interface Design, Data Analysis, Data Visualization
-description: WBEZ investigated police traffic stop data in Illinois from 2004-2022. Their team explored the data solely from a racial perspective and enlisted the Data Science Institute to build on their analysis of the relationship between traffic stops and race as well as between additional demographics such as age, gender, and location. <br> To increase engagement and accessibility to the data, our group created two interactive dashboards consisting of visualizations and driver-to-driver comparisons across selected demographics. Users can view choropleth maps to see county-level differences, scatterplots to contrast demographic groups at the individual agency level, and sunburst charts to visualize likelihood breakdowns, shown below.
+#skill: Keywords - Python, SQL, User Interface Design, Data Analysis, Data Visualization
+#description: WBEZ investigated police traffic stop data in Illinois from 2004-2022. Their team explored the data solely from a racial perspective and enlisted the Data Science Institute to build on their analysis of the relationship between traffic stops and race as well as between additional demographics such as age, gender, and location. <br> To increase engagement and accessibility to the data, our group created two interactive dashboards consisting of visualizations and driver-to-driver comparisons across selected demographics. Users can view choropleth maps to see county-level differences, scatterplots to contrast demographic groups at the individual agency level, and sunburst charts to visualize likelihood breakdowns, shown below.
 
 ---
 

@@ -5,12 +5,12 @@ layout: default
 modal-id: 2
 tags: programming
 project-date: December 2023
-link: https://public.tableau.com/app/profile/yuting.weng7987/viz/AFocusonTaiwansTrade/DatavizProject
-img: trade_image.png
+#link: https://public.tableau.com/app/profile/yuting.weng7987/viz/AFocusonTaiwansTrade/DatavizProject
+#img: trade_image.png
 thumbnail: trade_image.png
 alt: image-alt
-skill: Keywords - Data Visualization, Tableau
-description: This Dashboard provides a comprehensive understanding of Taiwan's economic and trade landscape.
+#skill: Keywords - Data Visualization, Tableau
+#description: This Dashboard provides a comprehensive understanding of Taiwan's economic and trade landscape.
 ---
 
 <html>
