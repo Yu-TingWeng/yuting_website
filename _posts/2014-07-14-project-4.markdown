@@ -5,14 +5,8 @@ layout: default
 modal-id: 4
 tags: programming
 project-date: April 2024
-#pdf: img/portfolio/text_classification_gpt.pdf
-#html: img/portfolio/text_classification_gpt.html
-#paragraph: Code Demonstration
-#skill: Keywords - LLMs for Text Classification
 thumbnail: stress.jpg
-alt: image-alt
-#description: "I focused on analyzing the 'Stress Detection from Social Media Articles' dataset obtained from Kaggle. I utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse."
-
+alt: Stress Detection
 ---
 
 <html>
@@ -43,14 +37,12 @@ alt: image-alt
     </style>
 </head>
 <body>
-    <h2>Stress Detection from Social Media</h2>
-    <h4>April 2024</h4>
-    <br>
     <h4>Introduction</h4>
     <p>I focused on analyzing the "Stress Detection from Social Media Articles" dataset obtained from Kaggle. In addition to traditional LSTM, CNN, and CNN-LSTM models, I also utilized GPT models with three distinct techniques: Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse.</p>
     <br>
     <p>Keywords - LLMs for Text Classification</p>
     <hr class="star-primary">
+    <h4>Slides</h4>
     <!-- PDF container -->
     <div class="pdf-container">
         <object data="img/portfolio/text_classification_gpt.pdf" width="1000" height="1000" type="application/pdf">
@@ -60,6 +52,7 @@ alt: image-alt
     </div>
     <br>
     <!-- HTML iframe container -->
+    <hr class="star-primary">
     <h4>Code Demonstration</h4>
     <div class="iframe-container">
         <iframe src="img/portfolio/text_classification_gpt.html" width="100%" height="600" frameborder="0"></iframe>
