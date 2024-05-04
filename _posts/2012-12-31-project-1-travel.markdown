@@ -21,6 +21,7 @@ alt: image-alt
         position: relative;
         overflow: hidden;
         background-color: #222222; /* Set your desired background color here */
+        border: 2px solid #f2f2f2; /* Set your desired border color here */
     }
     .photo-container iframe, 
     .photo-container img {
@@ -39,13 +40,20 @@ alt: image-alt
     </div>
     <br>
     <h2>September 2022: My First time to the U.S.</h2>
-    <h4>University of Chicago</h4>
+    <h4>Harris School of Public Policy, University of Chicago</h4>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/keller.jpg" alt="Keller Center" style="max-width: auto; height: 100%;">
     </div>
-    <br>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/card.jpg" alt="Student ID" style="max-width: auto; height: 100%;">
+    </div>
+    <br>
+    <h4>UChicago Campus</h4>
+    <div class="photo-container" style="text-align: center;">
+        <img src="img/blog/chicago/campus.jpg" alt="Campus" style="max-width: auto; height: 100%;">
+    </div>
+    <div class="photo-container" style="text-align: center;">
+        <img src="img/blog/chicago/campus2.jpg" alt="Campus" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <h4>Museum of Science and Industry</h4>
@@ -70,7 +78,6 @@ alt: image-alt
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/color.jpg" alt="Colorful Street" style="max-width: auto; height: 100%;">
     </div>
-    <br>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/leaf.jpg" alt="Colorful Street" style="max-width: auto; height: 100%;">
     </div>
@@ -92,7 +99,6 @@ alt: image-alt
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/chris_market.jpg" alt="Christmas Market" style="max-width: auto; height: 100%;">
     </div>
-    <br>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/group.JPG" alt="Group Photo" style="max-width: auto; height: 100%;">
     </div>
@@ -101,15 +107,12 @@ alt: image-alt
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/zoolight.jpg" alt="Zoolight" style="max-width: auto; height: 100%;">
     </div>
-    <br>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/light2.jpg" alt="Zoolight" style="max-width: auto; height: 100%;">
     </div>
-    <br>
     <div class="photo-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1FmWSNC5-rIkLKBJbzkceLcu8PG2530nn/preview" allow="autoplay"></iframe>
     </div>
-    <br>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/santa.jpg" alt="Santa" style="max-width: auto; height: 100%;">
     </div>
@@ -134,7 +137,6 @@ alt: image-alt
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/hilary.jpg" alt="Hilary Hahn's Concert" style="max-width: auto; height: 100%;">
     </div>
-    <br>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/hilary2.jpg" alt="Hilary Hahn's Concert" style="max-width: auto; height: 100%;">
     </div>
