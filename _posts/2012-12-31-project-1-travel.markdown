@@ -46,10 +46,10 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/1K7i_GunkinrOpXwUXK1vVGWMub-tjPwF/preview" allow="autoplay"></iframe>
     </div>
     <br>
-    <div class="gdrive-container" style="text-align: center;">
+   <!-- <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1z-IYMBcHPuwt0HRkcswpI9-Mk1BK4C18/preview" allow="autoplay"></iframe>
     </div>
-    <br>
+    <br>-->
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1JHqbdZoRmXYqWuF5Zogh7Pxime9rkq0D/preview" allow="autoplay"></iframe>
     </div>
@@ -58,8 +58,7 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/1stfM_g6N8ZFYYO6et-mBKqK4geuEXFWS/preview" allow="autoplay"></iframe>
     </div>
     <br>
-    <h4>• Downtown</h4>
-    <p>Field Musuem</p>
+    <h4>Field Musuem</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1eaZ771iq_rB2aPMIj5pzP3OwRujWdOPr/preview" allow="autoplay"></iframe>
     </div>
@@ -68,12 +67,12 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/1raMB907fpRxEEw1UZq9-PifrOEQyKvau/preview" allow="autoplay"></iframe>
     </div>
     <br>
-    <p>• My First Deep Dish</p>
+    <h4>• My First Deep Dish</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1XsPnTsBRJzrobJObLiellfoIpPU2CVoE/preview" allow="autoplay"></iframe>
     </div>
     <br>
-    <p>• City View</p>
+    <h4>• City View</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1EA88csOd_IFrwIOoBsntbMjcAM-r3Uvb/preview" allow="autoplay"></iframe>
     </div>
