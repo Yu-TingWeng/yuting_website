@@ -13,15 +13,6 @@ alt: Stress Detection
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Center align the content */
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh; /* Ensure full height of viewport */
-            margin: 0; /* Remove default margin */
-        }
         /* Style for the PDF container */
         .pdf-container {
             overflow-y: auto;
