@@ -34,7 +34,15 @@ alt: image-alt
     <h3>September 2022: My First time to the US</h3>
     <h4>University of Chicago</h4>
     <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1sSX_21M9FQZN2CU72QSZ21wd_ry_q-aI/preview"  allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/169g4wGBVwKey-KsEKotLLBCDqNEJ_ekt/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/10O1HQfr2lvZdJvtwd9oDBxzxchwkVlHw/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/11yCfAZy4qE9gNe4FQTB5dGDq5EuTMCxK/preview" allow="autoplay"></iframe>
     </div>
     <h4>Museum of Science and Industry</h4>
@@ -44,6 +52,8 @@ alt: image-alt
     <h4>Field Musuem</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1eaZ771iq_rB2aPMIj5pzP3OwRujWdOPr/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1raMB907fpRxEEw1UZq9-PifrOEQyKvau/preview" allow="autoplay"></iframe>
     </div>
     <h4>My First Deep Dish</h4>
