@@ -34,12 +34,6 @@ alt: image-alt
     <h3>September 2022: My First time to the US</h3>
     <h4>University of Chicago</h4>
     <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/1sSX_21M9FQZN2CU72QSZ21wd_ry_q-aI/preview"  allow="autoplay"></iframe>
-    </div>
-    <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/169g4wGBVwKey-KsEKotLLBCDqNEJ_ekt/preview" allow="autoplay"></iframe>
-    </div>
-    <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/11yCfAZy4qE9gNe4FQTB5dGDq5EuTMCxK/preview" allow="autoplay"></iframe>
     </div>
     <div class="gdrive-container" style="text-align: center;">
@@ -55,14 +49,12 @@ alt: image-alt
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1eaZ771iq_rB2aPMIj5pzP3OwRujWdOPr/preview" allow="autoplay"></iframe>
     </div>
-    <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/1raMB907fpRxEEw1UZq9-PifrOEQyKvau/preview" allow="autoplay"></iframe>
-    </div>
     <br>
     <h4>My First Deep Dish</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1XsPnTsBRJzrobJObLiellfoIpPU2CVoE/preview" allow="autoplay"></iframe>
     </div>
+    <br>
     <br>
     <h3>October 2022: Fall</h3>
     <h4>Colorful Street</h4>
@@ -74,6 +66,7 @@ alt: image-alt
         <iframe src="https://drive.google.com/file/d/1qKioP_Yne6PyVBq8Pdbee3seBQu8PZU4/preview" allow="autoplay"></iframe>
     </div>
     <br>
+    <br>
     <h3>November 2022: Thanksgiving Break</h3>
     <h4>Chinatown</h4>
     <div class="gdrive-container" style="text-align: center;">
@@ -82,9 +75,6 @@ alt: image-alt
     <h4>Christmas Market</h4>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1SquBKGpIaPFqk2xx1EMUpFJw7brEpbra/preview" allow="autoplay"></iframe>
-    </div>
-    <div class="gdrive-container" style="text-align: center;">
-        <iframe src="https://drive.google.com/file/d/1U4iilkTnEeZwK3polvAlDbDBiU29AgVr/preview" allow="autoplay"></iframe>
     </div>
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1vcuxi4RdI_mXnOInhfmDNL6qrn4T16uv/preview" allow="autoplay"></iframe>
