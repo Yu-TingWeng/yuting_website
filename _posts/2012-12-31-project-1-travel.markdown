@@ -79,6 +79,39 @@ alt: image-alt
     <div class="gdrive-container" style="text-align: center;">
         <iframe src="https://drive.google.com/file/d/1vcuxi4RdI_mXnOInhfmDNL6qrn4T16uv/preview" allow="autoplay"></iframe>
     </div>
+    <h4>Lincoln Zoo & Zoolight</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1G8_zeQv6eop_ji29EqlFB8pxyh0nHfwR/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1FmWSNC5-rIkLKBJbzkceLcu8PG2530nn/preview" allow="autoplay"></iframe>
+    </div>
+    <h4>Thanksgiving Parade</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/19FDupZUBF7zYi4ZEyalmaDeyU8fpw4HH/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/15t2TPrPlTpknRrIWKwf1IjUcEoKQ4tIj/preview" allow="autoplay"></iframe>
+    </div>
+    <br>
+    <br>
+    <h3>December 2022: End of the First Quarter</h3>
+    <h4>Last Statisitc Class</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1zVkscnFSLzLYxoLnsbAou1KtutO1Uxm2/preview" allow="autoplay"></iframe>
+    </div>
+    <h4>Hilary Hahn's Concert</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1ljYgEwoLBFKZBrAB24dE2BYXX_JxJoio/preview" allow="autoplay"></iframe>
+    </div>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1eBYxzeko7mCRgoYJQBwwmPQKr44W6x5L/preview" allow="autoplay"></iframe>
+    </div>
+    <h4>Taiwanese Food - Hello Jasmine in Chinatown</h4>
+    <div class="gdrive-container" style="text-align: center;">
+        <iframe src="https://drive.google.com/file/d/1l6E__LJoPAstcS4ArFrzP6YvGB8y3ihG/preview" allow="autoplay"></iframe>
+    </div>
+
 
 
 
