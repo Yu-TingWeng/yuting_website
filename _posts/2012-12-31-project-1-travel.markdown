@@ -20,7 +20,7 @@ alt: image-alt
         padding-bottom: 75%; /* Aspect ratio 4:3 */
         position: relative;
         overflow: hidden;
-         background-color: #222222; /* Set your desired background color here */
+        background-color: #222222; /* Set your desired background color here */
     }
     .container iframe, 
     .container img {
