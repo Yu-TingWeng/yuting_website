@@ -2,7 +2,7 @@
 title: Life in Chicago
 subtitle: 2023
 layout: default
-modal-id: 19
+#modal-id: 19
 tags: travel
 thumbnail: chicago.jpg
 alt: Chicago
@@ -48,7 +48,7 @@ alt: Chicago
     <br>
     <h4>Lunar New Year</h4>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/newyear.JPG" alt="Lunar New Year" style="max-width: auto; height: 100%;">
+        <img src="img/blog/chicago/newyear1.JPG" alt="Lunar New Year" style="max-width: auto; height: 100%;">
     </div>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/newyear2.JPG" alt="Lunar New Year" style="max-width: auto; height: 100%;">
