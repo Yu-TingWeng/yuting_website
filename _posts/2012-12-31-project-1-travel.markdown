@@ -48,10 +48,10 @@ alt: Chicago
     <br>
     <h4>Lunar New Year</h4>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/newyear.jpg" alt="Lunar New Year" style="max-width: auto; height: 100%;">
+        <img src="img/blog/chicago/newyear.JPG" alt="Lunar New Year" style="max-width: auto; height: 100%;">
     </div>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/newyear2.jpg" alt="Lunar New Year" style="max-width: auto; height: 100%;">
+        <img src="img/blog/chicago/newyear2.JPG" alt="Lunar New Year" style="max-width: auto; height: 100%;">
     </div>
     <div class="photo-container" style="text-align: center;">
         <img src="img/blog/chicago/newyear3.jpg" alt="Lunar New Year" style="max-width: auto; height: 100%;">
@@ -65,18 +65,7 @@ alt: Chicago
         <img src="img/blog/chicago/patrick.jpg" alt="St.Patrick Day" style="max-width: auto; height: 100%;">
     </div>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/patrick2.jpg" alt="St.Patrick Day" style="max-width: auto; height: 100%;">
-    </div>
-    <br>
-    <br>
-    <br>
-    <h2>April, May 2023</h2>
-    <h4>Spring</h4>
-    <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/flower.jpg" alt="Dandelion" style="max-width: auto; height: 100%;">
-    </div>
-    <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/tree.jpg" alt="Tree" style="max-width: auto; height: 100%;">
+        <img src="img/blog/chicago/patrick2.JPG" alt="St.Patrick Day" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <br>
@@ -87,7 +76,7 @@ alt: Chicago
         <img src="img/blog/chicago/jazz.jpg" alt="Jazz Festival" style="max-width: auto; height: 100%;">
     </div>
     <div class="photo-container" style="text-align: center;">
-        <img src="img/blog/chicago/jazz2.jpg" alt="Jazz Festival" style="max-width: auto; height: 100%;">
+        <img src="img/blog/chicago/jazz2.JPG" alt="Jazz Festival" style="max-width: auto; height: 100%;">
     </div>
     <br>
     <h4>Adler Planetarium</h4>
