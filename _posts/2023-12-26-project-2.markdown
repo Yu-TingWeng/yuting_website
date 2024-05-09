@@ -1,5 +1,5 @@
 ---
-title: Stress Detection from Social Media
+title: Utilizing GPT Model - Stress Detection from Social Media
 subtitle: Deep Learning (In Progess...)
 layout: default
 modal-id: 2
