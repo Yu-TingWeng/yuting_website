@@ -40,7 +40,11 @@ alt: GIS Project
     <p>This project aims to conduct a thorough analysis of the health conditions of the US population, with particular attention to disparities at the state and county levels. We will investigate how these patterns correlate with various demographic factors, including race, ethnicity, gender, and urban versus rural access. Furthermore, we will analyze socioeconomic indicators to assess their influence on telehealth access and effectiveness.</p>
     <p>Keywords - Data Visualization, Tableau, Python, ArcGIS</p>
     <hr class="star-primary">
-    <a href="https://public.tableau.com/app/profile/yuting.weng/viz/ExploringCDCPopulationHealthDataStateandCounty-levelChoroplethVisualizations/Dashboard1?publish=yes" target="_blank" style="font-size: 18px;">Exploring Population Health Data</a>
+    <h4>Tableau</h4>
+    <div style="text-align: center;">
+        <a href="https://public.tableau.com/app/profile/yuting.weng/viz/ExploringCDCPopulationHealthDataStateandCounty-levelChoroplethVisualizations/Dashboard1?publish=yes" target="_blank" style="font-size: 18px;">Exploring Population Health Data</a>
+    </div>
+    <br>
     <hr class="star-primary">
     <img src="img/portfolio/tableau.png" class="img-responsive img-centered" alt="Exploring Population Health Data">  
     <br>
