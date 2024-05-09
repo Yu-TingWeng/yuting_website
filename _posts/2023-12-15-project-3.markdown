@@ -44,8 +44,6 @@ alt: GIS Project
     <div style="text-align: center;">
         <a href="https://public.tableau.com/app/profile/yuting.weng/viz/ExploringCDCPopulationHealthDataStateandCounty-levelChoroplethVisualizations/Dashboard1?publish=yes" target="_blank" style="font-size: 18px;">Exploring Population Health Data</a>
     </div>
-    <br>
-    <hr class="star-primary">
     <img src="img/portfolio/tableau.png" class="img-responsive img-centered" alt="Exploring Population Health Data">  
     <br>
     <hr class="star-primary">
