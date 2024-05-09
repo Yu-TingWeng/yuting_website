@@ -1,6 +1,6 @@
 ---
 title: Exploring Population Health Data
-subtitle: Data Visualization with Tableau, Python, and ArcGIS
+subtitle: Data Visualization (In Progress...)
 layout: default
 modal-id: 3
 tags: programming
@@ -12,6 +12,28 @@ alt: GIS Project
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the PDF container */
+        .pdf-container {
+            overflow-y: auto;
+            max-height: 500px;
+            margin-top: 20px; /* Add margin to separate from the text */
+        }
+        /* Style for the iframe container */
+        .iframe-container {
+        width: 100%; /* Adjust as needed */
+        max-width: 1000px; /* Adjust as needed */
+        margin-top: 20px;
+        /* You can set a specific height for the container if needed */
+        /* height: 500px; */
+        }
+        .iframe-container iframe {
+        width: 100%; /* Set the iframe width to fill its container */
+        height: 600px; /* Set a fixed height for the iframe */
+        /* Alternatively, you can set a percentage height as well */
+        /* height: 100%; */
+        }
+    </style>
 </head>
 <body>
     <h4>Introduction</h4>
@@ -31,10 +53,10 @@ alt: GIS Project
         </object>
     </div>
     <br>
-    <hr class="star-primary">
+    <hr class="star-primary" style="text-align: center;">
     <h4>Creating Interactive Maps Using Folium</h4>
     <div class="iframe-container">
-        <iframe src="img/portfolio/us_map.html" width="auto" height="100%" frameborder="0"></iframe>
+        <iframe src="img/portfolio/us_map.html" frameborder="0"></iframe>
     </div>
     <br>
 </body>
