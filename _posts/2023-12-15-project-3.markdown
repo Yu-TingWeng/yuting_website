@@ -60,16 +60,11 @@ alt: GIS Project
     <br>
     <hr class="star-primary">
     <h4>Exploratory Data Analysis using Tableau</h4>
+    <br>
     <div style="text-align: center;">
         <a href="https://public.tableau.com/app/profile/yuting.weng/viz/ExploringCDCPopulationHealthDataStateandCounty-levelChoroplethVisualizations/Dashboard1?publish=yes" target="_blank" style="font-size: 18px;">Link to Exploring Population Health Data</a>
     </div>
     <img src="img/portfolio/tableau.png" class="img-responsive img-centered" alt="Exploring Population Health Data">  
-    <br>
-    <hr class="star-primary" style="text-align: center;">
-    <h4>Creating Interactive Maps Using Folium</h4>
-    <div class="iframe-container">
-        <iframe src="img/portfolio/us_map.html" frameborder="0"></iframe>
-    </div>
     <br>
     <hr class="star-primary">
     <h4>Data Cleaning and Preprocessing using Python</h4>
