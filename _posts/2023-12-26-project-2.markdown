@@ -1,6 +1,6 @@
 ---
 title: Utilizing GPT Model - Stress Detection from Social Media
-subtitle: Deep Learning (In Progess...)
+subtitle: Deep Learning (In Progress...)
 layout: default
 modal-id: 2
 tags: programming

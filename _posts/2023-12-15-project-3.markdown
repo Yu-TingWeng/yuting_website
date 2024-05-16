@@ -1,5 +1,5 @@
 ---
-title: Exploring Population Health Data
+title: Unveiling the Hidden Causes & Risk Factors of COPD
 subtitle: Data Visualization (In Progress...)
 layout: default
 modal-id: 3
@@ -37,17 +37,20 @@ alt: GIS Project
 </head>
 <body>
     <h4>Introduction</h4>
-    <p>This project aims to conduct a thorough analysis of the health conditions of the US population, with particular attention to disparities at the state and county levels. We will investigate how these patterns correlate with various demographic factors, including race, ethnicity, gender, and urban versus rural access. Furthermore, we will analyze socioeconomic indicators to assess their influence on telehealth access and effectiveness.</p>
+    <p>This project aims to conduct a comprehensive analysis of the health conditions of the US population. Initially, we explore the patterns of various diseases and their relationships with demographic factors and socioeconomic indicators at the state level using Python and Tableau. \n Subsequently, we narrow our focus to COPD, the primary area of interest, and identify states with both the highest and lowest prevalence rates. By comparing these states, we aim to uncover patterns in prevalence rates and their correlations with demographic factors and socioeconomic indicators within states, at the county level. \n Our methodology involves using Lasso regression for feature selection, followed by Ordinary Least Squares (OLS) regression using the selected variables. We then identify statistically significant variables and utilize them to create choropleth maps using ArcGIS.</p>
     <p>Keywords - Data Visualization, Tableau, Python, ArcGIS</p>
     <hr class="star-primary">
-    <h4>Tableau</h4>
-    <div style="text-align: center;">
-        <a href="https://public.tableau.com/app/profile/yuting.weng/viz/ExploringCDCPopulationHealthDataStateandCounty-levelChoroplethVisualizations/Dashboard1?publish=yes" target="_blank" style="font-size: 18px;">Link to Exploring Population Health Data</a>
+    <h4>Slides</h4>
+    <!-- PDF container -->
+    <div class="pdf-container" style="text-align: center;">
+        <object data="img/portfolio/GIS.pdf" width="640" height="480" type="application/pdf">
+            <!-- Fallback message if the browser doesn't support PDF embedding -->
+            Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/GIS.pdf">"download"</a> the PDF instead.
+        </object>
     </div>
-    <img src="img/portfolio/tableau.png" class="img-responsive img-centered" alt="Exploring Population Health Data">  
     <br>
     <hr class="star-primary">
-    <h4>Using Python for EDA</h4>
+    <h4>Exploratory Data Analysis using Python</h4>
     <div class="pdf-container" style="text-align: center;">
         <object data="img/portfolio/EDA.pdf" width="640" height="480" type="application/pdf">
             <!-- Fallback message if the browser doesn't support PDF embedding -->
@@ -55,10 +58,26 @@ alt: GIS Project
         </object>
     </div>
     <br>
+    <hr class="star-primary">
+    <h4>Exploratory Data Analysis using Tableau</h4>
+    <div style="text-align: center;">
+        <a href="https://public.tableau.com/app/profile/yuting.weng/viz/ExploringCDCPopulationHealthDataStateandCounty-levelChoroplethVisualizations/Dashboard1?publish=yes" target="_blank" style="font-size: 18px;">Link to Exploring Population Health Data</a>
+    </div>
+    <img src="img/portfolio/tableau.png" class="img-responsive img-centered" alt="Exploring Population Health Data">  
+    <br>
     <hr class="star-primary" style="text-align: center;">
     <h4>Creating Interactive Maps Using Folium</h4>
     <div class="iframe-container">
         <iframe src="img/portfolio/us_map.html" frameborder="0"></iframe>
+    </div>
+    <br>
+    <hr class="star-primary">
+    <h4>Data Cleaning and Preprocessing using Python</h4>
+    <div class="pdf-container" style="text-align: center;">
+        <object data="img/portfolio/Data Cleaning and Preprocessing.pdf" width="640" height="480" type="application/pdf">
+            <!-- Fallback message if the browser doesn't support PDF embedding -->
+            Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/Data Cleaning and Preprocessing.pdf">"download"</a> the PDF instead.
+        </object>
     </div>
     <br>
 </body>
