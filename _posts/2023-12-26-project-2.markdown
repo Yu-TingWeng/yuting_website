@@ -42,8 +42,17 @@ alt: Stress Detection
     <br>
     <!-- HTML iframe container -->
     <hr class="star-primary">
+    <h4>Medium Post</h4>
+    <br>
     <div style="text-align: center;">
         <a href="https://medium.com/@chenhui1/ai-driven-detection-of-stress-in-social-media-communications-7f9059de5244" target="_blank" style="font-size: 18px;">Link to Medium Post</a>
+    </div>
+    <br>
+    <hr class="star-primary">
+    <h4>Google Colab</h4>
+    <br>
+    <div style="text-align: center;">
+        <a href="https://drive.google.com/drive/folders/1I4od-5v_4NEStSQeqe4NOIJe-QBZyOKr" target="_blank" style="font-size: 18px;">Link to Google Colab</a>
     </div>
     <br>
 </body>
