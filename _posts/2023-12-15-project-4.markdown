@@ -1,6 +1,6 @@
 ---
 title: Unveiling the Hidden Causes & Risk Factors of COPD
-subtitle: Data Visualization (In Progress...)
+subtitle: Data Visualization
 layout: default
 modal-id: 4
 tags: programming
