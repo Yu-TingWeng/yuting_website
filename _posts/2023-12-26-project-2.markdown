@@ -1,11 +1,11 @@
 ---
-title: Utilizing GPT Model - Stress Detection from Social Media
-subtitle: Deep Learning (In Progress...)
+title: AI-Driven Detection of Stress on Twitter
+subtitle: Deep Learning
 layout: default
-modal-id: 2
+modal-id: 2 
 tags: programming
-project-date: April 2024
-thumbnail: stress.jpg
+project-date: May 2024
+thumbnail: stress_twitter.jpg
 alt: Stress Detection
 ---
 <html>
@@ -28,26 +28,22 @@ alt: Stress Detection
 </head>
 <body>
     <h4>Introduction</h4>
-    <p>I focused on analyzing the "Stress Detection from Social Media Articles" dataset obtained from Kaggle. I utilized <b>GPT models</b> with three distinct techniques: <b>Zero-Shot Prompting, Few-Shot Prompting, and Fine-tuning the GPT2 Model</b>. These techniques were employed to effectively classify stress-related posts within the dataset, aiming to enhance understanding and detection of stress signals in social media discourse.</p>
-    <p>Keywords - LLMs for Text Classification</p>
+    <p>This study successfully developed deep learning models, including <b>GPT-2, BERT, LSTM, and CNN</b>, to detect stress states in social media texts, particularly focusing on Twitter. The models demonstrated effectiveness in identifying stress signals, with <b>SHAP analysis</b> revealing both similarities and differences in word importance among the models. BERT and GPT-2 showed consistency in recognizing stress-related and non-stress-related language patterns, while CNN presented distinct terms. Further analysis using BERT revealed that non-stress users had higher social media engagement and more positive sentiment in their posts compared to stress users. These findings highlight the potential of utilizing social media metrics and sentiment analysis to understand and identify user stress levels.</p>
+    <p>Keywords - Text Classification</p>
     <hr class="star-primary">
     <h4>Slides</h4>
     <!-- PDF container -->
     <div class="pdf-container" style="text-align: center;">
-        <object data="img/portfolio/text_classification_gpt.pdf" width="640" height="480" type="application/pdf">
+        <object data="img/portfolio/twitter_slide.pdf" width="640" height="480" type="application/pdf">
             <!-- Fallback message if the browser doesn't support PDF embedding -->
-            Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/text_classification_gpt.pdf">"download"</a> the PDF instead.
+            Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/twitter_slide.pdf">"download"</a> the PDF instead.
         </object>
     </div>
     <br>
     <!-- HTML iframe container -->
     <hr class="star-primary">
-    <h4>Code Demonstration</h4>
-    <div class="pdf-container" style="text-align: center;">
-        <object data="img/portfolio/gpt_code.pdf" width="640" height="480" type="application/pdf">
-            <!-- Fallback message if the browser doesn't support PDF embedding -->
-            Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/gpt_code.pdf">"download"</a> the PDF or <a href="https://colab.research.google.com/drive/1xJQerUpwc0NdkC1adsfwBk-GAnMg0G_7?usp=sharing">"press the link to Google Colab"</a> instead.
-        </object>
+    <div style="text-align: center;">
+        <a href="https://medium.com/@chenhui1/ai-driven-detection-of-stress-in-social-media-communications-7f9059de5244" target="_blank" style="font-size: 18px;">Link to Medium Post</a>
     </div>
     <br>
 </body>
