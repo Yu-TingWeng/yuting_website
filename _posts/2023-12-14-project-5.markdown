@@ -4,7 +4,7 @@ subtitle: Big Data
 layout: default
 modal-id: 5
 tags: programming
-project-date: 
+project-date: May 2024
 thumbnail: airbnb.jpg
 alt: Airbnb Analysis
 ---
