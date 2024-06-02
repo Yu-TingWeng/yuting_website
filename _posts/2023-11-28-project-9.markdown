@@ -4,6 +4,6 @@ subtitle: Coming Soon...
 layout: default
 modal-id: 9
 tags: programming
-thumbnail: image6.png
+thumbnail: image6.jpg
 alt: image-alt
 ---
