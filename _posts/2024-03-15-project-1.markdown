@@ -1,5 +1,5 @@
 ---
-title: WBEZ Project
+title: Interactive Analysis of Illinois Traffic Stop Disparities
 subtitle: Data Analysis & Data Visualization
 layout: default
 modal-id: 1
