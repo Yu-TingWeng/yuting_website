@@ -1,0 +1,45 @@
+---
+title: Analyzing Key Factors Influencing Airbnb Property Prices
+subtitle: Big Data
+layout: default
+modal-id: 5
+tags: programming
+project-date: 
+thumbnail: airbnb.jpg
+alt: Airbnb Analysis
+---
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the PDF container */
+        .pdf-container {
+            overflow-y: auto;
+            max-height: 500px;
+            margin-top: 20px; /* Add margin to separate from the text */
+        }
+        /* Style for the iframe container */
+        .iframe-container {
+            width: 100%;
+            max-width: 1000px; /* Limit maximum width */
+            margin-top: 20px; /* Add margin to separate from the text */
+        }
+    </style>
+</head>
+<body>
+    <h4>Introduction</h4>
+    <p>In this paper, we conducted an extensive analysis of Airbnb data using various statistical and machine-learning techniques to identify key factors influencing property prices. We began with missing value imputation and exploratory data analysis (EDA) to ensure data integrity. Median imputation was used for numerical variables, and specific replacements for categorical variables. EDA revealed significant correlations, showing that properties with more accommodations, bathrooms, and bedrooms generally have higher prices, and that geographical location and property type also significantly affect prices. Advanced techniques such as principal component analysis (PCA), K-means clustering, Latent Dirichlet Allocation (LDA) for topic modeling, LASSO and Ridge regressions, CART, random forest, and gradient boosting models were employed to predict and understand the drivers of property prices, providing actionable insights for Airbnb hosts.</p>
+    <p>Keywords - Big Data, R</p>
+    <hr class="star-primary">
+    <h4>Paper</h4>
+    <!-- PDF container -->
+    <div class="pdf-container" style="text-align: center;">
+        <object data="img/portfolio/big_data_slide.pdf" width="640" height="480" type="application/pdf">
+            <!-- Fallback message if the browser doesn't support PDF embedding -->
+            Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/big_data_slide.pdf">"download"</a> the PDF instead.
+        </object>
+    </div>
+    <br>
+</body>
+</html>

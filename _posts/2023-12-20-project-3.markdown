@@ -1,6 +1,6 @@
 ---
 title: Reddit Stress Detection - Utilizing GPT Prompting
-subtitle: Deep Learning (In Progress...)
+subtitle: Deep Learning
 layout: default
 modal-id: 3
 tags: programming
