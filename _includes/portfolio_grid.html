@@ -79,23 +79,30 @@
 <!-- JavaScript to detect URL fragment and open the modal -->
 <script>
     $(document).ready(function() {
-        // Check if we're on the portfolio page
-        if (window.location.pathname.includes('portfolio')) {
-            // Open the modal if there's a hash in the URL
-            if (window.location.hash) {
-                var modalId = window.location.hash.substring(1);
-                $('#' + modalId).modal('show');
-            }
-
-            // Remove the hash from the URL when the modal is closed
-            $('.portfolio-modal').on('hidden.bs.modal', function () {
-                if (history.pushState) {
-                    history.pushState(null, null, window.location.pathname + window.location.search);
-                } else {
-                    // Fallback for older browsers
-                    window.location.hash = '';
-                }
-            });
+        // Function to check if we're on the portfolio page
+        function isPortfolioPage() {
+            return window.location.pathname.includes('portfolio');
         }
+
+        // Function to check if the hash contains a modal ID
+        function hasModalHash() {
+            return window.location.hash && window.location.hash.startsWith('#Modal');
+        }
+
+        // Check if we're on the portfolio page and has #Modal in the URL
+        if (isPortfolioPage() && hasModalHash()) {
+            var modalId = window.location.hash.substring(1);
+            $('#' + modalId).modal('show');
+        }
+
+        // Remove the hash from the URL when the modal is closed
+        $('.portfolio-modal').on('hidden.bs.modal', function () {
+            if (isPortfolioPage() && history.pushState) {
+                history.pushState(null, null, window.location.pathname + window.location.search);
+            } else if (isPortfolioPage()) {
+                // Fallback for older browsers
+                window.location.hash = '';
+            }
+        });
     });
 </script>
