@@ -92,15 +92,5 @@
             var modalId = window.location.hash.substring(1);
             $('#' + modalId).modal('show');
         }
-
-        // Remove the hash from the URL when the modal is closed
-        $('.portfolio-modal').on('hidden.bs.modal', function () {
-            if (isPortfolioPage() && history.pushState) {
-                history.pushState(null, null, window.location.pathname + window.location.search);
-            } else if (isPortfolioPage()) {
-                // Fallback for older browsers
-                window.location.hash = '';
-            }
-        });
     });
 </script>
