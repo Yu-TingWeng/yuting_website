@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container" id="programming">
@@ -63,9 +75,33 @@
 <!-- JavaScript to detect URL fragment and open the modal -->
 <script>
     $(document).ready(function() {
-        // Check if there's a hash in the URL and it matches a modal ID
-        if (window.location.hash && $(window.location.hash).length) {
-            $(window.location.hash).modal('show');
+        // Function to check if we're on the portfolio page
+        function isPortfolioPage() {
+            return window.location.pathname.includes('portfolio');
         }
+
+        // Function to check if the hash contains a modal ID
+        function hasModalHash() {
+            return window.location.hash && window.location.hash.startsWith('#Modal');
+        }
+
+        // Check if we're on the portfolio page and has #Modal in the URL
+        if (isPortfolioPage() && hasModalHash()) {
+            var modalId = window.location.hash.substring(1);
+            $('#' + modalId).modal('show');
+        }
+
+        // Remove the hash from the URL when the modal is closed
+        $('.portfolio-modal').on('hidden.bs.modal', function () {
+            if (isPortfolioPage() && history.pushState) {
+                history.pushState(null, null, window.location.pathname + window.location.search);
+            } else if (isPortfolioPage()) {
+                // Fallback for older browsers
+                window.location.hash = '';
+            }
+        });
     });
 </script>
+
+</body>
+</html>
