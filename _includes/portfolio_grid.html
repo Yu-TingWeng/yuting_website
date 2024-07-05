@@ -77,20 +77,9 @@
 <!-- JavaScript to detect URL fragment and open the modal -->
 <script>
     $(document).ready(function() {
-        // Function to check if we're on the portfolio page
-        function isPortfolioPage() {
-            return window.location.pathname.includes('portfolio');
-        }
-
-        // Function to check if the hash contains a modal ID
-        function hasModalHash() {
-            return window.location.hash && window.location.hash.startsWith('#Modal');
-        }
-
-        // Check if we're on the portfolio page and has #Modal in the URL
-        if (isPortfolioPage() && hasModalHash()) {
-            var modalId = window.location.hash.substring(1);
-            $('#' + modalId).modal('show');
-        }
-    });
+    // Check if there's a hash in the URL and it matches a modal ID
+    if (window.location.hash && $(window.location.hash).length) {
+        $(window.location.hash).modal('show');
+    }
+});
 </script>
