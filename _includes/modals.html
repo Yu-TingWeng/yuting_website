@@ -1,3 +1,8 @@
+ <!-- Modal Trigger -->
+{% for post in site.posts %}
+<a href="#Modal{{ post.modal-id }}" data-toggle="modal">Open {{ post.title }}</a>
+{% endfor %}
+ 
  <!-- Portfolio Modals -->
  {% for post in site.posts%}
     <div class="portfolio-modal modal fade" id="Modal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
