@@ -1,6 +1,6 @@
 ---
 title: Interactive Analysis of Illinois Traffic Stop Disparities
-subtitle: WBEZ Chicago
+subtitle: Data Analysis & Visualization
 layout: default
 modal-id: 1
 tags: programming

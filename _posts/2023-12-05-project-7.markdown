@@ -1,6 +1,6 @@
 ---
 title: Sentiment Analysis of Reddit's Posts and FOMC Statements
-subtitle: Data Analysis & Dashboard Design
+subtitle: Data Analysis & Visualization
 layout: default
 modal-id: 7
 tags: programming

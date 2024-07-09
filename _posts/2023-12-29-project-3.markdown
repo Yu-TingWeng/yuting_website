@@ -2,7 +2,7 @@
 title: A Focus on Taiwan's Trade
 subtitle: Tableau Data Visualization
 layout: default
-modal-id: 6
+modal-id: 3
 tags: programming
 project-date: December 2023
 thumbnail: trade_image.png

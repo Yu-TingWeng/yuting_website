@@ -2,7 +2,7 @@
 title: AI-Driven Detection of Stress on Twitter
 subtitle: Deep Learning
 layout: default
-modal-id: 2 
+modal-id: 4 
 tags: programming
 project-date: May 2024
 thumbnail: stress_twitter.jpg
