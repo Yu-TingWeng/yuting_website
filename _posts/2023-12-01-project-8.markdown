@@ -1,9 +1,25 @@
 ---
-title: "Project on the way...\U0001F680"
-subtitle: Coming Soon...
+title: "Worker Mental Health Analysis Practice Using SQL & Python"
+subtitle: Data Analysis & Data Visualization
 layout: default
 modal-id: 8
 tags: programming
-thumbnail: image5.png
+project-date: July 2024
+thumbnail: worker.jpeg
 alt: image-alt
 ---
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h4>Introduction</h4>
+    <p>Dataset: Mental Health in the Tech Industry</p>
+    <p>Keywords - Python, SQL</p>
+    <hr class="star-primary">
+    <a href="https://colab.research.google.com/drive/1RfEh3ZDjwzFe1NNf57T8lPJEs31lbNwO?usp=sharing" target="_blank" style="font-size: 18px;">Link to Google Colab</a>
+    <hr class="star-primary">
+    
+</body>
+</html>
