@@ -1,9 +1,0 @@
----
-title: "Project on the way...<br>\U0001F3C3"
-subtitle: Coming Soon...
-layout: default
-modal-id:
-tags: programming
-thumbnail: image6.jpg
-alt: image-alt
----
