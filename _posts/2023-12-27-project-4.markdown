@@ -20,7 +20,7 @@ alt: A Focus on Taiwan's Trade
     <hr class="star-primary">
     <h4>&#128161; Link &#128161;</h4>
     <a href="https://public.tableau.com/app/profile/yuting.weng7987/viz/AFocusonTaiwansTrade/DatavizProject" target="_blank" style="font-size: 18px;">Link to A Focus on Taiwan's Trade</a>
-    <hr class="star-primary">
+    <br>
     <img src="img/portfolio/trade_image.png" class="img-responsive img-centered" alt="A Focus on Taiwan's Trade">  
 </body>
 </html>

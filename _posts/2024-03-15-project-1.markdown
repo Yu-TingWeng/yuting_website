@@ -32,10 +32,12 @@ alt: WBEZ Project
     <p>WBEZ investigated police traffic stop data in Illinois from 2004-2022. Their team explored the data solely from a racial perspective and enlisted the Data Science Institute to build on their analysis of the relationship between traffic stops and race as well as between additional demographics such as age, gender, and location. <br> To increase engagement and accessibility to the data, our group created <b>two interactive dashboards</b> consisting of visualizations and driver-to-driver comparisons across selected demographics. Users can view <b>choropleth maps</b> to see county-level differences, <b>scatterplots</b> to contrast demographic groups at the individual agency level, and <b>sunburst charts</b> to visualize likelihood breakdowns.</p>
     <p>Keywords - Python, SQL, User Interface Design, Data Analysis, Data Visualization</p>
     <hr class="star-primary">
+    <h4>&#128161; Video Demonstration &#128161;</h4>
     <video width="100%" height="auto" controls>
         <source src="img/portfolio/WBEZ_Final_Video_Presentation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <br>
     <br>
     <hr class="star-primary">
     <h4>&#128161; Slides - Different Kinds of Viusalizations &#128161;</h4>
@@ -44,6 +46,7 @@ alt: WBEZ Project
             Your browser doesn't support embedding PDF files. You can <a href="img/portfolio/visualization.pdf">download</a> the PDF instead.
         </object>
     </div>
+    <br>
     <br>
     <hr class="star-primary">
     <h4>&#128161; Visualizations Code Demonstration &#128161;</h4>

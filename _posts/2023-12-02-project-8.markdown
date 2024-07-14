@@ -20,6 +20,7 @@ alt: image-alt
     <hr class="star-primary">
     <h4>&#128161; Link &#128161;</h4>
     <a href="https://github.com/Yu-TingWeng/Final_Project_Redditpower" target="_blank" style="font-size: 18px;">Link to Github Repository</a>
+    <br>
     <hr class="star-primary">
     <h4>&#128161; Video Demonstration &#128161;</h4>
     <video width="100%" height="auto" controls>
