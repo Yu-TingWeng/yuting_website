@@ -2,7 +2,7 @@
 title: Sentiment Analysis of Reddit's Posts and FOMC Statements
 subtitle: Data Analysis & Visualization
 layout: default
-modal-id: 7
+modal-id: 8
 tags: programming
 project-date: December 2023
 thumbnail: wallstreetbets.png

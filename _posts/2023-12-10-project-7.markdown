@@ -2,7 +2,7 @@
 title: Analyzing Factors Influencing Airbnb Property Prices
 subtitle: Big Data
 layout: default
-modal-id: 6
+modal-id: 7
 tags: programming
 project-date: May 2024
 thumbnail: airbnb.jpg
