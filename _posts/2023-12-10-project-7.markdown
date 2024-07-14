@@ -28,11 +28,11 @@ alt: Airbnb Analysis
     </style>
 </head>
 <body>
-    <h4>Introduction</h4>
+    <h4>&#128161; Introduction &#128161;</h4>
     <p>In this paper, we conducted an extensive analysis of Airbnb data using various statistical and machine-learning techniques to identify key factors influencing property prices. We began with missing value imputation and exploratory data analysis (EDA) to ensure data integrity. Median imputation was used for numerical variables, and specific replacements for categorical variables. EDA revealed significant correlations, showing that properties with more accommodations, bathrooms, and bedrooms generally have higher prices, and that geographical location and property type also significantly affect prices. Advanced techniques such as principal component analysis (PCA), K-means clustering, Latent Dirichlet Allocation (LDA) for topic modeling, LASSO and Ridge regressions, CART, random forest, and gradient boosting models were employed to predict and understand the drivers of property prices, providing actionable insights for Airbnb hosts.</p>
     <p>Keywords - Big Data, R</p>
     <hr class="star-primary">
-    <h4>Paper</h4>
+    <h4>&#128161; Paper &#128161;</h4>
     <!-- PDF container -->
     <div class="pdf-container" style="text-align: center;">
         <object data="img/portfolio/big_data_slide.pdf" width="640" height="480" type="application/pdf">
