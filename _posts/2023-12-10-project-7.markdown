@@ -1,6 +1,6 @@
 ---
 title: Analyzing Factors Influencing Airbnb Property Prices
-subtitle: Big Data
+subtitle: Big Data & R
 layout: default
 modal-id: 7
 tags: programming

@@ -1,6 +1,6 @@
 ---
-title: A Focus on Taiwan's Trade
-subtitle: Tableau Data Visualization
+title: A Focus on Taiwan's Trade - Using Tableau
+subtitle: Data Analysis & Data Visualization
 layout: default
 modal-id: 4
 tags: programming
