@@ -16,7 +16,7 @@ alt: image-alt
 <body>
     <h4>Introduction</h4>
     <p>The data is sourced from the Open Source Mental Illness (OSMI) survey, covering the years 2014, 2016, 2017, 2018, and 2019. Each survey captures attitudes towards mental health and the prevalence of mental health disorders in the workplace. The dataset is stored in an SQLite database, and a combination of SQL queries and Python data visualization techniques is used to analyze the data.</p>
-    <p>\U0002728<b>Analysis in Progress...</b>\U0002728</p>
+    <p>&#x2728;<b>Analysis in Progress...</b>&#x2728;</p>
     <p>Keywords - Python, SQL</p>
     <hr class="star-primary">
     <a href="https://colab.research.google.com/drive/1RfEh3ZDjwzFe1NNf57T8lPJEs31lbNwO?usp=sharing" target="_blank" style="font-size: 18px;">Link to Google Colab</a>
