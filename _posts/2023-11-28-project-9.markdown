@@ -1,5 +1,5 @@
 ---
-title: "Project on the way...\U0001F3C3"
+title: "Project on the way...<br>\U0001F3C3"
 subtitle: Coming Soon...
 layout: default
 modal-id: 9
