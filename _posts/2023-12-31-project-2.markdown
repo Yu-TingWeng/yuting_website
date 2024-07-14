@@ -61,6 +61,7 @@ alt: GIS Project
     <h4>&#128161; Exploratory Data Analysis using Tableau &#128161;</h4>
     <a href="https://public.tableau.com/app/profile/yuting.weng/viz/ExploringCDCPopulationHealthDataStateandCounty-levelChoroplethVisualizations/Dashboard1?publish=yes" target="_blank" style="font-size: 18px;">Link to Exploring Population Health Data</a>
     <br>
+    <br>
     <img src="img/portfolio/tableau.png" class="img-responsive img-centered" alt="Exploring Population Health Data">  
     <br>
     <br>
