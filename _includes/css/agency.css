@@ -349,8 +349,8 @@ section h3.section-subheading {
     margin-bottom: 20px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 16px;
-    font-style: italic;
+    font-size: 15px;
+    /**font-style: italic;**/
     font-weight: 400;
 }
 
