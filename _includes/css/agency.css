@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Cambria, Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -342,6 +342,7 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 40px;
+    font-weight: bold;
 }
 
 section h3.section-subheading {
