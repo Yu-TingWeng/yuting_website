@@ -351,7 +351,6 @@ section h3.section-subheading {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     /**font-style: italic;**/
-    font-weight: bold;
     line-height: 20px;
 }
 
@@ -627,6 +626,10 @@ section h3.section-subheading {
 
 .timeline>li:last-child {
     margin-bottom: 0;
+}
+
+.timeline .timeline-heading {
+    font-family: {{ site.data.template.font.primary }};
 }
 
 .timeline .timeline-heading h4 {
