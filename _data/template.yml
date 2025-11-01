@@ -8,7 +8,7 @@ color:
 # Font Families
 font:
   primary: 'Cambria, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Helvetica Neue", Helvetica,Arial,sans-serif'
+  secondary: 'Cambria, "Helvetica Neue", Helvetica,Arial,sans-serif'
 
 menu:
 - {name: 'Home',  url: 'home'}
