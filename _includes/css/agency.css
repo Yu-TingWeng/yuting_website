@@ -173,7 +173,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Time news roman", "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #fff;
 }
 
@@ -351,8 +351,8 @@ section h3.section-subheading {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     /**font-style: italic;**/
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: bold;
+    line-height: 20px;
 }
 
 @media(min-width:768px) {
