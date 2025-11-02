@@ -1,5 +1,5 @@
 ---
-title: A Collection of Projects Using Power BI & Tableau
+title: A Collection of Projects Using Power BI
 subtitle: Data Analysis & Data Visualization
 layout: default
 modal-id: 4
@@ -23,15 +23,16 @@ alt: Power BI & Tableau
 </head>
 <body>
     <h4>&#128161; Introduction &#128161;</h4>
-    <p>This collection showcases various projects utilizing Power BI and Tableau for data analysis and visualization. Each project demonstrates the application of these powerful tools to derive insights and present data in an accessible and visually appealing format.</p>
-    <p>Keywords: Data Analysis, Data Visualization, Power BI, Tableau</p>
+    <p>This collection showcases various projects utilizing Power BI for data analysis and visualization. Each project demonstrates the application of powerful tools to derive insights and present data in an accessible and visually appealing format.</p>
+    <p>Keywords: Data Analysis, Data Visualization, Power BI</p>
     <hr class="star-primary">
-    <h4>1. Supermarket Sales Analysis - Using Power BI</h4>
-    <p>This project involves a comprehensive analysis of supermarket sales data using Power BI. The dashboard provides insights into sales performance, product categories, and customer demographics. Key metrics and visualizations help in understanding sales trends and making data-driven decisions.</p>
+    <h4>1. Sales Goals Overview </h4>
+    <p>This dashboard provides insights into sales performance. Key metrics and visualizations help in understanding sales trends and making data-driven decisions.</p>
     <div class="centered-iframe">
-        <iframe title="業績目標" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="業績目標" width="800" height="300" src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
     <br>   
+    <!--
     <hr class="star-primary">
     <h4>2. A Focus on Taiwan's Trade - Using Tableau</h4>
     <p>This dashboard provides a comprehensive understanding of Taiwan's economic and trade landscape. Using Tableau, this project visualizes trade data to highlight key trading partners, import and export trends, and economic indicators. The interactive elements allow users to explore the data in depth and gain valuable insights.</p>
@@ -39,6 +40,7 @@ alt: Power BI & Tableau
         <img src="img/portfolio/trade_image.png" class="img-responsive img-centered" alt="A Focus on Taiwan's Trade">
     </a>
     <br>
+    -->
 
 </body>
 </html>
