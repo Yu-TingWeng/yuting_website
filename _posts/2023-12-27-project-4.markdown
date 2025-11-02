@@ -29,7 +29,7 @@ alt: Power BI & Tableau
     <h4>1. Supermarket Sales Analysis - Using Power BI</h4>
     <p>This project involves a comprehensive analysis of supermarket sales data using Power BI. The dashboard provides insights into sales performance, product categories, and customer demographics. Key metrics and visualizations help in understanding sales trends and making data-driven decisions.</p>
     <div class="centered-iframe">
-        <iframe title="Sales Analysis" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiY2YyMGRhY2UtYjRjNC00ZTEzLTk5ZTUtM2M3OWU4ZjRkNmQ4IiwidCI6IjgzYjAyYzkyLTVmMjYtNDhlZC05ZTViLTZjMmZjYTQ2YThlNiIsImMiOjN9&pageName=7e1308f82c2c010bd136" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="業績目標" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
     <br>   
     <hr class="star-primary">
