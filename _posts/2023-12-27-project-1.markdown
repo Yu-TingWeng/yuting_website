@@ -2,11 +2,11 @@
 title: A Collection of Projects Using Power BI
 subtitle: Data Analysis & Data Visualization
 layout: default
-modal-id: 4
+modal-id: 1
 tags: programming
-project-date: 2023 - 2024
-thumbnail: powerbi_tableau.jpeg
-alt: Power BI & Tableau
+project-date: 2023 - Present
+thumbnail: powerbi.jpg
+alt: Power BI
 ---
 
 <html>
