@@ -23,7 +23,10 @@
             {% for post in site.posts %}
                 {% if post.tags contains 'programming' %}
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#Modal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <!--<a href="#Modal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal"> -->
+                        <a href="#Modal{{ post.modal-id }}" class="portfolio-link" 
+                        data-toggle="modal"
+                        data-content="/posts/{{ post.slug }}.html">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -74,31 +77,42 @@
 
 <!-- JavaScript to detect URL fragment and open the modal -->
 <script>
-    $(document).ready(function() {
+    //$(document).ready(function() {
         // Function to check if we're on the portfolio page
-        function isPortfolioPage() {
-            return window.location.pathname.includes('portfolio');
-        }
+        //function isPortfolioPage() {
+        //    return window.location.pathname.includes('portfolio');
+        //}
 
         // Function to check if the hash contains a modal ID
-        function hasModalHash() {
-            return window.location.hash && window.location.hash.startsWith('#Modal');
-        }
+        //function hasModalHash() {
+        //    return window.location.hash && window.location.hash.startsWith('#Modal');
+        //}
 
         // Check if we're on the portfolio page and has #Modal in the URL
-        if (isPortfolioPage() && hasModalHash()) {
-            var modalId = window.location.hash.substring(1);
-            $('#' + modalId).modal('show');
-        }
+        //if (isPortfolioPage() && hasModalHash()) {
+        //    var modalId = window.location.hash.substring(1);
+        //    $('#' + modalId).modal('show');
+        //}
 
         // Remove the hash from the URL when the modal is closed
-        $('.portfolio-modal').on('hidden.bs.modal', function () {
-            if (isPortfolioPage() && history.pushState) {
-                history.pushState(null, null, window.location.pathname + window.location.search);
-            } else if (isPortfolioPage()) {
-                // Fallback for older browsers
-                window.location.hash = '';
-            }
+        //$('.portfolio-modal').on('hidden.bs.modal', function () {
+        //   if (isPortfolioPage() && history.pushState) {
+        //        history.pushState(null, null, window.location.pathname + window.location.search);
+        //    } else if (isPortfolioPage()) {
+        //        // Fallback for older browsers
+        //        window.location.hash = '';
+        //    }
+        //});
+    //});
+
+    $('.portfolio-link').on('click', function(e) {
+        e.preventDefault();
+        const modalId = $(this).attr('href');
+        const contentUrl = $(this).data('content');
+
+        // Load content only when needed
+        $(modalId + ' .modal-body').load(contentUrl, function() {
+            $(modalId).modal('show');
         });
     });
 </script>
