@@ -1,5 +1,5 @@
 url: "https://yu-tingweng.github.io"
-baseurl: "/yuting_website"
+baseurl: "https://yu-tingweng.github.io/yuting_website"
 permalink: /posts/:title.html
 
 # Site settings
