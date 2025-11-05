@@ -1,5 +1,6 @@
-url: https://yuting_website.github.io
-baseurl: https://yu-tingweng.github.io/yuting_website/
+url: "https://yu-tingweng.github.io"
+baseurl: "/yuting_website"
+permalink: /posts/:title.html
 
 # Site settings
 title: Hello, I'm Yuting Weng
@@ -10,14 +11,14 @@ description: "Hello, Welcome to Yuting Weng's Personal Website!"
 # Team names, titles and social links
 people:
 - pic: 1
-  position: Chicago, IL, USA
+  position: Taipei, Taiwan
   social:
     - title: gmail
-      url: #
+      url: mailto:jessicaweng91717@gmail.com
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/in/yuting17/
     - title: github
-      url: #
+      url: https://github.com/Yu-TingWeng?tab=repositories
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -30,8 +31,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: #
+  - line: #
 
 # Build settings
 markdown: kramdown
