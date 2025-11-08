@@ -5,8 +5,8 @@ layout: default
 modal-id: 1
 tags: programming
 project-date: 2023 - Present
-thumbnail: powerbi.jpg
-alt: Power BI
+thumbnail: sales_target.png
+alt: Power BI - Sales Target
 ---
 
 <html>
@@ -23,11 +23,11 @@ alt: Power BI
 </head>
 <body>
     <h4>&#128161; Introduction &#128161;</h4>
-    <p>This Power BI project visualizes company sales performance against targets to support strategic monitoring and decision-making. It incorporates key metrics such as <b>Current Achieved, Last Achieved, Current Backlog, Booking, Quota, Achieved %, Cumulative Achieved %, Growth %, Cumulative YOY %, and B/B Ratio </b>—each chosen to capture sales progress, year-over-year growth, demand versus fulfillment, and overall target attainment. <br> <b>Achievement and growth metrics</b> help evaluate short- and long-term performance, while <b>operational ratios</b> like the B/B Ratio reveal the balance between incoming orders and fulfilled sales, signaling future pipeline strength.
-    <br> On the other hand, filters for <b>Year, Salesperson, Customer, Region, and Country</b> allow users to analyze performance across different time periods, individual contributions, key accounts, and market regions—supporting more targeted sales and resource strategies.</p>
+    <p>This Power BI project visualizes company sales performance against targets to support strategic monitoring and decision-making. It incorporates key metrics such as <b>Current Achieved, Last Achieved, Current Backlog, Booking, Quota, Achieved %, Cumulative Achieved %, Growth %, Cumulative YOY %, and B/B Ratio </b>—each chosen to capture sales progress, year-over-year growth, demand versus fulfillment, and overall target attainment. <br><br> <b>Achievement and growth metrics</b> help evaluate short- and long-term performance, while <b>operational ratios</b> like the B/B Ratio reveal the balance between incoming orders and fulfilled sales, signaling future pipeline strength.
+    <br><br> On the other hand, filters for <b>Year, Salesperson, Customer, Region, and Country</b> allow users to analyze performance across different time periods, individual contributions, key accounts, and market regions—supporting more targeted sales and resource strategies.</p>
     <p>Keywords: Data Analysis, Data Visualization, Power BI</p>
     <hr class="star-primary">
-    <h4>Dashboard Showcase </h4>
+    <h4>&#128202; Dashboard Showcase </h4>
     <p>The report includes three pages: <br>
     •  <b>Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table for reference. <br>
     • <b>Sales Breakdown:</b> A sunburst chart and matrix visualize the proportional contribution of each region, customer, and salesperson. <br>
