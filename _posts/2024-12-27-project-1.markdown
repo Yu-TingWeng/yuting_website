@@ -4,7 +4,7 @@ subtitle: Power BI
 layout: default
 modal-id: 1
 tags: programming
-project-date: 2023 - Present
+project-date: 2025
 thumbnail: sales_target.png
 alt: Power BI - Sales Target
 ---

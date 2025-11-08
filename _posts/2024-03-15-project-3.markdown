@@ -2,7 +2,7 @@
 title: Interactive Analysis of Illinois Traffic Stop Disparities
 subtitle: Data Analysis & Visualization
 layout: default
-modal-id: 2
+modal-id: 3
 tags: programming
 project-date: March 2024
 thumbnail: dashboard.png
