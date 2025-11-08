@@ -36,24 +36,6 @@ alt: Power BI - Sales Target
         <iframe title="業績目標" width="800" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
     <br>
-    <!--
-    <hr class="star-primary">
-    <h4>2. SVG Custom Charts Demo </h4>
-    <p>Content to be updated...</p>
-    <div class="centered-iframe">
-        <iframe title="SVG Demo" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYzg0NWJjNDktNDJkMC00NWNiLTkzMDItMjZkNDRiMjM5ZmQ3IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
-    <br>-->    
-    <!--
-    <hr class="star-primary">
-    <h4>2. A Focus on Taiwan's Trade - Using Tableau</h4>
-    <p>This dashboard provides a comprehensive understanding of Taiwan's economic and trade landscape. Using Tableau, this project visualizes trade data to highlight key trading partners, import and export trends, and economic indicators. The interactive elements allow users to explore the data in depth and gain valuable insights.</p>
-    <a href="https://public.tableau.com/app/profile/yuting.weng7987/viz/AFocusonTaiwansTrade/DatavizProject" target="_blank" style="font-size: 18px;">
-        <img src="img/portfolio/trade_image.png" class="img-responsive img-centered" alt="A Focus on Taiwan's Trade">
-    </a>
-    <br>
-    -->
-
 </body>
 </html>
 
