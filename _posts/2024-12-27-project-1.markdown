@@ -1,5 +1,5 @@
 ---
-title: Sales Target Dashboard
+title: Sales Target
 subtitle: Power BI
 layout: default
 modal-id: 1
