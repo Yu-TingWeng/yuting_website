@@ -1,6 +1,6 @@
 ---
 title: Financial Performance Comparison Dashboard
-subtitle: Power BI + GitHub Actions
+subtitle: Power BI + Python + GitHub Actions
 layout: default
 modal-id: 2
 tags: programming
@@ -37,6 +37,9 @@ alt: Power BI - Financial Performance Comparison
     <br>
     <hr class="star-primary">
     <h4>Github Repository </h4>
+    <br>
+    <hr class="star-primary">
+    <h4>Python Code </h4>
 
 </body>
 </html>
