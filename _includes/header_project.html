@@ -1,4 +1,24 @@
 <!-- Navigation -->
+ <style>
+.navbar,
+.navbar.navbar-default,
+.navbar.navbar-default.navbar-fixed-top,
+.navbar-default.navbar-shrink {
+  background-color: #000 !important; /* always black */
+  border: none !important;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #fff !important; /* white text */
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ffd700 !important; /* optional hover color */
+}
+</style>
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,20 +55,4 @@
         <!-- /.navbar-collapse -->
     </div>
 </nav>
-
-    <!-- Header 
-    <header style="background-image: url('{{ site.baseurl }}/img/header_bg.jpeg');">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To My Personal Website!</div>
-                <a href="#team" class="page-scroll btn btn-xl">About Me</a>
-                <a href="#about" class="page-scroll btn btn-xl">Experience</a>
-            </div>
-        </div>
-    </header>-->
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
 
