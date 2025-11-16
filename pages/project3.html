@@ -58,29 +58,30 @@ alt: Power BI - Production
                 <br>
                 <hr class="star-primary">
                 <h3 class="section-subheading text-muted">Code Demo</h3>
+                <br>
+                <!-- Floating Back Button -->
+                <button onclick="history.back()" 
+                        style="
+                            position: fixed;
+                            top: 20px;
+                            left: 20px;
+                            padding: 12px 20px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            border-radius: 8px;
+                            border: 1px solid #333;
+                            background-color: #f0f0f0;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                            z-index: 1000;
+                            transition: background-color 0.3s;
+                        "
+                        onmouseover="this.style.backgroundColor='#e0e0e0';"
+                        onmouseout="this.style.backgroundColor='#f0f0f0';"
+                >
+                    ← Back
+                </button>
             </div>
         </div>
-        <!-- Floating Back Button -->
-        <button onclick="history.back()" 
-                style="
-                    position: fixed;
-                    top: 20px;
-                    left: 20px;
-                    padding: 12px 20px;
-                    font-size: 16px;
-                    cursor: pointer;
-                    border-radius: 8px;
-                    border: 1px solid #333;
-                    background-color: #f0f0f0;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-                    z-index: 1000;
-                    transition: background-color 0.3s;
-                "
-                onmouseover="this.style.backgroundColor='#e0e0e0';"
-                onmouseout="this.style.backgroundColor='#f0f0f0';"
-        >
-            ← Back
-        </button>
     </div>
 </section>
 
