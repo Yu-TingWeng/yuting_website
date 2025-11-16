@@ -9,30 +9,39 @@ project-date: 2025
 thumbnail: production.png
 alt: Power BI - Production
 ---
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<section id="portfolio" class="bg-light-gray">
-     <style>
+    <style>
     .section-subheading {
       font-weight: bold;
       color: #000;
-      font-size: 20px;
+      font-size: 24px;
     }
 
     #portfolio p {
       text-align: left;
       margin: 0 auto;
-      max-width: 900px;
+      max-width: 90%;
     }
 
-    /* --- Mobile override--- */
-    @media (max-width: 768px) {
-    #portfolio p {
-        max-width: 100% !important;
-        margin: 0 !important;
-        padding: 0 15px; 
+    .centered-iframe {
+    text-align: center;
     }
+
+    .centered-iframe iframe {
+        width: 90%;
+        max-width: 800px;
+        height: 80vh;  /* 高度為視窗的 80% */
+        display: block;
+        margin: 0 auto;
     }
     </style>
+</head>
+
+<body>
+<section id="portfolio" class="bg-light-gray">
 
     <div class="container" id="programming">
         <div class="row">
@@ -54,3 +63,27 @@ alt: Power BI - Production
     </div>
 </section>
 
+<!-- Floating Back Button -->
+<button onclick="history.back()" 
+        style="
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: background-color 0.3s;
+        "
+        onmouseover="this.style.backgroundColor='#e0e0e0';"
+        onmouseout="this.style.backgroundColor='#f0f0f0';"
+>
+    ← Back
+</button>
+
+</body>
+</html>
