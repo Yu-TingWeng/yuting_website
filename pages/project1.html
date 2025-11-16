@@ -17,7 +17,7 @@ alt: Power BI - Sales Target
     .section-subheading {
       font-weight: bold;
       color: #000;
-      font-size: 20px;
+      font-size: 24px;
     }
 
     #portfolio p {
@@ -47,7 +47,7 @@ alt: Power BI - Sales Target
     <div class="container" id="programming">
         <div class="row">
             <div class="col-xs-12 col-lg-12 text-center">
-                <h2 class="section-heading">Power BI - Sales Target Visualization</h2>
+                <h2 class="section-heading">Power BI - Sales Target</h2>
                 <h3 class="section-subheading text-muted">&#128161; Introduction </h3>
                 <p>This Power BI project visualizes company sales performance against targets to support strategic monitoring and decision-making. It incorporates key metrics such as <b>Current Achieved, Last Achieved, Current Backlog, Booking, Quota, Achieved %, Cumulative Achieved %, Growth %, Cumulative YOY %, and B/B Ratio </b>—each chosen to capture sales progress, year-over-year growth, demand versus fulfillment, and overall target attainment. <br><br> <b>Achievement and growth metrics</b> help evaluate short- and long-term performance, while <b>operational ratios</b> like the B/B Ratio reveal the balance between incoming orders and fulfilled sales, signaling future pipeline strength.
                 <br><br> On the other hand, filters for <b>Year, Salesperson, Customer, Region, and Country</b> allow users to analyze performance across different time periods, individual contributions, key accounts, and market regions—supporting more targeted sales and resource strategies.</p>
@@ -73,6 +73,27 @@ alt: Power BI - Sales Target
     </div>
 </section>
 
+<!-- Floating Back Button -->
+<button onclick="history.back()" 
+        style="
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: background-color 0.3s;
+        "
+        onmouseover="this.style.backgroundColor='#e0e0e0';"
+        onmouseout="this.style.backgroundColor='#f0f0f0';"
+>
+    ← Back
+</button>
 
 </body>
 </html>
