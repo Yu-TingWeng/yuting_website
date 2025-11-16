@@ -13,27 +13,78 @@ alt: Power BI - Custom Visuals Demo
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        .centered-iframe {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-        }
+    .section-subheading {
+      font-weight: bold;
+      color: #000;
+      font-size: 24px;
+    }
+
+    #portfolio p {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+
+    .centered-iframe {
+    text-align: center;
+    }
+
+    .centered-iframe iframe {
+        width: 90%;
+        max-width: 800px;
+        height: 50vh;  /* 高度為視窗的 80% */
+        display: block;
+        margin: 0 auto;
+    }
     </style>
 </head>
+
 <body>
-    <h4>&#128161; Introduction &#128161;</h4>
-    <p>This Power BI report demonstrates creating custom, interactive visuals by combining <b>DAX, HTML, SVG, and JavaScript.</b> Visuals include <b>state indicators</b> (green = good, yellow = on track, red = warning with blinking)<b>, liquid fill gauges, five-star ratings, linear and circular gauges, sparklines with intersection highlights, barcode charts by month, and boxplots.</b> Using DAX for data-driven calculations and HTML/JavaScript for rendering, each visual dynamically updates with the underlying dataset, allowing flexible styling and interactive effects. This project showcases how integrating scripting with Power BI enables highly customized, visually engaging dashboards beyond standard chart types.</p>
-    <p>Keywords: Power BI, SVG, HTML, JavaScript</p>
-    <hr class="star-primary">
-    <h4>&#128202; Dashboard Showcase </h4>
-    <div class="centered-iframe">
-        <iframe title="SVG Demo" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYzg0NWJjNDktNDJkMC00NWNiLTkzMDItMjZkNDRiMjM5ZmQ3IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+<section id="portfolio" class="bg-light-gray">
+    
+    <div class="container" id="programming">
+        <div class="row">
+            <div class="col-xs-12 col-lg-12 text-center">
+                <h2 class="section-heading">Power BI - Custom Visuals Demo</h2>
+                <h3 class="section-subheading text-muted">&#128161; Introduction </h3>
+                <p>This Power BI report demonstrates creating custom, interactive visuals by combining <b>DAX, HTML, SVG, and JavaScript.</b> Visuals include <b>state indicators</b> (green = good, yellow = on track, red = warning with blinking)<b>, liquid fill gauges, five-star ratings, linear and circular gauges, sparklines with intersection highlights, barcode charts by month, and boxplots.</b> Using DAX for data-driven calculations and HTML/JavaScript for rendering, each visual dynamically updates with the underlying dataset, allowing flexible styling and interactive effects. This project showcases how integrating scripting with Power BI enables highly customized, visually engaging dashboards beyond standard chart types.</p>
+                <p>Keywords: Power BI, SVG, HTML, JavaScript</p>
+                <hr class="star-primary">
+                <h3 class="section-subheading text-muted">&#128202; Dashboard Showcase</h3>
+                <div class="centered-iframe">
+                    <iframe title="SVG Demo" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYzg0NWJjNDktNDJkMC00NWNiLTkzMDItMjZkNDRiMjM5ZmQ3IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <br>
+                <hr class="star-primary">
+                <h4>Code Demo</h4>
+                <!-- Floating Back Button -->
+                <button onclick="history.back()" 
+                        style="
+                            position: fixed;
+                            bottom: 20px;
+                            left: 20px;
+                            padding: 12px 20px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            border-radius: 8px;
+                            border: 1px solid #333;
+                            background-color: #f0f0f0;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                            z-index: 1000;
+                            transition: background-color 0.3s;
+                        "
+                        onmouseover="this.style.backgroundColor='#e0e0e0';"
+                        onmouseout="this.style.backgroundColor='#f0f0f0';"
+                >
+                    ← Back
+                </button>
+            </div>
+        </div>
     </div>
-    <br>
-    <hr class="star-primary">
-    <h4>Code Demo</h4>
+</section>
 
 </body>
 </html>
