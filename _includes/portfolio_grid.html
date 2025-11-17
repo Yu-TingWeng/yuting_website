@@ -19,14 +19,10 @@
                 <h3 class="section-subheading text-muted"></h3>
             </div>
         </div>
-        <!--<div class="row">
-            {% for page in site.pages %}
-                {% if page.tags contains 'programming' %}
-                    <div class="col-md-4 col-sm-6 portfolio-item">-->
         <div class="portfolio-flex">
             {% for page in site.pages %}
                 {% if page.tags contains 'programming' %}
-                    <div class="portfolio-item">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
                         <!--<a href="#Modal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">-->
                         <a href="{{ site.baseurl }}{{ page.url }}" class="portfolio-link">
                             <div class="portfolio-hover">
