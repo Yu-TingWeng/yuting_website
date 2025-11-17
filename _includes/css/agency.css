@@ -374,11 +374,11 @@ section h3.section-subheading {
 #portfolio .portfolio-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* spacing between cards */
+    gap: 5px; /* spacing between cards */
 }
 
 #portfolio .portfolio-flex .portfolio-item {
-    flex: 1 1 calc(33.333% - 10px); /* 3 items per row */ }
+    flex: 1 1 calc(33.333% - 5px); /* 3 items per row */ }
 
 #portfolio .portfolio-item {
     right: 0;
