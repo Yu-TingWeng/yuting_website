@@ -78,8 +78,6 @@ alt: WBEZ Project
                         data="img/portfolio/visualization.pdf"
                         type="application/pdf"
                         class="pdf-object">
-                        Your browser doesn't support PDFs. 
-                        <a href="img/portfolio/visualization.pdf">Download the PDF</a>.
                     </object>
                 </div>
                 <br>
@@ -93,8 +91,6 @@ alt: WBEZ Project
                         data="img/portfolio/dataviz.pdf" 
                         type="application/pdf"
                         class="pdf-object">
-                        Your browser doesn't support PDFs. 
-                        <a href="img/portfolio/dataviz.pdf">Download the PDF</a>.
                     </object>
                 </div>
                 <br>
@@ -139,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
             obj.outerHTML = `
                 <div style="text-align:center; padding:20px;">
                     <p>PDF preview isn't supported on your device.</p>
+                    <br>
                     <a href="${pdfURL}" 
                        style="padding:10px 20px; background:#007bff; color:white; border-radius:6px; text-decoration:none;">
                        Open PDF
