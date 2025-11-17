@@ -381,8 +381,8 @@ section h3.section-subheading {
     flex: 1 1 calc(33.333% - 10px); /* 3 items per row */ }
 
 #portfolio .portfolio-item {
-    margin: 0;
-    display: flex;
+    right: 0;
+    margin: 0 0 15px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
