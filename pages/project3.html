@@ -1,13 +1,13 @@
 ---
-title: 生產管理
-subtitle: Power BI
+title: Production Management
+subtitle: Power BI (Custom Gantt & Calendar Visuals)
 layout: project
 permalink: /project3
 modal-id: 3
 tags: programming
 project-date: 2025
 thumbnail: production.png
-alt: Power BI - Production
+alt: Power BI - Production Management
 ---
 <html>
 <head>
@@ -46,9 +46,15 @@ alt: Power BI - Production
     <div class="container" id="programming">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Power BI - 生產管理 </h2>
+                <h2 class="section-heading">Power BI - Production Management </h2>
                 <h3 class="section-subheading text-muted">&#128161; Introduction </h3>
-                <p>To be Updated...</p>
+                <p>Developed a Power BI dashboard to track and visualize production schedules, progress, and inventory status. The report features a self-created calendar showing daily production quantities and the duration between production start and end dates, enabling quick identification of bottlenecks or delays.</p>
+                <br>
+                <p>Two types of custom Gantt charts are implemented: <br>
+                •  <b>Bar chart-based Gantt:</b> Uses a padded X-axis to represent days before production starts and production duration, allowing visualization of planned vs. actual timelines. <br>
+                •  <b>SVG-based Gantt in a matrix:</b> Provides flexible, color-coded visualization of production stages and progress for each order. <br>
+                Key tracked variables include <b>Material Ready Date, Planned Start Date, Planned End Date, Production Quantity, Inventory Quantity, Status (e.g., Created, Released, Bill of Materials Printed, Material Issued, FQC, WIP, In-Stock, Completed).</b> Rows where Material Ready Date > Planned Start Date are highlighted to flag potential delays. <br>
+                Moreover, Gantt charts and tables allow filtering by stages such as <b>Currently in Production, Planned but Not Started, Expected to Finish but Not Completed, and Custom Week Selection,</b> providing a comprehensive overview of production status, schedule adherence, and inventory flow.</p>
                 <p>Keywords: Power BI </p>
                 <hr class="star-primary">
                 <h3 class="section-subheading text-muted">&#128202; Dashboard Showcase</h3>
