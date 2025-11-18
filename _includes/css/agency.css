@@ -440,7 +440,7 @@ section h3.section-subheading {
     padding: 25px;
     text-align: center;
     background-color: #fff;
-    height: 110px;          /* fixed height */
+    height: 115px;          /* fixed height */
     display: flex;
     flex-direction: column;
     justify-content: center; /* vertically center the title + subtitle */
