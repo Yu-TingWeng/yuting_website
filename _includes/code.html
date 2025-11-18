@@ -1,6 +1,4 @@
-{% assign snippets = 
-    {
-        "code1": "
+{% capture code1 %}
 Gantt_SVG = 
 --------------------------------------------------------
 -- Step 1：把該筆工單換成「週一～週日」區間
@@ -196,10 +194,12 @@ VAR _svg =
 "
 
 RETURN "data:image/svg+xml;utf8," & _svg
-"
-    } 
-%}
+{% endcapture %}
 
 
-{% assign key = include.snippet %}
-<pre><code class="language-dax">{{ snippets[key] | escape }}</code></pre>
+{% assign snippets = site.data.snippets %}
+{% if include.snippet == "code1" %}
+<pre style="max-height: 50vh; overflow: auto;">
+<code class="language-dax">{{ code1 | escape }}</code>
+</pre>
+{% endif %}
