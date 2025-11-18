@@ -383,7 +383,8 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-flex .portfolio-item {
-    flex: 1 1 calc(33.333% - 5px); /* 3 items per row */ }
+    flex: 0 1 calc(33.333% - 5px); /* 3 items per row, don't grow */
+}
 
 #portfolio .portfolio-item {
     right: 0;
