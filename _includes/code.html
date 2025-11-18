@@ -199,3 +199,7 @@ RETURN "data:image/svg+xml;utf8," & _svg
 "
     } 
 %}
+
+
+{% assign key = include.snippet %}
+<pre><code class="language-dax">{{ snippets[key] | escape }}</code></pre>
