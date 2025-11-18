@@ -4,6 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+pre {
+    max-height: 50vh;   /* tall enough */
+    overflow: auto;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Time news roman", Cambria, "Helvetica Neue",Helvetica,Arial,sans-serif;
