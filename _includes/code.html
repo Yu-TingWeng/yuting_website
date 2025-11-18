@@ -1,0 +1,201 @@
+{% assign snippets = 
+    {
+        "code1": "
+Gantt_SVG = 
+--------------------------------------------------------
+-- Step 1：把該筆工單換成「週一～週日」區間
+--------------------------------------------------------
+VAR _start = MIN('查詢'[預計開工日])
+VAR _end   = MAX('查詢'[預計完工日])
+
+--------------------------------------------------------
+-- Step 2：整體資料的開始與結束，也換成週一～週日
+--------------------------------------------------------
+VAR _globalMinRaw =
+    CALCULATE(
+        MIN('查詢'[預計開工日]),
+        ALL('查詢'[品名], '查詢'[開工(週)], '查詢'[品名狀態], '查詢'[單據])
+    )
+
+VAR _globalMaxRaw =
+    CALCULATE(
+        MAX('查詢'[預計完工日]),
+        ALL('查詢'[品名], '查詢'[開工(週)], '查詢'[品名狀態], '查詢'[單據])
+    )
+
+VAR _minDate =
+    _globalMinRaw - WEEKDAY(_globalMinRaw, 2) + 1
+
+VAR _maxDate =
+    _globalMaxRaw + (7 - WEEKDAY(_globalMaxRaw, 2))
+
+-- NOTE: use +1 to treat the interval as inclusive of the last day
+VAR _totalDays = MAX(1, (_maxDate - _minDate) + 1)
+
+--------------------------------------------------------
+-- Step 3：SVG 基本設定
+--------------------------------------------------------
+VAR _w = 350
+VAR _h = 25
+VAR _leftPadding = 5
+VAR _rightPadding = 5
+VAR _usableWidth = _w - _leftPadding - _rightPadding
+
+--------------------------------------------------------
+-- Step 4：X 座標主計算
+--------------------------------------------------------
+VAR _xStart =
+    _leftPadding +
+    _usableWidth * DIVIDE(_start - _minDate, _totalDays)
+
+VAR _xEnd =
+    _leftPadding +
+    _usableWidth * DIVIDE(_end - _minDate, _totalDays)
+
+--------------------------------------------------------
+-- Step 5：bar 寬度（保證至少 0.5）
+--------------------------------------------------------
+VAR _barWidth = MAX(0.5, _xEnd - _xStart)
+
+--------------------------------------------------------
+-- Step 6：完成比例
+--------------------------------------------------------
+VAR _production = SUM('查詢'[生產量])
+VAR _stockin    = SUM('查詢'[入庫量])
+VAR _pct = DIVIDE(_stockin, _production)
+VAR _pctWidth = _barWidth * _pct
+
+--------------------------------------------------------
+-- Step 7：工單狀態顏色
+--------------------------------------------------------
+VAR _isDetailLevel = ISINSCOPE('查詢'[品名])
+VAR _status = SELECTEDVALUE('查詢'[工單狀態])
+
+VAR _colorDetail =
+    SWITCH(
+        TRUE(),
+        _status = "1", "#E7C1BC",
+        _status = "2", "#B6E2FE",
+        _status = "3", "#44B3E1",
+        _status = "4", "#BDA048",
+        _status = "5", "#B5E6A2",
+        _status = "6", "#B5E6A2",
+        _status = "7", "#00B050",
+        _status = "8", "#275317"
+    )
+
+VAR _useColor =
+    IF(_isDetailLevel, _colorDetail, "#FFC107")
+
+--------------------------------------------------------
+-- Step 8：延遲判斷
+--------------------------------------------------------
+VAR _isDelayed =
+    IF(
+        _end < TODAY() &&
+        _status <> "8",
+        TRUE(),
+        FALSE()
+    )
+
+--------------------------------------------------------
+-- Step 9：Today 位置
+--------------------------------------------------------
+VAR _todayPos =
+    _leftPadding +
+    _usableWidth * DIVIDE(TODAY() - _minDate, _totalDays)
+
+--------------------------------------------------------
+-- Step 10：Weekly 虛線（星期一）
+--------------------------------------------------------
+VAR _mondays =
+    FILTER(
+        ADDCOLUMNS(
+            CALENDAR(_minDate, _maxDate),
+            "IsMon", WEEKDAY([Date], 2) = 1
+        ),
+        [IsMon] = TRUE()
+    )
+
+VAR _weekLines =
+    CONCATENATEX(
+        _mondays,
+        VAR _d = [Date]
+        VAR _x = _leftPadding + _usableWidth * DIVIDE(_d - _minDate, _totalDays)
+        RETURN
+            "<line x1='" & _x & "' y1='0' x2='" & _x & "' y2='" & _h &
+            "' stroke='#808080' stroke-width='0.8' stroke-dasharray='3 3' />"
+    )
+
+--------------------------------------------------------
+-- Step 11：SVG 組裝
+--------------------------------------------------------
+VAR _svg =
+"
+<svg xmlns='http://www.w3.org/2000/svg' width='" & _w & "' height='" & _h & "'>
+
+    " & _weekLines & "
+
+    <rect
+        x='" & _xStart & "'
+        y='2'
+        width='" & _barWidth & "'
+        height='20'
+        fill='" & _useColor & "'
+        fill-opacity='0.5'
+        rx='3'
+    />
+
+    <rect
+        x='" & _xStart & "'
+        y='2'
+        width='" & _pctWidth & "'
+        height='20'
+        fill='" & _useColor & "'
+        fill-opacity='1'
+        rx='3'
+    />
+
+    <defs>
+        <pattern id='diagonalHatch'
+            patternUnits='userSpaceOnUse'
+            width='6' height='6'>
+            <path d='M-1,1 l2,-2 M0,6 l6,-6 M5,7 l2,-2'
+                stroke='red'
+                stroke-width='1'
+                stroke-opacity='0.5'/>
+        </pattern>
+    </defs>
+
+    " &
+    IF(
+        _isDelayed,
+        "<rect
+            x='" & _xStart & "'
+            y='2'
+            width='" & _barWidth & "'
+            height='20'
+            fill='url(#diagonalHatch)'
+            stroke='red'
+            stroke-width='1.8'
+            rx='3'
+        />",
+        ""
+    ) & "
+
+    <line
+        x1='" & _todayPos & "'
+        y1='0'
+        x2='" & _todayPos & "'
+        y2='" & _h & "'
+        stroke='red'
+        stroke-width='2'
+    />
+
+</svg>
+"
+
+RETURN "data:image/svg+xml;utf8," & _svg
+"
+    } 
+%}
