@@ -283,9 +283,14 @@ function copyCode(btn) {
 }
 </script>
 
-{% if include.snippet == "code1" or include.snippet == "state" %}
+{% if include.snippet == "code1" %}
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ code1 | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "state" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ state | escape }}</code></pre>
 </div>
 {% endif %}
