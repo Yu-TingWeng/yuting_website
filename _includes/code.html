@@ -196,6 +196,43 @@ VAR _svg =
 RETURN "data:image/svg+xml;utf8," & _svg
 {% endcapture %}
 
+{% capture state %}
+State = 
+VAR Stage = [test stage category] //Measure
+VAR Colour = SWITCH(
+    Stage,
+    "Warning", "#b30000",
+    "On Track", "Orange",
+    "Good", "Green",
+    "Gray"  // fallback
+)
+VAR RectWidth = 100
+VAR RectHeight = 30
+VAR RectY = 0          // start at top of SVG
+VAR TextY = 20         // vertical position of text inside rectangle
+VAR FontSize = 16
+VAR SvgWidth = RectWidth
+VAR SvgHeight = RectHeight
+
+/* Conditionally add blinking animation for Warning */
+VAR AnimateWarning =
+IF(
+    Stage = "Warning",
+    "<animate attributeName='fill-opacity' values='1;1;1;0;1;1;1' dur='2.5s' repeatCount='indefinite'/>",
+    ""
+)
+
+VAR Box = "<rect x='0' y='" & RectY & "' rx='15' ry='15' width='" & RectWidth & "' height='" & RectHeight & "' fill='" & Colour & "' stroke='#D0D0D0' stroke-width='0'>" & AnimateWarning & "</rect>"
+
+VAR Callout = "<text x='" & RectWidth/2 & "' y='" & TextY & "' text-anchor='middle' font-weight='bold' font-family='Segoe UI, sans-serif' font-size='" & FontSize & "' fill='white'>" & Stage & "</text>"
+
+RETURN
+"data:image/svg+xml;utf8," &
+"<svg width='" & SvgWidth & "' height='" & SvgHeight & "' viewBox='0 0 " & SvgWidth & " " & SvgHeight & "' style='vertical-align:middle' xmlns='http://www.w3.org/2000/svg'>" &
+Box & Callout &
+"</svg>"
+{% endcapture %}
+
 
 <style>
 /* code block container */
@@ -246,7 +283,7 @@ function copyCode(btn) {
 }
 </script>
 
-{% if include.snippet == "code1" %}
+{% if include.snippet == "code1" or include.snippet == "state" %}
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ code1 | escape }}</code></pre>
