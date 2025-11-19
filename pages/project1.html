@@ -40,6 +40,7 @@ alt: Power BI - Sales Target
       margin: 0 auto;
       max-width: 90%;
       font-size: 18px;
+      margin-bottom: 10px;    /* Adds spacing between items */
       font-family: "Cambria";
     }
 
@@ -47,7 +48,7 @@ alt: Power BI - Sales Target
       text-align: left;
       margin: 0 auto;
       max-width: 90%;
-      margin-bottom: 5px;    /* Adds spacing between items */
+      margin-bottom: 20px;    /* Adds spacing between items */
       font-size: 15px;
       font-family: "Cambria";
     }
@@ -100,6 +101,7 @@ alt: Power BI - Sales Target
         <b>•  Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.<br>
         <b>•  Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.<br>
       </p>
+      <br>
       <div class="centered-iframe">
         <iframe 
           title="業績目標" 
@@ -119,14 +121,14 @@ alt: Power BI - Sales Target
         <h5><b>1. Data Sources</b></h5>
         <p>
           •  ERP (Order Master, Product Data...)<br>
-          •  Excel (Manually maintained customer attributes)
+          •  Excel (Manually maintained customer attributes)<br>
         </p>
 
         <h5><b>2. Clean the Data</b></h5>
         <p>
           •  Standardize formats<br>
           •  Remove duplicates<br>
-          •  Unify columns (e.g., date formats)
+          •  Unify columns (e.g., date formats)<br>
         </p>
 
         <h5><b>3. Create Dimension and Fact Table Structures</b></h5>
@@ -134,12 +136,12 @@ alt: Power BI - Sales Target
         <p>
           •  Single-directional<br>
           •  Star Schema<br>
-          •  Customer, Product, and Sales connected via keys
+          •  Customer, Product, and Sales connected via keys<br>
         </p>
 
         <h5><b>5. Create DAX Measures</b></h5>
         <p>
-          •  Total Sales, Year-over-Year (YOY)...
+          •  Total Sales, Year-over-Year (YOY)...<br>
         </p>
       </section>
 
@@ -149,7 +151,7 @@ alt: Power BI - Sales Target
         <p>
           <b>•  Order Details (受訂明細)</b>: order-level transactional data; linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.<br>
           <b>•  Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".<br>
-          <b>•  Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.
+          <b>•  Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.<br>
         </p>
 
         <h5><b>2. Dimension Tables</b></h5>
@@ -158,17 +160,17 @@ alt: Power BI - Sales Target
           <b>•  Customer (客戶)</b>: master data including region; connected via Employee/Customer Bridge.<br>
           <b>•  Product (料號)</b>: master data including specifications.<br>
           <b>•  Calendar</b>: standard date table for time intelligence.<br>
-          <b>•  Year (年份)</b>: supports filtering in DAX measures.
+          <b>•  Year (年份)</b>: supports filtering in DAX measures.<br>
         </p>
 
         <h5><b>3. Bridge Table</b></h5>
         <p>
-          <b>•  Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.
+          <b>•  Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.<br>
         </p>
 
         <h5><b>4. Supporting Table</b></h5>
         <p>
-          <b>•  Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.
+          <b>•  Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.<br>
         </p>
       </section>
       </div>
