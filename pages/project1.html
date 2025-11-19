@@ -17,7 +17,7 @@ alt: Power BI - Sales Target
     .subheading {
       font-weight: bold;
       color: #000;
-      font-size: 22px;
+      font-size: 24px;
       font-family: "Cambria";
     }
 
@@ -39,7 +39,7 @@ alt: Power BI - Sales Target
       text-align: center;
       margin: 0 auto;
       max-width: 90%;
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 10px;    /* Adds spacing between items */
       font-family: "Cambria";
     }
@@ -48,8 +48,8 @@ alt: Power BI - Sales Target
       text-align: left;
       margin: 0 auto;
       max-width: 90%;
-      margin-bottom: 20px;    /* Adds spacing between items */
-      font-size: 15px;
+      margin-bottom: 10px;    /* Adds spacing between items */
+      font-size: 18px;
       font-family: "Cambria";
     }
 
@@ -123,6 +123,7 @@ alt: Power BI - Sales Target
           •  ERP (Order Master, Product Data...)<br>
           •  Excel (Manually maintained customer attributes)<br>
         </p>
+        <br>
 
         <h5><b>2. Clean the Data</b></h5>
         <p>
@@ -130,19 +131,23 @@ alt: Power BI - Sales Target
           •  Remove duplicates<br>
           •  Unify columns (e.g., date formats)<br>
         </p>
+        <br>
 
         <h5><b>3. Create Dimension and Fact Table Structures</b></h5>
+        <br>
         <h5><b>4. Establish Relationships </b></h5>
         <p>
           •  Single-directional<br>
           •  Star Schema<br>
           •  Customer, Product, and Sales connected via keys<br>
         </p>
+        <br>
 
         <h5><b>5. Create DAX Measures</b></h5>
         <p>
           •  Total Sales, Year-over-Year (YOY)...<br>
         </p>
+        <br>
       </section>
 
       <section>
@@ -153,6 +158,7 @@ alt: Power BI - Sales Target
           <b>•  Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".<br>
           <b>•  Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.<br>
         </p>
+        <br>
 
         <h5><b>2. Dimension Tables</b></h5>
         <p>
@@ -162,16 +168,19 @@ alt: Power BI - Sales Target
           <b>•  Calendar</b>: standard date table for time intelligence.<br>
           <b>•  Year (年份)</b>: supports filtering in DAX measures.<br>
         </p>
+        <br>
 
         <h5><b>3. Bridge Table</b></h5>
         <p>
           <b>•  Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.<br>
         </p>
+        <br>
 
         <h5><b>4. Supporting Table</b></h5>
         <p>
           <b>•  Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.<br>
         </p>
+        <br>
       </section>
       </div>
     </article>
