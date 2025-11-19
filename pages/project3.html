@@ -80,7 +80,20 @@ alt: Power BI - Production Management
                 <br>
                 <hr class="star-primary">
                 <h3 class="section-subheading text-muted">Code Demo</h3>
+                <h4>1. SVG Gantt Chart DAX Measure</h4>
+                <p>This DAX measure builds a small SVG Gantt chart for each production order in Power BI. It normalizes each order’s start and end dates to a Monday–Sunday calendar, and also aligns the global min/max dates so all orders share the same timeline. 
+                    Using this timeline, it calculates pixel positions for the bar start, bar end, and today’s position. The bar is colored by work-order status, and a second bar on top shows completion based on 入庫量 ÷ 生產量. 
+                    If the order is overdue and not completed, a red diagonal hatch overlay is drawn. The code also adds weekly dashed gridlines and a vertical red line for today. Finally, all components are combined into a single inline SVG returned as a data URI for Power BI to render.</p>
+                <br>
                 {% include code.html snippet="code1" %}
+                <br>
+                <h4>2. Timeline SVG DAX Measure</h4>
+                <p>This DAX measure creates a horizontal timeline SVG used as the shared axis for the combined Gantt chart. 
+                    It first identifies the global minimum and maximum dates across all work orders and expands them to full Monday–Sunday weeks. 
+                    Then it calculates the total number of days and maps each calendar date to an X-position in the SVG. 
+                    The code draws vertical tick marks for every day, labels each Monday with its day number, and adds monthly labels positioned at the start of each month. 
+                    Finally, it outputs a light-blue background with day ticks, Monday labels, and month headers—forming a clean timeline bar that aligns with the main Gantt chart bars.</p>
+                {% include code.html snippet="timeline" %}
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
                         style="

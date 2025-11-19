@@ -196,6 +196,124 @@ VAR _svg =
 RETURN "data:image/svg+xml;utf8," & _svg
 {% endcapture %}
 
+
+
+
+
+
+
+{% capture timeline %}
+Gantt_Timeline_SVG = 
+VAR _globalMin =
+    MIN('查詢'[預計開工日])
+VAR _globalMax =
+    MAX('查詢'[預計完工日])
+
+-- Full week alignment
+VAR _globalMinWeekStart = _globalMin - WEEKDAY(_globalMin, 2) + 1
+VAR _globalMaxWeekEnd   = _globalMax + (7 - WEEKDAY(_globalMax, 2))
+
+VAR _totalDays = MAX(1, _globalMaxWeekEnd - _globalMinWeekStart)
+
+--------------------------------------------------------
+-- SVG Layout
+--------------------------------------------------------
+VAR _w = 344
+VAR _h = 50
+VAR _leftPadding = 5
+VAR _rightPadding = 5
+VAR _usableWidth = _w - _leftPadding - _rightPadding
+
+--------------------------------------------------------
+-- Calendar with X positions
+--------------------------------------------------------
+VAR _calendar =
+    ADDCOLUMNS(
+        CALENDAR(_globalMinWeekStart, _globalMaxWeekEnd),
+        "XPos",
+            _leftPadding +
+            _usableWidth * DIVIDE([Date] - _globalMinWeekStart, _totalDays),
+        "DayNum", DAY([Date])
+    )
+
+--------------------------------------------------------
+-- Tick marks
+--------------------------------------------------------
+VAR _dateRects =
+    CONCATENATEX(
+        _calendar,
+        "<line x1='" & [XPos] &
+        "' y1='40' x2='" & [XPos] &
+        "' y2='60' stroke='#1F5E8A' stroke-width='1.5' />",
+        ""
+    )
+
+--------------------------------------------------------
+-- Show date every 5 days
+--------------------------------------------------------
+VAR _dateLabels =
+    CONCATENATEX(
+        --FILTER(_calendar, MOD([DayNum], 5) = 1),
+        FILTER(_calendar, FORMAT([Date], "ddd") = "Mon"),
+        "<text x='" & [XPos] &
+        "' y='35' font-size='10' fill='#1F5E8A' text-anchor='middle'>" &
+        [DayNum] & "</text>",
+        ""
+    )
+
+--------------------------------------------------------
+-- Months
+--------------------------------------------------------
+VAR _monthList =
+    DISTINCT(
+        SELECTCOLUMNS(
+            _calendar,
+            "MonthStart", DATE(YEAR([Date]), MONTH([Date]), 1)
+        )
+    )
+
+VAR _months =
+    ADDCOLUMNS(
+        _monthList,
+        "XPos",
+            _leftPadding +
+            _usableWidth * DIVIDE([MonthStart] - _globalMinWeekStart, _totalDays)
+    )
+
+VAR _monthLabels =
+    CONCATENATEX(
+        _months,
+        "<text x='" & [XPos] &
+        "' y='20' font-size='12' fill='#1F5E8A' text-anchor='middle'>" &
+        FORMAT([MonthStart], "MMM") & "</text>",
+        ""
+    )
+
+--------------------------------------------------------
+-- SVG output
+--------------------------------------------------------
+RETURN
+"
+<svg xmlns='http://www.w3.org/2000/svg' width='" & _w & "' height='" & _h & "'>
+
+    <rect x='0' y='0' width='" & _w & "' height='" & _h & "' fill='#eff9ff' />
+
+    " & _dateRects & "
+    " & _dateLabels & "
+    " & _monthLabels & "
+
+</svg>
+"
+{% endcapture %}
+
+
+
+
+
+
+
+
+
 {% capture state %}
 State = 
 VAR Stage = [test stage category] //Measure
@@ -288,6 +406,12 @@ function copyCode(btn) {
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ code1 | escape }}</code></pre>
 </div>
+{% elsif include.snippet == "timeline" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ timeline | escape }}</code></pre>
+</div>
+{% endif %}
 {% elsif include.snippet == "state" %}
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
