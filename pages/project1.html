@@ -26,6 +26,7 @@ alt: Power BI - Sales Target
       margin: 0 auto;
       max-width: 90%;
       color: #000; /* black */
+      font-size: 15px;
     }
 
     #portfolio h2,
@@ -48,7 +49,7 @@ alt: Power BI - Sales Target
       max-width: 90%;
       margin-bottom: 2px;    /* Adds spacing between items */
       font-size: 15px;
-      font-family: "Times New Roman";
+      font-family: "Cambria";
     }
 
     .centered-iframe {
@@ -64,6 +65,7 @@ alt: Power BI - Sales Target
     }
 
     ul {
+        max-width: 90%;
         text-align: left;      /* Aligns the list items to the left */
         padding-left: 0;       /* Removes extra padding if needed */
         list-style-type: disc; /* Makes bullets solid circles */
@@ -71,6 +73,7 @@ alt: Power BI - Sales Target
     }
 
     ul li {
+        max-width: 90%;
         margin-bottom: 1px;    /* Adds spacing between items */
         margin-left: 30px;     /* Controls indentation from left */
         display: list-item;    /* Ensures normal list item display */
@@ -158,14 +161,14 @@ alt: Power BI - Sales Target
 
       <section>
         <h4>B. Case Study</h4>
-        <h5>1. Fact Tables</h5>
+        <h5><b>1. Fact Tables</b></h5>
         <ul>
           <li><b>Order Details (受訂明細)</b>: order-level transactional data; linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.</li>
           <li><b>Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".</li>
           <li><b>Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.</li>
         </ul>
 
-        <h5>2. Dimension Tables</h5>
+        <h5><b>2. Dimension Tables</b></h5>
         <ul>
           <li><b>Employee (員工)</b>: master data with unique IDs; connected via Employee/Customer Bridge.</li>
           <li><b>Customer (客戶)</b>: master data including region; connected via Employee/Customer Bridge.</li>
@@ -174,12 +177,12 @@ alt: Power BI - Sales Target
           <li><b>Year (年份)</b>: supports filtering in DAX measures.</li>
         </ul>
 
-        <h5>3. Bridge Table</h5>
+        <h5><b>3. Bridge Table</b></h5>
         <ul>
           <li><b>Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.</li>
         </ul>
 
-        <h5>4. Supporting Table</h5>
+        <h5><b>4. Supporting Table</b></h5>
         <ul>
           <li><b>Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.</li>
         </ul>
