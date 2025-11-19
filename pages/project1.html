@@ -68,8 +68,8 @@ alt: Power BI - Sales Target
     #portfolio section,
     #portfolio article {
         margin-top: 10px;    /* smaller vertical space */
-        margin-bottom: 10px;
-        padding: 0;          /* optional, if padding was adding extra space */
+        margin-bottom: 15px;
+        padding: 0; 
     }
     </style>
 </head>
@@ -154,31 +154,31 @@ alt: Power BI - Sales Target
         <h4><b>B. Case Study</b></h4>
         <h5><b>1. Fact Tables</b></h5>
         <p>
-          <b>•  Order Details (受訂明細)</b>: order-level transactional data; linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.<br>
-          <b>•  Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".<br>
-          <b>•  Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.<br>
+          <b>•  Order Details (受訂明細)</b>: Order-level Transactional Data; Linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.<br>
+          <b>•  Sales Details (銷售明細)</b>: Shipment data; Used to calculate "Current Year Sales" and "Last Year Sales".<br>
+          <b>•  Planned Shipment (預計出貨)</b>: Planned shipment info; Connects to Calendar and other dimensions.<br>
         </p>
         <br>
 
         <h5><b>2. Dimension Tables</b></h5>
         <p>
-          <b>•  Employee (員工)</b>: master data with unique IDs; connected via Employee/Customer Bridge.<br>
-          <b>•  Customer (客戶)</b>: master data including region; connected via Employee/Customer Bridge.<br>
-          <b>•  Product (料號)</b>: master data including specifications.<br>
-          <b>•  Calendar</b>: standard date table for time intelligence.<br>
-          <b>•  Year (年份)</b>: supports filtering in DAX measures.<br>
+          <b>•  Employee (員工)</b>: Master data with unique IDs; Connected via Employee/Customer Bridge.<br>
+          <b>•  Customer (客戶)</b>: Master data including region; Connected via Employee/Customer Bridge.<br>
+          <b>•  Product (料號)</b>: Master data including specifications.<br>
+          <b>•  Calendar</b>: Standard date table for time intelligence.<br>
+          <b>•  Year (年份)</b>: Supports filtering in DAX measures.<br>
         </p>
         <br>
 
         <h5><b>3. Bridge Table</b></h5>
         <p>
-          <b>•  Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.<br>
+          <b>•  Employee/Customer Bridge (員工/客戶 Bridge)</b>: Handles many-to-many relationships between employees and customers.<br>
         </p>
         <br>
 
         <h5><b>4. Supporting Table</b></h5>
         <p>
-          <b>•  Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.<br>
+          <b>•  Annual Target (年度目標)</b>: Yearly targets per customer, region, and employee; links to Calendar for analysis.<br>
         </p>
         <br>
       </section>
