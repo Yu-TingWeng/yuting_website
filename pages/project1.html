@@ -76,150 +76,112 @@ alt: Power BI - Sales Target
 <body>
 
 <section id="portfolio" class="bg-light-gray">
+  <div class="container" id="programming">
+    <header class="text-center">
+      <h2>Power BI - Sales Target</h2>
+      <h3 class="subheading">&#128161; Introduction</h3>
+      <p>
+        This Power BI project visualizes company sales performance against targets 
+        to support strategic monitoring and decision-making. It incorporates key metrics such as 
+        <b>Current Achieved, Last Achieved, Current Backlog, Booking, Quota, Achieved %, Cumulative Achieved %, Growth %, Cumulative YOY %, and B/B Ratio</b>.
+      </p>
+      <p>&#128477; Keywords: Data Analysis, Data Visualization, Power BI</p>
+      <hr class="star-primary">
+    </header>
 
-    <div class="container" id="programming">
-        <div class="row">
-            <div class="col-xs-12 col-lg-12 text-center">
-                <h2 class="section-heading">Power BI - Sales Target</h2>
-                <h3 class="subheading">&#128161; Introduction </h3>
-                <p>This Power BI project visualizes company sales performance against targets to support strategic monitoring and decision-making. It incorporates key metrics such as <b>Current Achieved, Last Achieved, Current Backlog, Booking, Quota, Achieved %, Cumulative Achieved %, Growth %, Cumulative YOY %, and B/B Ratio </b>—each chosen to capture sales progress, year-over-year growth, demand versus fulfillment, and overall target attainment. <br><br> <b>Achievement and growth metrics</b> help evaluate short- and long-term performance, while <b>operational ratios</b> like the B/B Ratio reveal the balance between incoming orders and fulfilled sales, signaling future pipeline strength.
-                <br><br> On the other hand, filters for <b>Year, Salesperson, Customer, Region, and Country</b> allow users to analyze performance across different time periods, individual contributions, key accounts, and market regions—supporting more targeted sales and resource strategies.</p>
-                <br>
-                <p>&#128477; Keywords: Data Analysis, Data Visualization, Power BI</p>
-                <hr class="star-primary">
-                <h3 class="subheading">&#128202; Dashboard Showcase</h3>
-                <p>The report includes three pages: <br>
-                •  <b>Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table for reference. <br>
-                • <b>Sales Breakdown:</b> A sunburst chart and matrix visualize the proportional contribution of each region, customer, and salesperson. <br>
-                • <b>Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance, complemented by a color-coded table highlighting underperformance.</p>
-                <br>
-                <div class="centered-iframe">
-                    <iframe 
-                        title="業績目標" 
-                        src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <br>
-                <hr class="star-primary">
-                <h3 class="subheading">&#128296;  Data Modeling</h3>
-                <br>
-                <h4> <b>A. Data Modeling Process</b> </h4>
-                <br>
-                <h5> <b>1. Data Sources:</b> </h5>
-                <ul>
-                    <li>ERP (Order Master,Product Data...)</li>
-                    <li>Excel (Manually maintained customer attributes)</li>
-                </ul>
-                <h5> <b>2. Clean the Data:</b> </h5>
-                <ul>
-                    <li>Standardize formats</li>
-                    <li>Remove duplicates</li>
-                    <li>Unify columns (e.g., date formats)</li>
-                </ul>
-                <h5> <b>3. Create Dimension and Fact table Structures:</b> </h5>
-                <h5> <b>4. Establish Relationships:</b> </h5>
-                <ul>
-                    <li>Single-directional</li>
-                    <li>Star Schema</li>
-                    <li>Customer, Product, and Sales connected via keys</li>
-                </ul>
-                <h5> <b>5. Create DAX Measures:</b> </h5>
-                <ul>
-                    <li>Total Sales, Year-over-Year (YOY)...</li>
-                </ul>
-                <br>
+    <article>
+      <h3 class="subheading">&#128202; Dashboard Showcase</h3>
+      <p>The report includes three pages:</p>
+      <ul>
+        <li><b>Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table.</li>
+        <li><b>Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.</li>
+        <li><b>Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.</li>
+      </ul>
+      <div class="centered-iframe">
+        <iframe 
+          title="業績目標" 
+          src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </article>
 
-                <h4> <b>B. Case Study</b> </h4>
-                <br>
-                <h5> <b>1. Fact Tables</b> </h5>
-                <p><b>i. 受訂明細 (Order Details)</b></p>
-                <ul>
-                    <li>Contains order-level transactional data: order number, order date, product, customer, employee, amount, tax, etc.</li>
-                    <li>Linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.</li>
-                </ul>
+    <article>
+      <h3 class="subheading">&#128296; Data Modeling</h3>
 
-                <p><b>ii. 銷售明細 (Sales Details)</b></p>
-                <ul>
-                    <li>Contains shipping/sales data: shipment date, shipped quantity, sales amounts, customer info, product info, etc.</li>
-                    <li>Used to calculate measures like “Current Year Sales” and “Last Year Sales”.</li>
-                </ul>
+      <section>
+        <h4>A. Data Modeling Process</h4>
+        <h5>1. Data Sources</h5>
+        <ul>
+          <li>ERP (Order Master, Product Data...)</li>
+          <li>Excel (Manually maintained customer attributes)</li>
+        </ul>
 
-                <p><b>iii. 預計出貨 (Planned Shipment)</b></p>
-                <ul>
-                    <li>Contains planned shipment information: delivery date, product, customer, employee, and amounts.</li>
-                    <li>Connects to Calendar for date-based calculations and other dimensions for analysis.</li>
-                </ul>
-                <br>
-                <h5> <b>2. Dimension Tables</b> </h5>
-                <p><b>i. 員工 (Employee)</b></p>
-                <ul>
-                    <li>Employee master data with unique employee IDs (GEN01).</li>
-                    <li>Connected via 員工/客戶 Bridge to bridge transactional tables.</li>
-                </ul>
+        <h5>2. Clean the Data</h5>
+        <ul>
+          <li>Standardize formats</li>
+          <li>Remove duplicates</li>
+          <li>Unify columns (e.g., date formats)</li>
+        </ul>
 
-                <p><b>ii. 客戶 (Customer)</b></p>
-                <ul>
-                    <li>Customer master data including ID, name, region, etc.</li>
-                    <li>Also connected via 員工/客戶 Bridge.</li>
-                </ul>
+        <h5>3. Create Dimension and Fact Table Structures</h5>
+        <h5>4. Establish Relationships</h5>
+        <ul>
+          <li>Single-directional</li>
+          <li>Star Schema</li>
+          <li>Customer, Product, and Sales connected via keys</li>
+        </ul>
 
-                <p><b>iii. 料號 (Product)</b></p>
-                <ul>
-                    <li>Product master data: product name, specifications.</li>
-                </ul>
+        <h5>5. Create DAX Measures</h5>
+        <ul>
+          <li>Total Sales, Year-over-Year (YOY)...</li>
+        </ul>
+      </section>
 
-                <p><b>iv. Calendar</b></p>
-                <ul>
-                    <li>Standard date table with columns: Date, Month Number, etc.</li>
-                    <li>Used for time intelligence (e.g., yearly, monthly aggregation).</li>
-                </ul>
+      <section>
+        <h4>B. Case Study</h4>
+        <h5>1. Fact Tables</h5>
+        <ul>
+          <li><b>Order Details (受訂明細)</b>: order-level transactional data; linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.</li>
+          <li><b>Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".</li>
+          <li><b>Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.</li>
+        </ul>
+      </section>
 
-                <p><b>v. 年份 (Year)</b></p>
-                <ul>
-                    <li>Single-year table to support measures like “Current Year Sales”, “Last Year Sales”.</li>
-                    <li>Uses "SELECTEDVALUE" in DAX for filtering measures.</li>
-                </ul>
-                <br>
-                <h5> <b>3. Bridge Table</b> </h5>
-                <p><b>i. 員工/客戶 Bridge (Employee/Customer Bridge)</b></p>
-                <ul>
-                    <li>Handles many-to-many relationships between employees and customers.</li>
-                    <li>Contains both Employee and Customer keys (GEN01, GEN02).</li>
-                </ul>
-                <br>
-                <h5> <b>4. Supporting Table</b> </h5>
-                <p><b>i. 年度目標 (Annual Target)</b></p>
-                <ul>
-                    <li>Contains yearly targets per customer, region, and employee.</li>
-                    <li>Links to Calendar for time analysis and measures like amount or revenue.</li>
-                </ul>
-                <!-- Floating Back Button -->
-                <button onclick="history.back()" 
-                        style="
-                            position: fixed;
-                            bottom: 20px;
-                            left: 20px;
-                            padding: 12px 20px;
-                            font-size: 16px;
-                            cursor: pointer;
-                            border-radius: 8px;
-                            border: 1px solid #333;
-                            background-color: #f0f0f0;
-                            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-                            z-index: 1000;
-                            transition: background-color 0.3s;
-                        "
-                        onmouseover="this.style.backgroundColor='#e0e0e0';"
-                        onmouseout="this.style.backgroundColor='#f0f0f0';"
-                >
-                    ← Back
-                </button>
-            </div>
-        </div>
-    </div>
+      <section>
+        <h5>2. Dimension Tables</h5>
+        <ul>
+          <li><b>Employee (員工)</b>: master data with unique IDs; connected via Employee/Customer Bridge.</li>
+          <li><b>Customer (客戶)</b>: master data including region; connected via Employee/Customer Bridge.</li>
+          <li><b>Product (料號)</b>: master data including specifications.</li>
+          <li><b>Calendar</b>: standard date table for time intelligence.</li>
+          <li><b>Year (年份)</b>: supports filtering in DAX measures.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>3. Bridge Table</h5>
+        <ul>
+          <li><b>Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>4. Supporting Table</h5>
+        <ul>
+          <li><b>Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.</li>
+        </ul>
+      </section>
+    </article>
+
+    <button id="backButton">← Back</button>
+  </div>
 </section>
+
+<script>
+document.getElementById('backButton').onclick = () => history.back();
+</script>
 
 </body>
 </html>
