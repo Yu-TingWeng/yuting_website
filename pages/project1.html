@@ -41,17 +41,17 @@ alt: Power BI - Sales Target
 
     ul {
         text-align: left;      /* Aligns the list items to the left */
-        margin-left: 20px;     /* Controls indentation from left */
+        margin-left: 40px;     /* Controls indentation from left */
         padding-left: 0;       /* Removes extra padding if needed */
         list-style-type: disc; /* Makes bullets solid circles */
-        font-size: 10px;
+        font-size: 12px;
         font-family: "Time news roman";
     }
 
     ul li {
         margin-bottom: 5px;    /* Adds spacing between items */
         display: list-item;    /* Ensures normal list item display */
-        font-size: 10px;
+        font-size: 12px;
         font-family: "Time news roman";
     }
     </style>
@@ -94,19 +94,62 @@ alt: Power BI - Sales Target
                     <li>Contains order-level transactional data: order number, order date, product, customer, employee, amount, tax, etc.</li>
                     <li>Linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.</li>
                 </ul>
-                <br>
+
                 <p><b>2. 銷售明細 (Sales Details)</b></p>
                 <ul>
                     <li>Contains shipping/sales data: shipment date, shipped quantity, sales amounts, customer info, product info, etc.</li>
                     <li>Used to calculate measures like “Current Year Sales” and “Last Year Sales”.</li>
                 </ul>
-                <br>
+
                 <p><b>3. 預計出貨 (Planned Shipment)</b></p>
                 <ul>
                     <li>Contains planned shipment information: delivery date, product, customer, employee, and amounts.</li>
                     <li>Connects to Calendar for date-based calculations and other dimensions for analysis.</li>
                 </ul>
                 <br>
+                <h4> <b>B. Dimension Tables</b> <h4>
+                <p><b>1. 員工 (Employee)</b></p>
+                <ul>
+                    <li>Employee master data with unique employee IDs (GEN01).</li>
+                    <li>Connected via 員工/客戶 Bridge to bridge transactional tables.</li>
+                </ul>
+
+                <p><b>2. 客戶 (Customer)</b></p>
+                <ul>
+                    <li>Customer master data including ID, name, region, etc.</li>
+                    <li>Also connected via 員工/客戶 Bridge.</li>
+                </ul>
+
+                <p><b>3. 料號 (Product)</b></p>
+                <ul>
+                    <li>Product master data: product name, specifications.</li>
+                </ul>
+
+                <p><b>4. Calendar</b></p>
+                <ul>
+                    <li>Standard date table with columns: Date, Month Number, etc.</li>
+                    <li>Used for time intelligence (e.g., yearly, monthly aggregation).</li>
+                </ul>
+
+                <p><b>5. 年份 (Year)</b></p>
+                <ul>
+                    <li>Single-year table to support measures like “Current Year Sales”, “Last Year Sales”.</li>
+                    <li>Uses "SELECTEDVALUE" in DAX for filtering measures.</li>
+                </ul>
+                <br>
+                <h4> <b>C. Bridge Table</b> <h4>
+                <p><b>1. 員工/客戶 Bridge (Employee/Customer Bridge)</b></p>
+                <ul>
+                    <li>Handles many-to-many relationships between employees and customers.</li>
+                    <li>Contains both Employee and Customer keys (GEN01, GEN02).</li>
+                </ul>
+                <br>
+                <h4> <b>D. Supporting Table</b> <h4>
+                <p><b>1. 年度目標 (Annual Target)</b></p>
+                <ul>
+                    <li>Contains yearly targets per customer, region, and employee.</li>
+                    <li>Links to Calendar for time analysis and measures like amount or revenue.</li>
+                </ul>
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
                         style="

@@ -7,8 +7,8 @@ color:
 
 # Font Families
 font:
-  primary: '"Time news roman", "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Time news roman", Cambria, "Helvetica Neue", Helvetica,Arial,sans-serif'
+  primary: '"Time news roman", Cambria, "Helvetica Neue"'
+  secondary: '"Time news roman", Cambria, "Helvetica Neue"'
 
 menu:
 - {name: 'Home',  url: 'home'}
