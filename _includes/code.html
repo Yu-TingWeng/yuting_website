@@ -437,10 +437,112 @@ RETURN
 
 
 
+{% capture stars %}
+Stars = 
+VAR svg_start = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 100'>"
+VAR svg_end   = "</svg>"
+
+VAR Star1 = "<path d='m50,2 12,34h36l-28,22 10,34-30-20-30,20 10-34-28-22h36z'/>"
+VAR Star5 =
+    CONCATENATEX (
+        GENERATESERIES ( 0, 400, 100 ),
+        "<g transform='translate(" & [Value] & ",0)'>" & Star1 & "</g>"
+    )
+
+// Clip 的寬度隨 Achieved % 動態變化 (0–500px)
+VAR ClipWidth = 500   // Clip 最大寬度
+
+VAR Defs =
+    "<defs>
+        <clipPath id='StarClip'>
+            <rect x='0' y='0' height='100' width='0'>
+                <animate attributeName='width' from='0' to='" & ([Achieved %]*500) & "' dur='2s' fill='freeze' />
+            </rect>
+        </clipPath>
+    </defs>"
+VAR GreyStars = "<g fill='White' stroke-width='1' stroke='Black'>" & Star5 & "</g>"
+VAR GoldStars = "<g fill='Gold' clip-path='url(#StarClip)'>" & Star5 & "</g>"
+
+RETURN
+IF (
+    ISBLANK([Achieved %]) || [Achieved %]="NA",
+    BLANK(),
+    svg_start & Defs & GreyStars & GoldStars & svg_end
+)
+{% endcapture %}
 
 
 
 
+
+{% capture linear_gauge %}
+Linear Gauge = 
+VAR Achieved = [Achieved %]
+VAR Target = 0.8
+RETURN
+IF(
+    ISBLANK(Achieved) || Achieved = "NA",
+    BLANK(),
+    "data:image/svg+xml;utf8," &
+    "<svg width='100' height='20' xmlns='http://www.w3.org/2000/svg' overflow='visible'>
+        <!-- 背景軌道 -->
+        <rect id='track' x='0' y='0' width='100' height='18' fill='#D0D0D0'/>
+        
+        <!-- 動態填充條 -->
+        <rect id='fill' x='0' y='4' width='0' height='10' fill='#1F51FF'>
+            <animate attributeName='width'
+                     from='0'
+                     to='" & (Achieved*100) & "'
+                     dur='1.5s'
+                     fill='freeze' />
+            <title>Percent: " & FORMAT(Achieved, "0%") & "</title>
+        </rect>
+        
+        <!-- 目標線 -->
+        <rect id='target' x='" & (Target*100) & "' y='0' width='2' height='18' fill='orange'>
+            <title>Target: " & FORMAT(Target, "0%") & "</title>
+        </rect>
+    </svg>"
+)
+{% endcapture %}
+
+
+
+
+{% capture gauge %}
+Gauge Animated = 
+VAR MAXValue = 1
+VAR CounterValue = 'annualgoal'[Achieved %]
+
+VAR PERCENTAGEFILL = 
+IF(
+    ISBLANK(CounterValue) || CounterValue = "NA",
+    BLANK(),
+CounterValue / MAX(MAXValue, CounterValue))
+VAR strokeColor = IF(PERCENTAGEFILL < 0.5, "#e62c29", IF(PERCENTAGEFILL < 0.65, "#F4E40E", "#28a428"))
+
+RETURN
+IF(
+    ISBLANK(CounterValue) || CounterValue = "NA",
+    BLANK(),
+    "data:image/svg+xml;charset=utf-8,
+    <svg xmlns='http://www.w3.org/2000/svg' width='100' height='80' viewBox='0 0 110 80'>
+        <!-- 背景軌道 -->
+        <path fill='none' stroke='lightgrey' stroke-width='20' d='M10,55 a45,45 0 1 1 90,0'/>
+        
+        <!-- 動態填充條 -->
+        <path fill='none' stroke='" & strokeColor & "' stroke-width='20' stroke-dasharray='141.3717' stroke-dashoffset='141.3717' d='M10,55 a45,45 0 1 1 90,0'>
+            <animate attributeName='stroke-dashoffset' from='141.3717' to='" & (1-PERCENTAGEFILL)*141.3717 & "' dur='1s' fill='freeze'/>
+        </path>
+
+        <!-- Counter 指針 -->
+        <path fill='black' stroke='black' stroke-width='3' d='M0,55 L0,55' transform='rotate(" & PERCENTAGEFILL*180 & " 55 55)'/>
+
+        <!-- 文字 -->
+        <text x='35%' y='55' font-family='Segoe UI' font-size='16' font-weight='bold'>" & FORMAT(CounterValue,"0%") & "</text>
+    </svg>"
+)
+{% endcapture %}
 
 
 
@@ -514,5 +616,20 @@ function copyCode(btn) {
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ liquidfill_gauge | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "stars" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ stars | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "linear_gauge" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ linear_gauge | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "gauge" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ gauge | escape }}</code></pre>
 </div>
 {% endif %}

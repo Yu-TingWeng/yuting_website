@@ -130,6 +130,35 @@ alt: Power BI - Custom Visuals Demo
                     <img src="img/portfolio/liquidfill.png" alt="Custom Liquid-Fill Gauge SVG Chart" style="max-width: 80%; height: auto;">
                 </div>
                 {% include code.html snippet="liquidfill_gauge" %}
+                <br>
+                <h4>3. Animated 5-Star Rating</h4>
+                <p>This DAX measure builds an animated 5-star rating graphic. It draws five identical star shapes in a row, first in white (the background), then again in gold. <br>
+                    A dynamic clipPath controls how much of the gold layer is revealed, with the width animated from 0 to Achieved % × 500px, creating a smooth left-to-right “filling” effect (like Amazon-style star ratings). <br>
+                    If Achieved % is blank, it returns nothing; otherwise it outputs the complete SVG as a data URI for Power BI visuals.</p>
+                <br>
+                <div style="text-align: center;">
+                    <img src="img/portfolio/stars.png" alt="Custom 5-Star Rating SVG Chart" style="max-width: 80%; height: auto;">
+                </div>
+                {% include code.html snippet="stars" %}
+                <br>
+                <h4>4. Animated Linear Gauge</h4>
+                <p>This DAX measure creates a simple animated linear gauge showing progress toward a target. A gray track forms the background, and a blue bar animates its width from 0 to Achieved% × 100. <br>
+                    An orange vertical line marks the fixed target threshold (80%). Tooltips on both the fill bar and target line show the exact percentages. If Achieved% is blank or “NA,” the measure returns nothing; otherwise it outputs the full inline SVG for display in Power BI.</p>
+                <br>
+                <div style="text-align: center;">
+                    <img src="img/portfolio/linear_gauge.png" alt="Custom Linear Gauge SVG Chart" style="max-width: 80%; height: auto;">
+                </div>
+                {% include code.html snippet="linear_gauge" %}
+                <br>
+                <h4>5. Animated Semi-Circular Gauge</h4>
+                <p>This measure renders a semi-circular gauge with animation. It first draws a grey arc as the background. Then it adds a colored arc that animates by reducing its stroke-dashoffset, visually “filling” the gauge based on Achieved%. <br>
+                    The fill color changes automatically (red → yellow → green) depending on the percentage level. A simple pointer rotates from 0° to 180° to match the current value, and the percentage is shown as centered text. <br>
+                    If Achieved% is blank or “NA,” it returns nothing; otherwise it outputs the complete SVG for Power BI.</p>
+                <br>
+                <div style="text-align: center;">
+                    <img src="img/portfolio/gauge.png" alt="Custom Semi-Circular Gauge SVG Chart" style="max-width: 80%; height: auto;">
+                </div>
+                {% include code.html snippet="gauge" %}
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
                         style="
