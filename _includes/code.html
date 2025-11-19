@@ -352,6 +352,98 @@ Box & Callout &
 {% endcapture %}
 
 
+
+{% capture liquidfill_gauge %}
+Liquid Fill Gauge = 
+VAR _value = [Current Year Sales]
+VAR _total = SUM('年度目標'[Amount])
+VAR _percent = DIVIDE(_value,_total,0)
+VAR _pctText = FORMAT(_percent,"0%")
+
+VAR _svgWidth = 200
+VAR _svgHeight = 200
+VAR _r = 80
+VAR _cx = 100
+VAR _cy = 100
+
+/* Start and target Y */
+VAR _startY = 200
+VAR _targetY = _svgHeight * (1-_percent)
+
+/* Wave path template */
+VAR _waveStartPath =
+"M20 " & _startY & 
+" Q30 " & (_startY-2) & " 50 " & _startY &   // crest 1
+" T90 " & (_startY-1) &                        
+" T145 " & (_startY+1) &                       
+" T180 " & _startY & 
+" V200 H20 Z"
+
+VAR _waveTargetPath =
+"M20 " & _targetY & 
+" Q30 " & (_targetY-2) & " 50 " & (_targetY+2) &   // crest 1
+" T90 " & (_targetY-1) &                             
+" T145 " & (_targetY-1) &                        
+" T180 " & _targetY & 
+" V200 H20 Z"
+
+VAR _svg =
+"<svg viewBox='0 0 " & _svgWidth & " " & _svgHeight & "' width='" & _svgWidth & "' height='" & _svgHeight & "' xmlns='http://www.w3.org/2000/svg'>
+  <!-- Outer circle -->
+  <circle cx='" & _cx & "' cy='" & _cy & "' r='" & _r+5 & "' fill='#f3f6fb' stroke='#9bc1ef' stroke-width='10'/>
+
+  <defs>
+    <clipPath id='liquidClip'>
+      <circle cx='" & _cx & "' cy='" & _cy & "' r='" & _r & "'/>
+    </clipPath>
+
+    <!-- Optional gradient for more depth -->
+    <linearGradient id='waveGradient' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#6bb6ff' stop-opacity='0.7'/>
+      <stop offset='100%' stop-color='#1E90FF' stop-opacity='1'/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path='url(#liquidClip)'>
+    <!-- Main rising wave -->
+    <path d='" & _waveStartPath & "' fill='url(#waveGradient)'>
+      <animate attributeName='d' 
+               from='" & _waveStartPath & "' 
+               to='" & _waveTargetPath & "' 
+               dur='2s' fill='freeze' />
+      <animateTransform attributeName='transform' type='translate' values='0 0; 0 5.5; 0 0' keyTimes='0;0.5;1' dur='4s' repeatCount='indefinite'/>
+    </path>
+
+    <!-- Overlapping secondary wave -->
+    <path d='" & _waveStartPath & "' fill='rgba(255,255,255,0.2)'>
+      <animate attributeName='d' 
+               from='" & _waveStartPath & "' 
+               to='" & _waveTargetPath & "' 
+               dur='2s' fill='freeze' />
+      <animateTransform attributeName='transform' type='translate' values='0 0; 0 7; 0 0' keyTimes='0;0.5;1' dur='3s' repeatCount='indefinite'/>
+    </path>
+  </g>
+
+  <!-- Percentage Text -->
+  <text x='" & _cx+2.5 & "' y='" & _cy+2.5 & "' text-anchor='middle' font-size='28' font-weight='700' fill='#0b2545'>" & _pctText & "</text>
+</svg>"
+
+RETURN 
+"data:image/svg+xml;utf8," & _svg
+{% endcapture %}
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
 /* code block container */
 .code-wrapper {
@@ -401,6 +493,8 @@ function copyCode(btn) {
 }
 </script>
 
+
+
 {% if include.snippet == "code1" %}
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
@@ -415,5 +509,10 @@ function copyCode(btn) {
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ state | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "liquidfill_gauge" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ liquidfill_gauge | escape }}</code></pre>
 </div>
 {% endif %}
