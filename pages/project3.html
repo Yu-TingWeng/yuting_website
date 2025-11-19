@@ -62,7 +62,7 @@ alt: Power BI - Production Management
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Power BI - Production Management </h2>
-                <h3 class="section-subheading text-muted">&#128161; Introduction </h3>
+                <h3 class="section-subheading">&#128161; Introduction </h3>
                 <p>Developed a Power BI dashboard to track and visualize production schedules, progress, and inventory status. The report features a  <span style="color:#000072; font-weight: 700;">self-created Calendar</span> showing daily production quantities and the duration between production start and end dates, enabling quick identification of bottlenecks or delays.</p>
                 <br>
                 <p>Two types of  <span style="color:#000072; font-weight: 700;">Custom Gantt Charts</span> are implemented: <br>
@@ -73,13 +73,13 @@ alt: Power BI - Production Management
                 <br>
                 <p>&#128477; Keywords: Power BI (Custom Gantt & Calendar Visuals) </p>
                 <hr class="star-primary">
-                <h3 class="section-subheading text-muted">&#128202; Dashboard Showcase</h3>
+                <h3 class="section-subheading">&#128202; Dashboard Showcase</h3>
                 <div class="centered-iframe">
                     <iframe title="生產管理" src="https://app.powerbi.com/view?r=eyJrIjoiODFlOGRhZDYtMDdlYS00NzkwLWI4MGUtMDBhYmZkNmIyZjhhIiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
                 <br>
                 <hr class="star-primary">
-                <h3 class="section-subheading text-muted">Code Demo</h3>
+                <h3 class="section-subheading">Code Demo</h3>
                 <h4>Custom Gantt Chart</h4>
                 <p><b>1. SVG Gantt Chart DAX Measure</b> <br>
                     This DAX measure builds a small SVG Gantt chart for each production order in Power BI. It normalizes each order’s start and end dates to a Monday–Sunday calendar, and also aligns the global min/max dates so all orders share the same timeline. 
@@ -95,6 +95,7 @@ alt: Power BI - Production Management
                     The code draws vertical tick marks for every day, labels each Monday with its day number, and adds monthly labels positioned at the start of each month. 
                     Finally, it outputs a light-blue background with day ticks, Monday labels, and month headers—forming a clean timeline bar that aligns with the main Gantt chart bars.</p>
                 {% include code.html snippet="timeline" %}
+                <br>
                 <p> In combination of the above two measures, we get: <br></p>
                 <div style="text-align: center;">
                     <img src="img/portfolio/svg_gantt.png" alt="custom gantt chart" style="max-width: 80%; height: auto;">
