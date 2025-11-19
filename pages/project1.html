@@ -1,6 +1,6 @@
 ---
 title: Sales Target
-subtitle: Power BI
+subtitle: Power BI (Data Modeling)
 layout: project
 permalink: /project1
 modal-id: 1
@@ -69,6 +69,44 @@ alt: Power BI - Sales Target
                         allowfullscreen>
                     </iframe>
                 </div>
+                <br>
+                <hr class="star-primary">
+                <h3 class="subheading">&#128296;  Data Modeling</h3>
+                <p> <b>A. Fact Tables</b> <br>
+                <p><b>1. 受訂明細 (Order Details)</b></p>
+                <p>Contains order-level transactional data:</p>
+                <ul>
+                    <li>Order number</li>
+                    <li>Order date</li>
+                    <li>Product</li>
+                    <li>Customer</li>
+                    <li>Employee</li>
+                    <li>Amount</li>
+                    <li>Tax</li>
+                </ul>
+                <p>Linked to <b>年度目標</b>, <b>預計出貨</b>, and <b>員工/客戶 Bridge</b>.</p>
+
+                <p><b>2. 銷售明細 (Sales Details)</b></p>
+                <p>Contains shipping/sales data:</p>
+                <ul>
+                    <li>Shipment date</li>
+                    <li>Shipped quantity</li>
+                    <li>Sales amounts</li>
+                    <li>Customer info</li>
+                    <li>Product info</li>
+                </ul>
+                <p>Used to calculate measures like <b>Current Year Sales</b> and <b>Last Year Sales</b>.</p>
+
+                <p><b>3. 預計出貨 (Planned Shipment)</b></p>
+                <p>Contains planned shipment information:</p>
+                <ul>
+                    <li>Delivery date</li>
+                    <li>Product</li>
+                    <li>Customer</li>
+                    <li>Employee</li>
+                    <li>Amounts</li>
+                </ul>
+                <p>Connects to <b>Calendar</b> for date-based calculations and other dimensions for analysis.</p>
                 <br>
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
