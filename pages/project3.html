@@ -1,6 +1,6 @@
 ---
 title: Production Management
-subtitle: Power BI (Custom Gantt & Calendar Visuals)
+subtitle: Power BI + SVG
 layout: project
 permalink: /project3
 modal-id: 3
@@ -25,7 +25,7 @@ alt: Power BI - Production Management
     .section-subheading {
       font-weight: bold;
       color: #000;
-      font-size: 30px;
+      font-size: 40px;
     }
 
     #portfolio p {
@@ -41,7 +41,7 @@ alt: Power BI - Production Management
     .centered-iframe iframe {
         width: 90%;
         max-width: 800px;
-        height: 50vh;  /* 高度為視窗的 80% */
+        height: 50vh; 
         display: block;
         margin: 0 auto;
     }
@@ -63,37 +63,42 @@ alt: Power BI - Production Management
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Power BI - Production Management </h2>
                 <h3 class="section-subheading text-muted">&#128161; Introduction </h3>
-                <p>Developed a Power BI dashboard to track and visualize production schedules, progress, and inventory status. The report features a self-created calendar showing daily production quantities and the duration between production start and end dates, enabling quick identification of bottlenecks or delays.</p>
+                <p>Developed a Power BI dashboard to track and visualize production schedules, progress, and inventory status. The report features a  <span style="color:#000072; font-weight: 700;">self-created Calendar</span> showing daily production quantities and the duration between production start and end dates, enabling quick identification of bottlenecks or delays.</p>
                 <br>
-                <p>Two types of custom Gantt charts are implemented: <br>
+                <p>Two types of  <span style="color:#000072; font-weight: 700;">Custom Gantt Charts</span> are implemented: <br>
                 •  <b>Bar chart-based Gantt:</b> Uses a padded X-axis to represent days before production starts and production duration, allowing visualization of planned vs. actual timelines. <br>
                 •  <b>SVG-based Gantt in a matrix:</b> Provides flexible, color-coded visualization of production stages and progress for each order. <br><br>
                 Key tracked variables include <b>Material Ready Date, Planned Start Date, Planned End Date, Production Quantity, Inventory Quantity, Status (e.g., Created, Released, Bill of Materials Printed, Material Issued, FQC, WIP, In-Stock, Completed).</b> Rows where Material Ready Date > Planned Start Date are highlighted to flag potential delays. <br><br>
                 Moreover, Gantt charts and tables allow filtering by stages such as <b>Currently in Production, Planned but Not Started, Expected to Finish but Not Completed, and Custom Week Selection,</b> providing a comprehensive overview of production status, schedule adherence, and inventory flow.</p>
                 <br>
-                <p>&#128477; Keywords: Power BI </p>
+                <p>&#128477; Keywords: Power BI (Custom Gantt & Calendar Visuals) </p>
                 <hr class="star-primary">
                 <h3 class="section-subheading text-muted">&#128202; Dashboard Showcase</h3>
                 <div class="centered-iframe">
-                    <iframe title="生產管理" width="800" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiODFlOGRhZDYtMDdlYS00NzkwLWI4MGUtMDBhYmZkNmIyZjhhIiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
+                    <iframe title="生產管理" src="https://app.powerbi.com/view?r=eyJrIjoiODFlOGRhZDYtMDdlYS00NzkwLWI4MGUtMDBhYmZkNmIyZjhhIiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
                 <br>
                 <hr class="star-primary">
                 <h3 class="section-subheading text-muted">Code Demo</h3>
-                <h4>1. SVG Gantt Chart DAX Measure</h4>
-                <p>This DAX measure builds a small SVG Gantt chart for each production order in Power BI. It normalizes each order’s start and end dates to a Monday–Sunday calendar, and also aligns the global min/max dates so all orders share the same timeline. 
+                <h4>Custom Gantt Chart</h4>
+                <p><b>1. SVG Gantt Chart DAX Measure</b> <br>
+                    This DAX measure builds a small SVG Gantt chart for each production order in Power BI. It normalizes each order’s start and end dates to a Monday–Sunday calendar, and also aligns the global min/max dates so all orders share the same timeline. 
                     Using this timeline, it calculates pixel positions for the bar start, bar end, and today’s position. The bar is colored by work-order status, and a second bar on top shows completion based on 入庫量 ÷ 生產量. 
                     If the order is overdue and not completed, a red diagonal hatch overlay is drawn. The code also adds weekly dashed gridlines and a vertical red line for today. Finally, all components are combined into a single inline SVG returned as a data URI for Power BI to render.</p>
                 <br>
                 {% include code.html snippet="code1" %}
                 <br>
-                <h4>2. Timeline SVG DAX Measure</h4>
-                <p>This DAX measure creates a horizontal timeline SVG used as the shared axis for the combined Gantt chart. 
+                <p><b>2. Timeline SVG DAX Measure</b> <br>
+                    This DAX measure creates a horizontal timeline SVG used as the shared axis for the combined Gantt chart. 
                     It first identifies the global minimum and maximum dates across all work orders and expands them to full Monday–Sunday weeks. 
                     Then it calculates the total number of days and maps each calendar date to an X-position in the SVG. 
                     The code draws vertical tick marks for every day, labels each Monday with its day number, and adds monthly labels positioned at the start of each month. 
                     Finally, it outputs a light-blue background with day ticks, Monday labels, and month headers—forming a clean timeline bar that aligns with the main Gantt chart bars.</p>
                 {% include code.html snippet="timeline" %}
+                <p> In combination of the above two measures, we get: <br></p>
+                <div style="text-align: center;">
+                    <img src="img/portfolio/svg_gantt.png" alt="custom gantt chart" style="max-width: 80%; height: auto;">
+                </div>
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
                         style="
