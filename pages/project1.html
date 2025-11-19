@@ -64,23 +64,6 @@ alt: Power BI - Sales Target
         margin: 0 auto;
     }
 
-    ul {
-        max-width: 80%;
-        margin-bottom: 15px;    /* Adds spacing between items */
-        padding-left: 20%;  /* restore indentation */
-        text-align: left;      /* Aligns the list items to the left */
-        padding-left: 0;       /* Removes extra padding if needed */
-        list-style-type: disc; /* Makes bullets solid circles */
-        font-size: 15px;
-    }
-
-    ul li {
-        max-width: 80%;
-        margin-bottom: 1px;    /* Adds spacing between items */
-        display: list-item;    /* Ensures normal list item display */
-        font-size: 15px;
-    }
-
     #portfolio section,
     #portfolio article {
         margin-top: 10px;    /* smaller vertical space */
@@ -112,11 +95,11 @@ alt: Power BI - Sales Target
     <article>
       <h3 class="subheading">&#128202; Dashboard Showcase</h3>
       <p>The report includes three pages:</p>
-      <ul>
-        <li><b>Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table.</li>
-        <li><b>Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.</li>
-        <li><b>Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.</li>
-      </ul>
+      <p>  
+        <b>•  Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table.<br>
+        <b>•  Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.<br>
+        <b>•  Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.<br>
+      </p>
       <div class="centered-iframe">
         <iframe 
           title="業績目標" 
@@ -134,59 +117,59 @@ alt: Power BI - Sales Target
       <section>
         <h4><b>A. Data Modeling Process</b></h4>
         <h5><b>1. Data Sources</b></h5>
-        <ul>
-          <li>ERP (Order Master, Product Data...)</li>
-          <li>Excel (Manually maintained customer attributes)</li>
-        </ul>
+        <p>
+          •  ERP (Order Master, Product Data...)<br>
+          •  Excel (Manually maintained customer attributes)
+        </p>
 
         <h5><b>2. Clean the Data</b></h5>
-        <ul>
-          <li>Standardize formats</li>
-          <li>Remove duplicates</li>
-          <li>Unify columns (e.g., date formats)</li>
-        </ul>
+        <p>
+          •  Standardize formats<br>
+          •  Remove duplicates<br>
+          •  Unify columns (e.g., date formats)
+        </p>
 
         <h5><b>3. Create Dimension and Fact Table Structures</b></h5>
         <h5><b>4. Establish Relationships </b></h5>
-        <ul>
-          <li>Single-directional</li>
-          <li>Star Schema</li>
-          <li>Customer, Product, and Sales connected via keys</li>
-        </ul>
+        <p>
+          •  Single-directional<br>
+          •  Star Schema<br>
+          •  Customer, Product, and Sales connected via keys
+        </p>
 
         <h5><b>5. Create DAX Measures</b></h5>
-        <ul>
-          <li>Total Sales, Year-over-Year (YOY)...</li>
-        </ul>
+        <p>
+          •  Total Sales, Year-over-Year (YOY)...
+        </p>
       </section>
 
       <section>
         <h4><b>B. Case Study</b></h4>
         <h5><b>1. Fact Tables</b></h5>
-        <ul>
-          <li><b>Order Details (受訂明細)</b>: order-level transactional data; linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.</li>
-          <li><b>Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".</li>
-          <li><b>Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.</li>
-        </ul>
+        <p>
+          <b>•  Order Details (受訂明細)</b>: order-level transactional data; linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.<br>
+          <b>•  Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".<br>
+          <b>•  Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.
+        </p>
 
         <h5><b>2. Dimension Tables</b></h5>
-        <ul>
-          <li><b>Employee (員工)</b>: master data with unique IDs; connected via Employee/Customer Bridge.</li>
-          <li><b>Customer (客戶)</b>: master data including region; connected via Employee/Customer Bridge.</li>
-          <li><b>Product (料號)</b>: master data including specifications.</li>
-          <li><b>Calendar</b>: standard date table for time intelligence.</li>
-          <li><b>Year (年份)</b>: supports filtering in DAX measures.</li>
-        </ul>
+        <p>
+          <b>•  Employee (員工)</b>: master data with unique IDs; connected via Employee/Customer Bridge.<br>
+          <b>•  Customer (客戶)</b>: master data including region; connected via Employee/Customer Bridge.<br>
+          <b>•  Product (料號)</b>: master data including specifications.<br>
+          <b>•  Calendar</b>: standard date table for time intelligence.<br>
+          <b>•  Year (年份)</b>: supports filtering in DAX measures.
+        </p>
 
         <h5><b>3. Bridge Table</b></h5>
-        <ul>
-          <li><b>Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.</li>
-        </ul>
+        <p>
+          <b>•  Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.
+        </p>
 
         <h5><b>4. Supporting Table</b></h5>
-        <ul>
-          <li><b>Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.</li>
-        </ul>
+        <p>
+          <b>•  Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.
+        </p>
       </section>
       </div>
     </article>
