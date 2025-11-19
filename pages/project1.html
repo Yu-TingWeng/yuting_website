@@ -66,7 +66,8 @@ alt: Power BI - Sales Target
 
     ul {
         max-width: 80%;
-        margin-bottom: 5px;    /* Adds spacing between items */
+        margin-bottom: 10px;    /* Adds spacing between items */
+        padding-left: 20px;  /* restore indentation */
         text-align: left;      /* Aligns the list items to the left */
         padding-left: 0;       /* Removes extra padding if needed */
         list-style-type: disc; /* Makes bullets solid circles */
@@ -133,28 +134,28 @@ alt: Power BI - Sales Target
 
       <section>
         <h4><b>A. Data Modeling Process</b></h4>
-        <h5>1. Data Sources</h5>
+        <h5><b>1. Data Sources</b></h5>
         <ul>
           <li>ERP (Order Master, Product Data...)</li>
           <li>Excel (Manually maintained customer attributes)</li>
         </ul>
 
-        <h5>2. Clean the Data</h5>
+        <h5><b>2. Clean the Data</b></h5>
         <ul>
           <li>Standardize formats</li>
           <li>Remove duplicates</li>
           <li>Unify columns (e.g., date formats)</li>
         </ul>
 
-        <h5>3. Create Dimension and Fact Table Structures</h5>
-        <h5>4. Establish Relationships</h5>
+        <h5><b>3. Create Dimension and Fact Table Structures</b></h5>
+        <h5><b>4. Establish Relationships </b></h5>
         <ul>
           <li>Single-directional</li>
           <li>Star Schema</li>
           <li>Customer, Product, and Sales connected via keys</li>
         </ul>
 
-        <h5>5. Create DAX Measures</h5>
+        <h5><b>5. Create DAX Measures</b></h5>
         <ul>
           <li>Total Sales, Year-over-Year (YOY)...</li>
         </ul>
