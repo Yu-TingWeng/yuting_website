@@ -11,7 +11,7 @@ pre {
 
 body {
     overflow-x: hidden;
-    font-family: "Time news roman", Cambria, "Helvetica Neue";
+    font-family: "Times New Roman", Cambria, "Helvetica Neue";
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -178,7 +178,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Time news roman", "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Times New Roman", "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #fff;
 }
 

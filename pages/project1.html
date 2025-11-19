@@ -18,7 +18,7 @@ alt: Power BI - Sales Target
       font-weight: bold;
       color: #000;
       font-size: 22px;
-      font-family: "Time news roman";
+      font-family: "Times New Roman";
     }
 
     #portfolio p {
@@ -32,7 +32,7 @@ alt: Power BI - Sales Target
       margin: 0 auto;
       max-width: 90%;
       font-size: 18px;
-      font-family: "Time news roman";
+      font-family: "Times New Roman";
     }
 
     #portfolio h5 {
@@ -61,14 +61,21 @@ alt: Power BI - Sales Target
         padding-left: 0;       /* Removes extra padding if needed */
         list-style-type: disc; /* Makes bullets solid circles */
         font-size: 15px;
-        /*font-family: "Time news roman";*/
+        /*font-family: "Times New Roman";*/
     }
 
     ul li {
         margin-bottom: 1px;    /* Adds spacing between items */
         display: list-item;    /* Ensures normal list item display */
-        font-size: 15 px;
-        /*font-family: "Time news roman";*/
+        font-size: 15px;
+        /*font-family: "Times New Roman";*/
+    }
+
+    #portfolio section,
+    #portfolio article {
+        margin-top: 10px;    /* smaller vertical space */
+        margin-bottom: 10px;
+        padding: 0;          /* optional, if padding was adding extra space */
     }
     </style>
 </head>
@@ -78,14 +85,16 @@ alt: Power BI - Sales Target
 <section id="portfolio" class="bg-light-gray">
   <div class="container" id="programming">
     <header class="text-center">
-      <h2>Power BI - Sales Target</h2>
+      <h2 class="section-heading">Power BI - Sales Target</h2>
       <h3 class="subheading">&#128161; Introduction</h3>
       <p>
-        This Power BI project visualizes company sales performance against targets 
-        to support strategic monitoring and decision-making. It incorporates key metrics such as 
-        <b>Current Achieved, Last Achieved, Current Backlog, Booking, Quota, Achieved %, Cumulative Achieved %, Growth %, Cumulative YOY %, and B/B Ratio</b>.
-      </p>
-      <p>&#128477; Keywords: Data Analysis, Data Visualization, Power BI</p>
+        This Power BI project visualizes company sales performance against targets to support strategic monitoring and decision-making. 
+        It incorporates key metrics such as <b>Current Achieved, Last Achieved, Current Backlog, Booking, Quota, Achieved %, Cumulative Achieved %, Growth %, Cumulative YOY %, and B/B Ratio </b>
+        —each chosen to capture sales progress, year-over-year growth, demand versus fulfillment, and overall target attainment. <br><br> <b>Achievement and growth metrics</b> help evaluate short- and long-term performance, 
+        while <b>operational ratios</b> like the B/B Ratio reveal the balance between incoming orders and fulfilled sales, signaling future pipeline strength. <br><br> 
+        On the other hand, filters for <b>Year, Salesperson, Customer, Region, and Country</b> allow users to analyze performance across different time periods, individual contributions, key accounts, and market regions—supporting more targeted sales and resource strategies.</p>
+     <br>
+     <p>&#128477; Keywords: Data Analysis, Data Visualization, Power BI</p>
       <hr class="star-primary">
     </header>
 
@@ -106,6 +115,7 @@ alt: Power BI - Sales Target
         </iframe>
       </div>
     </article>
+    <hr class="star-primary">
 
     <article>
       <h3 class="subheading">&#128296; Data Modeling</h3>
@@ -147,9 +157,7 @@ alt: Power BI - Sales Target
           <li><b>Sales Details (銷售明細)</b>: shipment data; used to calculate "Current Year Sales" and "Last Year Sales".</li>
           <li><b>Planned Shipment (預計出貨)</b>: planned shipment info; connects to Calendar and other dimensions.</li>
         </ul>
-      </section>
 
-      <section>
         <h5>2. Dimension Tables</h5>
         <ul>
           <li><b>Employee (員工)</b>: master data with unique IDs; connected via Employee/Customer Bridge.</li>
@@ -158,16 +166,12 @@ alt: Power BI - Sales Target
           <li><b>Calendar</b>: standard date table for time intelligence.</li>
           <li><b>Year (年份)</b>: supports filtering in DAX measures.</li>
         </ul>
-      </section>
 
-      <section>
         <h5>3. Bridge Table</h5>
         <ul>
           <li><b>Employee/Customer Bridge (員工/客戶 Bridge)</b>: handles many-to-many relationships between employees and customers.</li>
         </ul>
-      </section>
 
-      <section>
         <h5>4. Supporting Table</h5>
         <ul>
           <li><b>Annual Target (年度目標)</b>: yearly targets per customer, region, and employee; links to Calendar for analysis.</li>
@@ -175,13 +179,29 @@ alt: Power BI - Sales Target
       </section>
     </article>
 
-    <button id="backButton">← Back</button>
+    <!-- Floating Back Button -->
+    <button onclick="history.back()" 
+            style="
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                padding: 12px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 8px;
+                border: 1px solid #333;
+                background-color: #f0f0f0;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                z-index: 1000;
+                transition: background-color 0.3s;
+            "
+            onmouseover="this.style.backgroundColor='#e0e0e0';"
+            onmouseout="this.style.backgroundColor='#f0f0f0';"
+    >
+        ← Back
+    </button>
   </div>
 </section>
-
-<script>
-document.getElementById('backButton').onclick = () => history.back();
-</script>
 
 </body>
 </html>
