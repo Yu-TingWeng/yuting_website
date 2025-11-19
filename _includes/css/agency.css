@@ -11,7 +11,7 @@ pre {
 
 body {
     overflow-x: hidden;
-    font-family: "Time news roman", Cambria, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Time news roman", Cambria, "Helvetica Neue";
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
