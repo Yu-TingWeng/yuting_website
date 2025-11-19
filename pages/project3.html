@@ -26,7 +26,7 @@ alt: Power BI - Production Management
       font-weight: bold;
       color: #000;
       font-size: 20px;
-      font-family: {{ site.data.template.font.primary }};
+      font-family: "Time news roman";
     }
 
     #portfolio p {
@@ -81,7 +81,7 @@ alt: Power BI - Production Management
                 <br>
                 <hr class="star-primary">
                 <h3 class="subheading">Code Demo</h3>
-                <h4>Custom Gantt Chart</h4>
+                <h4>A. SVG-based Gantt in a matrix</h4>
                 <p><b>1. SVG Gantt Chart DAX Measure</b> <br>
                     This DAX measure builds a small SVG Gantt chart for each production order in Power BI. It normalizes each order’s start and end dates to a Monday–Sunday calendar, and also aligns the global min/max dates so all orders share the same timeline. 
                     Using this timeline, it calculates pixel positions for the bar start, bar end, and today’s position. The bar is colored by work-order status, and a second bar on top shows completion based on 入庫量 ÷ 生產量. 

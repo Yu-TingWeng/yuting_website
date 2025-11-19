@@ -23,10 +23,11 @@ alt: Power BI - Custom Visuals Demo
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-dax.min.js"></script>
     
     <style>
-    .section-subheading {
+    .subheading {
       font-weight: bold;
       color: #000;
-      font-size: 40px;
+      font-size: 20px;
+      font-family: "Time news roman";
     }
 
     #portfolio p {
@@ -57,18 +58,18 @@ alt: Power BI - Custom Visuals Demo
         <div class="row">
             <div class="col-xs-12 col-lg-12 text-center">
                 <h2 class="section-heading">Power BI - Custom Visuals Demo</h2>
-                <h3 class="section-subheading text-muted">&#128161; Introduction </h3>
+                <h3 class="subheading">&#128161; Introduction </h3>
                 <p>This Power BI report demonstrates creating custom, interactive visuals by combining <b>DAX, HTML, SVG, and JavaScript.</b> Visuals include <b>state indicators</b> (green = good, yellow = on track, red = warning with blinking)<b>, liquid fill gauges, five-star ratings, linear and circular gauges, sparklines with intersection highlights, barcode charts by month, and boxplots.</b> Using DAX for data-driven calculations and HTML/JavaScript for rendering, each visual dynamically updates with the underlying dataset, allowing flexible styling and interactive effects. This project showcases how integrating scripting with Power BI enables highly customized, visually engaging dashboards beyond standard chart types.</p>
                 <br>
                 <p>&#128477; Keywords: Power BI, SVG, HTML, JavaScript</p>
                 <hr class="star-primary">
-                <h3 class="section-subheading text-muted">&#128202; Dashboard Showcase</h3>
+                <h3 class="subheading">&#128202; Dashboard Showcase</h3>
                 <div class="centered-iframe">
                     <iframe title="SVG Demo" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYzg0NWJjNDktNDJkMC00NWNiLTkzMDItMjZkNDRiMjM5ZmQ3IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
                 <br>
                 <hr class="star-primary">
-                <h3 class="section-subheading text-muted">Code Demo </h3>
+                <h3 class="subheading">Code Demo </h3>
                 <h4>1. SVG Status Badge</h4>
                 <p>This DAX measure generates a small SVG status badge based on the value of [stage category]. It chooses a color for the rectangle (Good = green, On Track = orange, Warning = red, Gray as default) and displays the stage text centered inside the rounded box. 
                     If the stage is “Warning,” it adds a blinking fill-opacity animation to draw attention. The measure outputs the colored, rounded status label as an inline SVG image for use in Power BI tables or matrices.</p>
