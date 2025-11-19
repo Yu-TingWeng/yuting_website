@@ -38,6 +38,18 @@ alt: Power BI - Sales Target
         display: block;
         margin: 0 auto;
     }
+
+    ul {
+        text-align: left;      /* Aligns the list items to the left */
+        margin-left: 20px;     /* Controls indentation from left */
+        padding-left: 0;       /* Removes extra padding if needed */
+        list-style-type: disc; /* Makes bullets solid circles */
+    }
+
+    ul li {
+        margin-bottom: 5px;    /* Adds spacing between items */
+        display: list-item;    /* Ensures normal list item display */
+    }
     </style>
 </head>
 
@@ -72,41 +84,24 @@ alt: Power BI - Sales Target
                 <br>
                 <hr class="star-primary">
                 <h3 class="subheading">&#128296;  Data Modeling</h3>
-                <p> <b>A. Fact Tables</b> <br>
+                <h4> <b>A. Fact Tables</b> <h4>
                 <p><b>1. 受訂明細 (Order Details)</b></p>
-                <p>Contains order-level transactional data:</p>
                 <ul>
-                    <li>Order number</li>
-                    <li>Order date</li>
-                    <li>Product</li>
-                    <li>Customer</li>
-                    <li>Employee</li>
-                    <li>Amount</li>
-                    <li>Tax</li>
+                    <li>Contains order-level transactional data: order number, order date, product, customer, employee, amount, tax, etc.</li>
+                    <li>Linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.</li>
                 </ul>
-                <p>Linked to <b>年度目標</b>, <b>預計出貨</b>, and <b>員工/客戶 Bridge</b>.</p>
-
+                <br>
                 <p><b>2. 銷售明細 (Sales Details)</b></p>
-                <p>Contains shipping/sales data:</p>
                 <ul>
-                    <li>Shipment date</li>
-                    <li>Shipped quantity</li>
-                    <li>Sales amounts</li>
-                    <li>Customer info</li>
-                    <li>Product info</li>
+                    <li>Contains shipping/sales data: shipment date, shipped quantity, sales amounts, customer info, product info, etc.</li>
+                    <li>Used to calculate measures like “Current Year Sales” and “Last Year Sales”.</li>
                 </ul>
-                <p>Used to calculate measures like <b>Current Year Sales</b> and <b>Last Year Sales</b>.</p>
-
+                <br>
                 <p><b>3. 預計出貨 (Planned Shipment)</b></p>
-                <p>Contains planned shipment information:</p>
                 <ul>
-                    <li>Delivery date</li>
-                    <li>Product</li>
-                    <li>Customer</li>
-                    <li>Employee</li>
-                    <li>Amounts</li>
+                    <li>Contains planned shipment information: delivery date, product, customer, employee, and amounts.</li>
+                    <li>Connects to Calendar for date-based calculations and other dimensions for analysis.</li>
                 </ul>
-                <p>Connects to <b>Calendar</b> for date-based calculations and other dimensions for analysis.</p>
                 <br>
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
