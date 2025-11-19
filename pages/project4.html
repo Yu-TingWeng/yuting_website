@@ -106,6 +106,10 @@ alt: Power BI - Custom Visuals Demo
                 <h4>1. SVG Status Badge</h4>
                 <p>This DAX measure generates a small SVG status badge based on the value of [stage category]. It chooses a color for the rectangle (Good = green, On Track = orange, Warning = red, Gray as default) and displays the stage text centered inside the rounded box. 
                     If the stage is “Warning,” it adds a blinking fill-opacity animation to draw attention. The measure outputs the colored, rounded status label as an inline SVG image for use in Power BI tables or matrices.</p>
+                <br>
+                <div style="text-align: center;">
+                    <img src="img/portfolio/state.png" alt="Custom State SVG Chart" style="max-width: 80%; height: auto;">
+                </div>
                 {% include code.html snippet="state" %}
                 <br>
                 <h4>2. SVG Liquid-Fill Gauge</h4>
@@ -113,6 +117,10 @@ alt: Power BI - Custom Visuals Demo
                     It calculates the percentage of Current Year Sales vs. the Annual Goal, then animates a rising wave inside a circular clip path to visually represent the fill level.<br> 
                     Two layered waves provide motion and depth through path animation and gentle oscillation. An outer ring frames the gauge, and the center displays the numeric percentage.<br> 
                     The entire graphic is returned as an inline SVG for use in Power BI visuals.</p>
+                <br>
+                <div style="text-align: center;">
+                    <img src="img/portfolio/liquidfill.png" alt="Custom Liquid-Fill Gauge SVG Chart" style="max-width: 80%; height: auto;">
+                </div>
                 {% include code.html snippet="liquidfill_gauge" %}
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
