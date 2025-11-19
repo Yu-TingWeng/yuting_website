@@ -26,7 +26,7 @@ alt: Power BI - Custom Visuals Demo
     .section-subheading {
       font-weight: bold;
       color: #000;
-      font-size: 24px;
+      font-size: 30px;
     }
 
     #portfolio p {
@@ -68,7 +68,10 @@ alt: Power BI - Custom Visuals Demo
                 </div>
                 <br>
                 <hr class="star-primary">
-                <h4>Code Demo</h4>
+                <h3 class="section-subheading text-muted">Code Demo </h3>
+                <h4>1. SVG Status Badge</h4>
+                <p>This DAX measure generates a small SVG status badge based on the value of [stage category]. It chooses a color for the rectangle (Good = green, On Track = orange, Warning = red, Gray as default) and displays the stage text centered inside the rounded box. 
+                    If the stage is “Warning,” it adds a blinking fill-opacity animation to draw attention. The measure outputs the colored, rounded status label as an inline SVG image for use in Power BI tables or matrices.</p>
                 {% include code.html snippet="state" %}
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
