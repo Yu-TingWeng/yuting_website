@@ -29,6 +29,12 @@ alt: Power BI - Sales Target
       font-family: "Cambria";
     }
 
+    .subheading::before {
+      content: "";
+      display: block;
+      height: 20px; /* acts like top padding */
+    }
+
     #portfolio p {
       text-align: left;
       margin: 0 auto;
@@ -80,9 +86,6 @@ alt: Power BI - Sales Target
         padding: 0; 
     }
 
-    section[id] {
-      scroll-margin-top: 100px;
-    }
     </style>
 </head>
 <body>
