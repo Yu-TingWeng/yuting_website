@@ -73,20 +73,29 @@ alt: Custom Power BI Themes Collection
     }
 
     #myImage {
-      width: 300px;
-      height: auto;
-      display: block;
-      margin-top: 20px;
-      transition: opacity 0.3s ease;
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 20px auto 0; /* top, auto left/right, bottom */
+        transition: opacity 0.3s ease;
+    }
+
+    .image-row {
+        display: flex;
+        align-items: center;   /* vertically center the icon and image */
+        justify-content: center; /* center the row horizontally */
+        gap: 10px;  /* space between image and icon */
     }
 
     #logoBtn {
-      cursor: pointer;
-      font-size: 24px;
-      padding: 10px 20px;
-      background-color: #eee;
-      border: 1px solid #ccc;
-      display: inline-block;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     </style>
 </head>
@@ -116,8 +125,10 @@ alt: Custom Power BI Themes Collection
                 <div style="text-align: center;">
                     <a href="img/portfolio/color_theme/blue_green_theme.json" download="theme.json">Download JSON File!</a>
                 </div>
-                <div id="logoBtn">>></div>
-                <img id="myImage" src="img/portfolio/color_theme/blue_green_color.png" alt="Blue & Green Color" style="max-width: 80%; height: auto;">
+                <div class="image-row">
+                    <img id="myImage" src="img/portfolio/color_theme/blue_green_color.png" alt="Blue & Green Color">
+                    <div id="logoBtn">>></div>
+                </div>
 
                 <script>
                 const btn = document.getElementById('logoBtn');
