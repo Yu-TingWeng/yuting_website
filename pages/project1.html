@@ -140,170 +140,198 @@ alt: Power BI - Sales Target
       <hr class="star-primary">
     </header>
 
+    <!-- Dashboard -->
     <section id="dashboard">
-      <div class="col-lg-12 text-center">
-      <article>
-        <h3 class="subheading">&#128202; Dashboard Showcase</h3>
-        <p>The report includes three pages:</p>
-        <p>  
-          <b>•  Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table.<br>
-          <b>•  Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.<br>
-          <b>•  Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.<br>
-        </p>
-        <br>
-        <div class="centered-iframe">
-          <iframe 
-            title="業績目標" 
-            src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" 
-            frameborder="0" 
-            allowfullscreen>
-          </iframe>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+
+            <article>
+              <h3 class="subheading">&#128202; Dashboard Showcase</h3>
+              <p>The report includes three pages:</p>
+              <p>
+                <b>• Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table.<br>
+                <b>• Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.<br>
+                <b>• Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.<br>
+              </p>
+              <br>
+
+              <div class="centered-iframe">
+                <iframe 
+                  title="業績目標"
+                  src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" 
+                  frameborder="0" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </article>
+
+            <hr class="star-primary">
+
+          </div>
         </div>
-      </article>
-      <hr class="star-primary">
+      </div>
     </section>
 
-    <article>
-      <h3 id="modeling" class="subheading">&#128296; Data Modeling</h3>
+    <section id="modeling">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-left">
+            <article>
+              <h3 class="subheading">&#128296; Data Modeling</h3>
 
-      <section>
-        <h4><b>A. Data Modeling Process</b></h4>
-        <h5><b>1. Data Sources</b></h5>
-        <p>
-          •  ERP (Order Master, Product Data...)<br>
-          •  Excel (Manually maintained customer attributes)<br>
-        </p>
-        <br>
+              <section>
+                <h4><b>A. Data Modeling Process</b></h4>
 
-        <h5><b>2. Clean the Data</b></h5>
-        <p>
-          •  Standardize formats<br>
-          •  Remove duplicates<br>
-          •  Unify columns (e.g., date formats)<br>
-        </p>
-        <br>
+                <h5><b>1. Data Sources</b></h5>
+                <p>
+                  • ERP (Order Master, Product Data...)<br>
+                  • Excel (Manually maintained customer attributes)<br>
+                </p>
+                <br>
 
-        <h5><b>3. Create Dimension and Fact Table Structures</b></h5>
-        <br>
-        <h5><b>4. Establish Relationships </b></h5>
-        <p>
-          •  Single-directional<br>
-          •  Star Schema<br>
-          •  Customer, Product, and Sales connected via keys<br>
-        </p>
-        <br>
+                <h5><b>2. Clean the Data</b></h5>
+                <p>
+                  • Standardize formats<br>
+                  • Remove duplicates<br>
+                  • Unify columns (e.g., date formats)<br>
+                </p>
+                <br>
 
-        <h5><b>5. Create DAX Measures</b></h5>
-        <p>
-          •  Total Sales, Year-over-Year (YOY)...<br>
-        </p>
-        <br>
-      </section>
+                <h5><b>3. Create Dimension and Fact Table Structures</b></h5>
+                <br>
 
-      <section>
-        <h4><b>B. Case Study</b></h4>
-        <h5><b>1. Fact Tables</b></h5>
-        <p>
-          <b>•  Order Details (受訂明細)</b>: Order-level Transactional Data; Linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.<br>
-          <b>•  Sales Details (銷售明細)</b>: Shipment data; Used to calculate "Current Year Sales" and "Last Year Sales".<br>
-          <b>•  Planned Shipment (預計出貨)</b>: Planned shipment info; Connects to Calendar and other dimensions.<br>
-        </p>
-        <br>
+                <h5><b>4. Establish Relationships</b></h5>
+                <p>
+                  • Single-directional<br>
+                  • Star Schema<br>
+                  • Customer, Product, and Sales connected via keys<br>
+                </p>
+                <br>
 
-        <h5><b>2. Dimension Tables</b></h5>
-        <p>
-          <b>•  Employee (員工)</b>: Master data with unique IDs; Connected via Employee/Customer Bridge.<br>
-          <b>•  Customer (客戶)</b>: Master data including region; Connected via Employee/Customer Bridge.<br>
-          <b>•  Product (料號)</b>: Master data including specifications.<br>
-          <b>•  Calendar</b>: Standard date table for time intelligence.<br>
-          <b>•  Year (年份)</b>: Supports filtering in DAX measures.<br>
-        </p>
-        <br>
+                <h5><b>5. Create DAX Measures</b></h5>
+                <p>
+                  • Total Sales, Year-over-Year (YOY)...<br>
+                </p>
+                <br>
+              </section>
 
-        <h5><b>3. Bridge Table</b></h5>
-        <p>
-          <b>•  Employee/Customer Bridge (員工/客戶 Bridge)</b>: Handles many-to-many relationships between employees and customers.<br>
-        </p>
-        <br>
+              <section>
+                <h4><b>B. Case Study</b></h4>
 
-        <h5><b>4. Supporting Table</b></h5>
-        <p>
-          <b>•  Annual Target (年度目標)</b>: Yearly targets per customer, region, and employee; links to Calendar for analysis.<br>
-        </p>
-        <br>
-      </section>
+                <h5><b>1. Fact Tables</b></h5>
+                <p>
+                  <b>• Order Details (受訂明細)</b>: Order-level Transactional Data; Linked to 年度目標, 預計出貨, and 員工/客戶 Bridge.<br>
+                  <b>• Sales Details (銷售明細)</b>: Shipment data; Used to calculate "Current Year Sales" and "Last Year Sales".<br>
+                  <b>• Planned Shipment (預計出貨)</b>: Planned shipment info; Connects to Calendar and other dimensions.<br>
+                </p>
+                <br>
+
+                <h5><b>2. Dimension Tables</b></h5>
+                <p>
+                  <b>• Employee (員工)</b>: Master data with unique IDs; Connected via Employee/Customer Bridge.<br>
+                  <b>• Customer (客戶)</b>: Master data including region; Connected via Employee/Customer Bridge.<br>
+                  <b>• Product (料號)</b>: Master data including specifications.<br>
+                  <b>• Calendar</b>: Standard date table for time intelligence.<br>
+                  <b>• Year (年份)</b>: Supports filtering in DAX measures.<br>
+                </p>
+                <br>
+
+                <h5><b>3. Bridge Table</b></h5>
+                <p>
+                  <b>• Employee/Customer Bridge (員工/客戶 Bridge)</b>: Handles many-to-many relationships between employees and customers.<br>
+                </p>
+                <br>
+
+                <h5><b>4. Supporting Table</b></h5>
+                <p>
+                  <b>• Annual Target (年度目標)</b>: Yearly targets per customer, region, and employee; links to Calendar for analysis.<br>
+                </p>
+                <br>
+              </section>
+            </article>
+            <hr class="star-primary">
+          </div>
+        </div>
       </div>
-    </article>
-    <hr class="star-primary">
+    </section>
 
     
-    <div class="col-lg-12 text-center">
-    <article>
-      <h3 id="dax" class="subheading">&#128202; DAX Techniques Deep Dive</h3>
-      <section>
-          <h4><b>A. Time Intelligence</b></h4>
-          <br>
-          <h5><b>1. 'Calendar' Table → the Real Date Dimension Linked to Facts</b></h5>
-          <p>
-            To enable consistent time intelligence across all metrics, I created a Date Dimension using DAX:
-          </p>
-          {% include code.html snippet="calendar" %}
-          <p>
-          - Linked to multiple fact tables: FactSales, FactQuota, FactBooking, FactBacklog, FactTarget.<br>
-          - Used for <b>multi-select slicers</b>.<br>
-          - Benefits of a single Date Dimension:
-          <span style="margin-left:20px; display:block;"> • Ensures consistent date filtering across all measures.</span> <br>
-          <span style="margin-left:20px; display:block;"> • Simplifies DAX calculations for time intelligence.</span>
-          </p>
-          <br>
+    <section id="dax">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-left">
+            <article>
+              <h3 class="subheading">&#128202; DAX Techniques Deep Dive</h3>
 
-          <h5><b>2. '年份' table → used only for filtering year (single-select)</b></h5>
-          <p>
-            I created a disconnected single-select table ('年份') as a Year Selector to improve user experience. 
-            Measures use <b>TREATAS</b> to apply the selected year as a filter to the fact table, ensuring: <br> 
-            • Correct context transition <br>
-            • Support for future multi-year selection without rewriting measures
-          </p>
-          {% include code.html snippet="single_year" %}
-          <br>
+              <section>
+                <h4><b>A. Time Intelligence</b></h4>
+                <br>
 
-          <h5><b>3. Selected Year Sales Amount</b></h5>
-          <p>
-            This measure calculates sales for the year selected in the '年份' slicer.
-          </p>
-          {% include code.html snippet="selected_sales" %}
-          <br>
+                <h5><b>1. 'Calendar' Table → the Real Date Dimension Linked to Facts</b></h5>
+                <p>
+                  To enable consistent time intelligence across all metrics, I created a Date Dimension using DAX:
+                </p>
+                {% include code.html snippet="calendar" %}
+                <p>
+                  - Linked to multiple fact tables: FactSales, FactQuota, FactBooking, FactBacklog, FactTarget.<br>
+                  - Used for <b>multi-select slicers</b>.<br>
+                  - Benefits of a single Date Dimension:
+                  <span style="margin-left:20px; display:block;">• Ensures consistent date filtering across all measures.</span>
+                  <span style="margin-left:20px; display:block;">• Simplifies DAX calculations for time intelligence.</span>
+                </p>
+                <br>
 
-          <h5><b>4. Selected Last Year Sales Amount</b></h5>
-          <p>
-            This measure calculates sales for the year prior to the one selected in the '年份' slicer. <br>
-            Useful for year-over-year comparisons and growth analysis.
-          </p>
-          {% include code.html snippet="last_sales" %}
-          <br>
+                <h5><b>2. '年份' table → used only for filtering year (single-select)</b></h5>
+                <p>
+                  I created a disconnected single-select table ('年份') as a Year Selector to improve user experience. 
+                  Measures use <b>TREATAS</b> to apply the selected year as a filter to the fact table, ensuring: <br> 
+                  • Correct context transition <br>
+                  • Support for future multi-year selection without rewriting measures
+                </p>
+                {% include code.html snippet="single_year" %}
+                <br>
 
-          <h5><b>5. B/B Ratio (Booking ÷ Sales)</b></h5>
-          <p>
-            Calculates ratio of current bookings to current sales.<br>
-            Handles edge cases: blank/zero values return <b>BLANK</b> to avoid misleading results.
-          </p>
-          {% include code.html snippet="selected_booking" %}
-          {% include code.html snippet="bb_ratio" %}
-          <p>
-          <br>
+                <h5><b>3. Selected Year Sales Amount</b></h5>
+                <p>
+                  This measure calculates sales for the year selected in the '年份' slicer.
+                </p>
+                {% include code.html snippet="selected_sales" %}
+                <br>
 
-          <h5><b>6. Cumulative B/B Ratio</b></h5>
-          <p>
-            Calculates cumulative bookings ÷ cumulative sales from January to the selected month. Highlights: <br>
-            •  Uses <b>DATESBETWEEN</b> and <b>EOMONTH</b> to calculate Jan → Selected Month range <br>
-            •  Skips future months in the current year to maintain accuracy <br>
-          </p>
-          {% include code.html snippet="cum_bb" %}
-          <p>
-          <br>
+                <h5><b>4. Selected Last Year Sales Amount</b></h5>
+                <p>
+                  This measure calculates sales for the year prior to the one selected in the '年份' slicer. <br>
+                  Useful for year-over-year comparisons and growth analysis.
+                </p>
+                {% include code.html snippet="last_sales" %}
+                <br>
 
-      </section>
-    </article>
+                <h5><b>5. B/B Ratio (Booking ÷ Sales)</b></h5>
+                <p>
+                  Calculates ratio of current bookings to current sales.<br>
+                  Handles edge cases: blank/zero values return <b>BLANK</b> to avoid misleading results.
+                </p>
+                {% include code.html snippet="selected_booking" %}
+                {% include code.html snippet="bb_ratio" %}
+                <br>
+
+                <h5><b>6. Cumulative B/B Ratio</b></h5>
+                <p>
+                  Calculates cumulative bookings ÷ cumulative sales from January to the selected month. Highlights: <br>
+                  • Uses <b>DATESBETWEEN</b> and <b>EOMONTH</b> to calculate Jan → Selected Month range <br>
+                  • Skips future months in the current year to maintain accuracy <br>
+                </p>
+                {% include code.html snippet="cum_bb" %}
+                <br>
+              </section>
+
+            </article>
+            <hr class="star-primary">
+          </div>
+        </div>
+      </div>
+    </section>
     
 
     <!-- Floating Back Button -->
