@@ -98,11 +98,11 @@ alt: Power BI - Sales Target
      <br>
 
      <div style="
-          border: 1px solid #000000;
+          border: 2px solid #000000;
           border-radius: 5px;
           padding: 10px;
           background-color: #F5F7FA;
-          width: 80vw;
+          width: 70vw;
           margin: 20px auto;             /* Center the box horizontally */
           text-align: left;
           color: #000000;          /* black text */
@@ -111,12 +111,12 @@ alt: Power BI - Sales Target
         <h4>Chapters</h4>
         <ul style="list-style-type: disc; padding-left: 20px;">
           <li>
-            <a href="#dashboard" class="page-scroll btn btn-xl">
+            <a href="#dashboard" class="page-scroll">
               <b>Dashboard Showcase</b>
             </a>
           </li>
           <li>
-            <a href="#modeling" class="page-scroll btn btn-xl">
+            <a href="#modeling" class="page-scroll">
               <b>Data Modeling</b>
             </a>
             <ul style="list-style-type: circle;">
@@ -125,7 +125,7 @@ alt: Power BI - Sales Target
             </ul>
           </li>
           <li>
-            <a href="#dax" class="page-scroll btn btn-xl">
+            <a href="#dax" class="page-scroll">
               <b>DAX Techniques Deep Dive</b>
             </a>
             <ul style="list-style-type: circle;">
@@ -140,26 +140,28 @@ alt: Power BI - Sales Target
       <hr class="star-primary">
     </header>
 
-    <div class="col-lg-12 text-center">
-    <article>
-      <h3 id="dashboard" class="subheading">&#128202; Dashboard Showcase</h3>
-      <p>The report includes three pages:</p>
-      <p>  
-        <b>•  Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table.<br>
-        <b>•  Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.<br>
-        <b>•  Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.<br>
-      </p>
-      <br>
-      <div class="centered-iframe">
-        <iframe 
-          title="業績目標" 
-          src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" 
-          frameborder="0" 
-          allowfullscreen>
-        </iframe>
-      </div>
-    </article>
-    <hr class="star-primary">
+    <section id="dashboard">
+      <div class="col-lg-12 text-center">
+      <article>
+        <h3 class="subheading">&#128202; Dashboard Showcase</h3>
+        <p>The report includes three pages:</p>
+        <p>  
+          <b>•  Sales Target Overview:</b> Trend charts and gauges display achievement rates, growth trends, and order ratios, with a detailed KPI table.<br>
+          <b>•  Sales Breakdown:</b> Sunburst chart and matrix visualize proportional contributions by region, customer, and salesperson.<br>
+          <b>•  Cumulative Sales Achievement:</b> Dual bar charts compare quotas to actual performance with color-coded table highlighting underperformance.<br>
+        </p>
+        <br>
+        <div class="centered-iframe">
+          <iframe 
+            title="業績目標" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiNTQxMjBjOTUtMThlNy00ZjJiLTk2M2ItMTM4MmM4ZWIyNGQ4IiwidCI6Ijc0MzkxNTMyLTk5YzktNDYwNy04NThkLTczMzI5MjkxZDc0YSJ9" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </article>
+      <hr class="star-primary">
+    </section>
 
     <article>
       <h3 id="modeling" class="subheading">&#128296; Data Modeling</h3>
@@ -234,6 +236,7 @@ alt: Power BI - Sales Target
     </article>
     <hr class="star-primary">
 
+    
     <div class="col-lg-12 text-center">
     <article>
       <h3 id="dax" class="subheading">&#128202; DAX Techniques Deep Dive</h3>
