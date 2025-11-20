@@ -217,19 +217,26 @@ alt: Power BI - Sales Target
 
           <h5><b>2. '年份' table → used only for filtering year (single-select)</b></h5>
           <p>
-            I designed a Year Selector ('年份') as a <b>disconnected single-select table</b> to improve user experience.
-            DAX measures use "TREATAS" to convert the selected year into a filter on the fact table, ensuring correct context transition and supporting future extension to multi-select scenarios.
+            I created a disconnected single-select table ('年份') as a Year Selector to improve user experience. 
+            Measures use <b>TREATAS</b> to apply the selected year as a filter to the fact table, ensuring proper context transition and supporting future multi-year selection.
           </p>
           {% include code.html snippet="single_year" %}
           <p>
           <br>
 
-          <h5><b>3. '年份' table → used only for filtering year (single-select)</b></h5>
+          <h5><b>3. Selected Year Sales Amount</b></h5>
           <p>
-            I designed a Year Selector ('年份') as a <b>disconnected single-select table</b> to improve user experience.
-            DAX measures use "TREATAS" to convert the selected year into a filter on the fact table, ensuring correct context transition and supporting future extension to multi-select scenarios.
+            This measure calculates sales for the year selected in the '年份' slicer.
           </p>
-          {% include code.html snippet="single_year" %}
+          {% include code.html snippet="selected_sales" %}
+          <p>
+          <br>
+
+          <h5><b>4. Selected Last Year Sales Amount</b></h5>
+          <p>
+            This measure calculates sales for the year prior to the one selected in the '年份' slicer.
+          </p>
+          {% include code.html snippet="last_sales" %}
           <p>
           <br>
 

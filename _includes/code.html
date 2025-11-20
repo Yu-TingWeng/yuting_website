@@ -577,6 +577,40 @@ ADDCOLUMNS (
 )
 {% endcapture %}
 
+{% capture selected_sales %}
+-- Allows user to select a single year without affecting other slicers
+-- TREATAS pushes the selected value as a filter to the fact table
+-- Supports future multi-year selection without rewriting measures
+
+Selected Year Sales =  
+VAR _Year = SELECTEDVALUE('年份'[年份])
+RETURN
+CALCULATE(
+    SUMX(
+        '銷售明細', 
+        [銷售金額]
+    ),
+    TREATAS({_Year}, '銷售明細'[出貨年])
+)
+{% endcapture %}
+
+
+
+{% capture last_sales %}
+Selected Last Year Sales =  
+VAR _Year = SELECTEDVALUE('年份'[年份])
+RETURN
+CALCULATE(
+    SUMX(
+        '銷售明細', 
+        [銷售金額]
+    ),
+    TREATAS({_Year}-1, '銷售明細'[出貨年]) 
+)
+{% endcapture %}
+
+
+
 <style>
 /* code block container */
 .code-wrapper {
@@ -672,5 +706,15 @@ function copyCode(btn) {
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ single_year | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "selected_sales" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ selected_sales | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "last_sales" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ last_sales | escape }}</code></pre>
 </div>
 {% endif %}
