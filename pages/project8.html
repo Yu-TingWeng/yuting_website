@@ -72,32 +72,33 @@ alt: Custom Power BI Themes Collection
         padding: 0; 
     }
 
-    #myImage {
-        max-width: 90%;
+    .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* responsive on small screens */
+    margin-top: 20px;
+    }
+
+    .carousel-image {
+        width: 300px;
+        max-width: 100%;
         height: auto;
-        display: block;
-        margin: 10px auto 0; /* top, auto left/right, bottom */
         transition: opacity 0.3s ease;
     }
 
-    .image-row {
-        display: flex;
-        align-items: center;       /* vertically center icon and image */
-        justify-content: center;   /* horizontally center the whole row */
-        gap: 10px;                 /* space between image and icon */
-        flex-wrap: wrap;           /* allow wrapping on small screens */
-    }
-
-    #logoBtn {
+    .carousel-btn {
         cursor: pointer;
-        font-size: 16px;
-        padding: 5px 10px;
+        font-size: 24px;
+        padding: 10px 15px;
         background-color: #eee;
         border: 1px solid #ccc;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     </style>
 </head>
 
@@ -126,22 +127,12 @@ alt: Custom Power BI Themes Collection
                 <div style="text-align: center;">
                     <a href="img/portfolio/color_theme/blue_green_theme.json" download="theme.json">Download JSON File!</a>
                 </div>
-                <div class="image-row">
-                    <img id="myImage" src="img/portfolio/color_theme/blue_green_color.png" alt="Blue & Green Color">
-                    <div id="logoBtn">>></div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/blue_green_color.png,img/portfolio/color_theme/blue_green_theme.png">
+                    <img class="carousel-image" src="img/portfolio/color_theme/blue_green_color.png" alt="Blue & Green Color">
+                    <div class="carousel-btn">>></div>
                 </div>
-                <script>
-                const btn = document.getElementById('logoBtn');
-                const img = document.getElementById('myImage');
-
-                btn.addEventListener('click', () => {
-                if(img.src.includes('blue_green_theme.png')) {
-                    img.src="img/portfolio/color_theme/blue_green_color.png";
-                } else {
-                    img.src="img/portfolio/color_theme/blue_green_theme.png";
-                }
-                });
-                </script>
+            
                 <br>
                 <!-- Floating Back Button -->
                 <button onclick="history.back()" 
@@ -164,6 +155,25 @@ alt: Custom Power BI Themes Collection
                 >
                     ← Back
                 </button>
+
+
+                <!-- Carousel-Style Toggle JS -->
+                <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    document.querySelectorAll('.carousel').forEach(carousel => {
+                        const images = carousel.dataset.images ? carousel.dataset.images.split(',') : [];
+                        let index = 0;
+                        const img = carousel.querySelector('.carousel-image');
+                        const btn = carousel.querySelector('.carousel-btn');
+                        btn.addEventListener('click', () => {
+                            if(images.length === 0) return;
+                            index = (index + 1) % images.length;
+                            img.src = images[index].trim();
+                        });
+                    });
+                });
+                </script>
+
             </div>
         </div>
     </div>
