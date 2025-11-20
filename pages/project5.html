@@ -1,13 +1,13 @@
 ---
-title: Illinois Traffic Stop Disparities
-subtitle: Python + SQL + Dash
+title: Custom Power BI Themes Collection
+subtitle: Power BI
 layout: project
 permalink: /project5
 modal-id: 5
 tags: programming
-project-date: March 2024
-thumbnail: dashboard.png
-alt: WBEZ Project
+project-date:
+thumbnail: theme.png
+alt: Custom Power BI Themes Collection
 ---
 <html>
 <head>
@@ -72,17 +72,44 @@ alt: WBEZ Project
         padding: 0; 
     }
 
-    .pdf-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    .carousel {
+        display: flex;
+        flex-direction: column; /* stack buttons above image */
+        align-items: center;
+        margin-top: 10px;
+        gap: 10px;
     }
 
-    .pdf-object {
-        width: 100%;
-        height: 70vh;   /* works on all desktop browsers */
-        border: none;
+    .carousel-btn-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
+
+    .carousel-image {
+        width: auto;
+        max-width: 800px;
+        height: 50vh;
+        transition: opacity 0.3s ease;
+    }
+
+    .carousel-btn-left,
+    .carousel-btn-right {
+        cursor: pointer;
+        font-size: 15px;
+        padding: 6px 10px;
+        background-color: #eee;
+        border: none;
+        outline: none;           /* remove focus outline */
+        box-shadow: none;        /* remove default button shadow */
+        transition: background-color 0.2s;
+    }
+
+    .carousel-btn-left:hover,
+    .carousel-btn-right:hover {
+        background-color: #ddd;
+    }
+
     </style>
 </head>
 
@@ -91,44 +118,170 @@ alt: WBEZ Project
 
     <div class="container" id="programming">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">WBEZ - Interactive Analysis of Illinois Traffic Stop Disparities</h2>
+            <header class="col-xs-12 col-lg-12 text-center">
+                <h2 class="section-heading">Custom Power BI Themes Collection </h2>
                 <h3 class="subheading">&#128161; Introduction </h3>
-                <p>WBEZ investigated police traffic stop data in Illinois from 2004-2022. Their team explored the data solely from a racial perspective and enlisted the Data Science Institute to build on their analysis of the relationship between traffic stops and race as well as between additional demographics such as age, gender, and location. <br> To increase engagement and accessibility to the data, our group created <b>two interactive dashboards</b> consisting of visualizations and driver-to-driver comparisons across selected demographics. Users can view <b>choropleth maps</b> to see county-level differences, <b>scatterplots</b> to contrast demographic groups at the individual agency level, and <b>sunburst charts</b> to visualize likelihood breakdowns.</p>
+                <p>In Power BI, a theme defines the overall visual style of a report — including colors, fonts, backgrounds, and visual formatting. A well-designed theme ensures consistency across pages, improves readability, and reinforces brand identity. <br>
+                I customized eight Power BI themes and provided all corresponding JSON theme files below for easy use and modification. These themes can be directly imported into Power BI to instantly apply their styles. <br><br>
+                If you’d like to explore more ideas or generate your own styles, here are some helpful resources:
                 <br>
-                <p>&#128477; Keywords - Python, SQL, User Interface Design, Data Analysis, Data Visualization</p>
+                • <a href="https://community.fabric.microsoft.com/t5/Themes-Gallery/bd-p/ThemesGallery" target="_blank">
+                    <b>Power BI Theme Galleries</b>   
+                </a> 
+                – curated collections of community-made themes
+                <br>
+                •  <a href="https://bibb.pro/apps/theme-generator/" target="_blank">
+                    <b>Power BI Theme Generator (BIBB)</b>
+                </a>
+                - an online tool to create custom themes visually without coding 
+                <br>
+                </p>
+                <br>
+                <p>&#128477; Keywords - Power BI Themes</p>
                 <hr class="star-primary">
-                <h3 class="subheading">&#128161; Video Demonstration </h3>
-                <video width="80%" height="auto" controls>
-                    <source src="img/portfolio/WBEZ_Final_Video_Presentation.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <br>
-                <br>
-                <hr class="star-primary">
-                <h3 class="subheading">&#128161; Slides - Different Kinds of Viusalizations </h3>
-                <div class="pdf-container" style="text-align: center;">
-                     <object 
-                        data="img/portfolio/visualization.pdf"
-                        type="application/pdf"
-                        class="pdf-object">
-                    </object>
+            </header>
+
+            <div class="col-lg-12 text-center">
+                <h3 class="subheading">&#128187; Code Demonstration </h3>
+                <h4>A. Blue and Green Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/blue_green_theme.json" download="blue_green_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/blue_green_color.png,img/portfolio/color_theme/blue_green_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/blue_green_theme.png" alt="Blue & Green Theme">
                 </div>
                 <br>
-                <br>
-                <hr class="star-primary">
-                <h3 class="subheading">&#128187; Visualizations Code Demonstration </h3>
-                <p>Note: Results generated by Dash App and Plotly cannot be displayed on Jupyter Notebook; only the code is demonstrated here.</p>
-                <br>
-                <div class="pdf-container" style="text-align: center;">
-                    <object 
-                        data="img/portfolio/dataviz.pdf" 
-                        type="application/pdf"
-                        class="pdf-object">
-                    </object>
+
+                <h4>B. Yellow Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/yellow_theme.json" download="yellow_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/yellow_color.png,img/portfolio/color_theme/yellow_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/yellow_theme.png" alt="Yellow Theme">
                 </div>
                 <br>
-                 <!-- Floating Back Button -->
+
+                <h4>C. Green Apple Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/green_apple_theme.json" download="green_apple_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/green_apple_color.png,img/portfolio/color_theme/green_apple_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/green_apple_theme.png" alt="Green Apple Theme">
+                </div>
+                <br>
+
+                <h4>D. Purple Iris Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/purple_theme.json" download="purple_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/purple_color.png,img/portfolio/color_theme/purple_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/purple_theme.png" alt="Purple Iris Theme">
+                </div>
+                <br>
+
+                <h4>E. Google Inspired Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/google_theme.json" download="google_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/google_color.png,img/portfolio/color_theme/google_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/google_theme.png" alt="Google Inspired Theme">
+                </div>
+                <br>
+
+                <h4>F. Solar Ecsplise Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/solar_theme.json" download="solar_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/solar_color.png,img/portfolio/color_theme/solar_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/solar_theme.png" alt="Solar Ecsplise Theme">
+                </div>
+                <br>
+
+                <h4>G. Dark Green Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/dark_green_theme.json" download="dark_green_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/dark_green_color.png,img/portfolio/color_theme/dark_green_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/dark_green_theme.png" alt="Dark Green Theme">
+                </div>
+                <br>
+
+                <h4>H. Dark Blue Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/dark_blue_theme.json" download="dark_blue_theme.json">&#128073; Download JSON File!</a>
+                </div>
+                <!-- Images -->
+                <div class="carousel" data-images="img/portfolio/color_theme/dark_blue_color.png,img/portfolio/color_theme/dark_blue_theme.png">
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <p> Scroll the Images </p>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/dark_blue_theme.png" alt="Dark Blue Theme">
+                </div>
+                <br>
+
+
+
+                <!-- Floating Back Button -->
                 <button onclick="history.back()" 
                         style="
                             position: fixed;
@@ -149,6 +302,32 @@ alt: WBEZ Project
                 >
                     ← Back
                 </button>
+
+
+                <!-- Carousel-Style Toggle JS -->
+                <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    document.querySelectorAll('.carousel').forEach(carousel => {
+                        const images = carousel.dataset.images.split(',').map(s => s.trim());
+                        let index = 0;
+
+                        const img = carousel.querySelector('.carousel-image');
+                        const btnLeft = carousel.querySelector('.carousel-btn-left');
+                        const btnRight = carousel.querySelector('.carousel-btn-right');
+
+                        btnRight.addEventListener('click', () => {
+                            index = (index + 1) % images.length;
+                            img.src = images[index];
+                        });
+
+                        btnLeft.addEventListener('click', () => {
+                            index = (index - 1 + images.length) % images.length;
+                            img.src = images[index];
+                        });
+                    });
+                });
+                </script>
+
             </div>
         </div>
     </div>
@@ -184,5 +363,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
-
-
