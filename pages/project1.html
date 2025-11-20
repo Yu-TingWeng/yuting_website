@@ -210,7 +210,7 @@ alt: Power BI - Sales Target
           - Used for <b>multi-select slicers</b>.<br>
           - Benefits of a single Date Dimension:
           </p>
-          <div style="padding-left: 20px;">
+          <div style="padding-left: 20px; text-align: left;">
             • Ensures consistent date filtering across all measures.<br>
             • Simplifies DAX calculations for time intelligence.
           </div>
@@ -254,7 +254,7 @@ alt: Power BI - Sales Target
           <h5><b>6. Cumulative B/B Ratio</b></h5>
           <p>
             Calculates cumulative bookings ÷ cumulative sales from January to the selected month. Highlights: <br>
-            •  Uses DATESBETWEEN and EOMONTH to calculate Jan → Selected Month range <br>
+            •  Uses <b>DATESBETWEEN</b> and <b>EOMONTH</b> to calculate Jan → Selected Month range <br>
             •  Skips future months in the current year to maintain accuracy <br>
           </p>
           {% include code.html snippet="cum_bb" %}
