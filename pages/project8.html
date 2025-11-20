@@ -73,12 +73,17 @@ alt: Custom Power BI Themes Collection
     }
 
     .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; /* responsive on small screens */
-    margin-top: 10px;
+        display: flex;
+        flex-direction: column; /* stack buttons above image */
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .carousel-btn-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     .carousel-image {
@@ -88,14 +93,18 @@ alt: Custom Power BI Themes Collection
         transition: opacity 0.3s ease;
     }
 
-    .carousel-btn {
+    .carousel-btn-left,
+    .carousel-btn-right {
         cursor: pointer;
-        font-size: 16px;
-        padding: 5px 5px;
+        font-size: 18px;
+        padding: 6px 12px;
         background-color: #eee;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        transition: background-color 0.2s;
+    }
+
+    .carousel-btn-left:hover,
+    .carousel-btn-right:hover {
+        background-color: #ddd;
     }
 
     </style>
@@ -128,8 +137,14 @@ alt: Custom Power BI Themes Collection
                 </div>
                 <!-- Images -->
                 <div class="carousel" data-images="img/portfolio/color_theme/blue_green_color.png,img/portfolio/color_theme/blue_green_theme.png">
-                    <img class="carousel-image" src="img/portfolio/color_theme/blue_green_color.png" alt="Blue & Green Color">
-                    <div class="carousel-btn">►</div>
+                    <!-- Buttons Row -->
+                    <div class="carousel-btn-row">
+                        <button class="carousel-btn-left">&#9664;</button>
+                        <button class="carousel-btn-right">&#9654;</button>
+                    </div>
+
+                    <!-- Image -->
+                    <img class="carousel-image" src="img/portfolio/color_theme/blue_green_theme.png" alt="Blue & Green Theme">
                 </div>
             
                 <br>
@@ -160,14 +175,21 @@ alt: Custom Power BI Themes Collection
                 <script>
                 document.addEventListener("DOMContentLoaded", function() {
                     document.querySelectorAll('.carousel').forEach(carousel => {
-                        const images = carousel.dataset.images ? carousel.dataset.images.split(',') : [];
+                        const images = carousel.dataset.images.split(',').map(s => s.trim());
                         let index = 0;
+
                         const img = carousel.querySelector('.carousel-image');
-                        const btn = carousel.querySelector('.carousel-btn');
-                        btn.addEventListener('click', () => {
-                            if(images.length === 0) return;
+                        const btnLeft = carousel.querySelector('.carousel-btn-left');
+                        const btnRight = carousel.querySelector('.carousel-btn-right');
+
+                        btnRight.addEventListener('click', () => {
                             index = (index + 1) % images.length;
-                            img.src = images[index].trim();
+                            img.src = images[index];
+                        });
+
+                        btnLeft.addEventListener('click', () => {
+                            index = (index - 1 + images.length) % images.length;
+                            img.src = images[index];
                         });
                     });
                 });
