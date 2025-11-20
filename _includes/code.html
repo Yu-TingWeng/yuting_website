@@ -562,6 +562,20 @@ ADDCOLUMNS(
 {% endcapture %}
 
 
+{% capture single_year %}
+年份 = 
+VAR CurrentYear = YEAR(TODAY())
+RETURN
+ADDCOLUMNS (
+    GENERATESERIES(MIN('銷售明細'[日期]), YEAR(TODAY()), 1),
+    "年份顯示", 
+        IF (
+            [Value] = CurrentYear,
+            "Current",
+            FORMAT([Value], "0")
+        )
+)
+{% endcapture %}
 
 <style>
 /* code block container */
@@ -653,5 +667,10 @@ function copyCode(btn) {
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ calendar | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "single_year" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ single_year | escape }}</code></pre>
 </div>
 {% endif %}

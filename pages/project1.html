@@ -12,6 +12,14 @@ alt: Power BI - Sales Target
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prism CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism.min.css" rel="stylesheet" />
+
+    <!-- Prism Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+
+    <!-- Prism DAX Syntax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-dax.min.js"></script>
 
     <style>
     .subheading {
@@ -191,21 +199,38 @@ alt: Power BI - Sales Target
       <h3 class="subheading">&#128202; DAX Techniques Deep Dive</h3>
       <section>
           <h4><b>A. Time Intelligence</b></h4>
-          <h5><b>1. Date Dimension (DimDate) for Time Intelligence</b></h5>
+          <h5><b>1. 'Calendar' Table → the Real Date Dimension Linked to Facts</b></h5>
           <p>
             To enable consistent time intelligence across all metrics, I created a Date Dimension using DAX:
           </p>
-          <br>
           {% include code.html snippet="calendar" %}
-          <br>
           <p>
           <b>🔗 Relationships </b> <br>
-          The Date Dimension is linked to multiple fact tables: <br>
-          •  FactSales, FactQuota, FactBooking, FactBacklog, FactTarget. <br><br>
-          Using a single Date Dimension ensures: <br>
-          •  Consistent date filtering across all measures.<br>
-          •  Simplified DAX formulas for time intelligence calculations.<br>
+          - The Date Dimension is linked to multiple fact tables: <br>
+            •  FactSales, FactQuota, FactBooking, FactBacklog, FactTarget. <br><br>
+          - It is used for <b>multi-select slicers</b> <br>
+          - Using a single Date Dimension ensures: <br>
+            •  Consistent date filtering across all measures.<br>
+            •  Simplified DAX formulas for time intelligence calculations.<br>
           </p>
+          <br>
+
+          <h5><b>2. '年份' table → used only for filtering year (single-select)</b></h5>
+          <p>
+            I designed a Year Selector ('年份') as a <b>disconnected single-select table</b> to improve user experience.
+            DAX measures use "TREATAS" to convert the selected year into a filter on the fact table, ensuring correct context transition and supporting future extension to multi-select scenarios.
+          </p>
+          {% include code.html snippet="single_year" %}
+          <p>
+          <br>
+
+          <h5><b>3. '年份' table → used only for filtering year (single-select)</b></h5>
+          <p>
+            I designed a Year Selector ('年份') as a <b>disconnected single-select table</b> to improve user experience.
+            DAX measures use "TREATAS" to convert the selected year into a filter on the fact table, ensuring correct context transition and supporting future extension to multi-select scenarios.
+          </p>
+          {% include code.html snippet="single_year" %}
+          <p>
           <br>
 
       </section>
