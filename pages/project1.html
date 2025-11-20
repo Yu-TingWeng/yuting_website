@@ -184,6 +184,33 @@ alt: Power BI - Sales Target
       </section>
       </div>
     </article>
+    <hr class="star-primary">
+
+    <div class="col-lg-12 text-center">
+    <article>
+      <h3 class="subheading">&#128202; DAX Techniques Deep Dive</h3>
+      <section>
+          <h4><b>A. Time Intelligence</b></h4>
+          <h5><b>1. Date Dimension (DimDate) for Time Intelligence</b></h5>
+          <p>
+            To enable consistent time intelligence across all metrics, I created a Date Dimension using DAX:
+          </p>
+          <br>
+          {% include code.html snippet="calendar" %}
+          <br>
+          <p>
+          <b>🔗 Relationships </b> <br>
+          The Date Dimension is linked to multiple fact tables: <br>
+          •  FactSales, FactQuota, FactBooking, FactBacklog, FactTarget. <br><br>
+          Using a single Date Dimension ensures: <br>
+          •  Consistent date filtering across all measures.<br>
+          •  Simplified DAX formulas for time intelligence calculations.<br>
+          </p>
+          <br>
+
+      </section>
+    </article>
+    
 
     <!-- Floating Back Button -->
     <button onclick="history.back()" 

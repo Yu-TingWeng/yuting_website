@@ -545,6 +545,23 @@ IF(
 {% endcapture %}
 
 
+{% capture calendar %}
+Calendar = 
+ADDCOLUMNS(
+    CALENDAR(MIN('銷售明細'[日期]), MAX('銷售明細'[日期])),
+    "Year", YEAR([Date]),
+    "QuarterNo", QUARTER([Date]),
+    "Quarter", FORMAT([Date], "\QQ"),
+    "MonthNo", MONTH([Date]),
+    "Month", FORMAT([Date], "MMM"),
+    "WeekNo", WEEKNUM([Date],2),
+    "WeekdayNo", WEEKDAY([Date],2),
+    "Weekday", FORMAT([Date], "ddd"),
+    "Day", DAY([Date])
+    )
+{% endcapture %}
+
+
 
 <style>
 /* code block container */
@@ -631,5 +648,10 @@ function copyCode(btn) {
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ gauge | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "calendar" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ calendar | escape }}</code></pre>
 </div>
 {% endif %}
