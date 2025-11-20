@@ -780,4 +780,19 @@ function copyCode(btn) {
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ last_sales | escape }}</code></pre>
 </div>
+{% elsif include.snippet == "selected_booking" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ selected_booking | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "bb_ratio" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ bb_ratio | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "cum_bb" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ cum_bb | escape }}</code></pre>
+</div>
 {% endif %}
