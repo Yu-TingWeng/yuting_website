@@ -76,7 +76,7 @@ alt: Custom Power BI Themes Collection
         max-width: 80%;
         height: auto;
         display: block;
-        margin: 20px auto 0; /* top, auto left/right, bottom */
+        margin: 10px auto 0; /* top, auto left/right, bottom */
         transition: opacity 0.3s ease;
     }
 
@@ -84,13 +84,13 @@ alt: Custom Power BI Themes Collection
         display: flex;
         align-items: center;   /* vertically center the icon and image */
         justify-content: center; /* center the row horizontally */
-        gap: 10px;  /* space between image and icon */
+        gap: 5px;  /* space between image and icon */
     }
 
     #logoBtn {
         cursor: pointer;
-        font-size: 24px;
-        padding: 10px 20px;
+        font-size: 16px;
+        padding: 5px 10px;
         background-color: #eee;
         border: 1px solid #ccc;
         display: flex;
@@ -126,7 +126,7 @@ alt: Custom Power BI Themes Collection
                     <a href="img/portfolio/color_theme/blue_green_theme.json" download="theme.json">Download JSON File!</a>
                 </div>
                 <div class="image-row">
-                    <img id="myImage" src="img/portfolio/color_theme/blue_green_color.png" alt="Blue & Green Color">
+                    <img id="myImage" src="img/portfolio/color_theme/blue_green_theme.png" alt="Blue & Green Color">
                     <div id="logoBtn">>></div>
                 </div>
 
@@ -135,10 +135,10 @@ alt: Custom Power BI Themes Collection
                 const img = document.getElementById('myImage');
 
                 btn.addEventListener('click', () => {
-                if(img.src.includes('blue_green_color.png')) {
-                    img.src="img/portfolio/color_theme/blue_green_theme.png";
-                } else {
+                if(img.src.includes('blue_green_theme.png')) {
                     img.src="img/portfolio/color_theme/blue_green_color.png";
+                } else {
+                    img.src="img/portfolio/color_theme/blue_green_theme.png";
                 }
                 });
                 </script>
