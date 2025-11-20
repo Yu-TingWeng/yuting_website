@@ -1,0 +1,197 @@
+---
+title: Custom Power BI Themes Collection
+subtitle: Power BI
+layout: project
+permalink: /project8
+modal-id: 8
+tags: programming
+project-date:
+thumbnail: theme.png
+alt: Custom Power BI Themes Collection
+---
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    .subheading {
+      font-weight: bold;
+      color: #000;
+      font-size: 24px;
+      font-family: "Cambria";
+    }
+
+    #portfolio p {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 90%;
+      color: #000; /* black */
+      font-size: 15px;
+    }
+
+    #portfolio h2,
+    #portfolio h3,
+    #portfolio h4 {
+        color: #000; /* black */
+    }
+
+    #portfolio h4 {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 90%;
+      font-size: 20px;
+      margin-bottom: 10px;    /* Adds spacing between items */
+      font-family: "Cambria";
+    }
+
+    #portfolio h5 {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 90%;
+      margin-bottom: 10px;    /* Adds spacing between items */
+      font-size: 18px;
+      font-family: "Cambria";
+    }
+
+    .centered-iframe {
+    text-align: center;
+    }
+
+    .centered-iframe iframe {
+        width: 90%;
+        max-width: 800px;
+        height: 50vh; 
+        display: block;
+        margin: 0 auto;
+    }
+
+    #portfolio section,
+    #portfolio article {
+        margin-top: 10px;    /* smaller vertical space */
+        margin-bottom: 15px;
+        padding: 0; 
+    }
+
+    .pdf-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    }
+
+    .pdf-object {
+        width: 100%;
+        height: 70vh;   /* works on all desktop browsers */
+        border: none;
+    }
+
+    .img-wrapper {
+        position: relative;
+        width: 300px;
+        height: 200px;
+    }
+
+    .img-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.3s ease;
+    }
+
+    .img-wrapper img.top-img {
+        opacity: 1;
+    }
+
+    .img-wrapper:hover img.top-img {
+        opacity: 0;
+    }
+    </style>
+</head>
+
+<body>
+<section id="portfolio" class="bg-light-gray">
+
+    <div class="container" id="programming">
+        <div class="row">
+            <header class="col-xs-12 col-lg-12 text-center">
+                <h2 class="section-heading">Custom Power BI Themes Collection </h2>
+                <h3 class="subheading">&#128161; Introduction </h3>
+                <p>In Power BI, a theme defines the overall visual style of a report — including colors, fonts, backgrounds, and visual formatting. A well-designed theme ensures consistency across pages, improves readability, and reinforces brand identity. <br>
+                I customized eight Power BI themes and provided all corresponding JSON theme files below for easy use and modification. These themes can be directly imported into Power BI to instantly apply their styles. <br>
+                If you’d like to explore more ideas or generate your own styles, here are some helpful resources: <br>
+                <b>•  Power BI Theme Galleries</b> – curated collections of community-made themes <br>
+                <b>•  Power BI Theme Generator (BIBB)</b> – https://bibb.pro/apps/theme-generator/ <br>
+                </p>
+                <br>
+                <p>&#128477; Keywords - Power BI Themes</p>
+            </header>
+
+            <div class="col-lg-12 text-center">
+                <hr class="star-primary">
+                <h3 class="subheading">&#128187; Code Demonstration </h3>
+                <h4>A. Blue and Green Theme</h4>
+                <div style="text-align: center;">
+                    <a href="img/portfolio/color_theme/blue&green theme.json" download="theme.json">Download JSON File!</a>
+                </div>
+                <div class="img-wrapper">
+                    <img src="img/portfolio/color_theme/blue&green color.png" alt="Blue & Green Color" style="max-width: 80%; height: auto;">
+                    <img src="img/portfolio/color_theme/blue&green theme.png" alt="Blue & Green Theme" style="max-width: 80%; height: auto;">
+                </div>
+                <br>
+                <!-- Floating Back Button -->
+                <button onclick="history.back()" 
+                        style="
+                            position: fixed;
+                            bottom: 20px;
+                            left: 20px;
+                            padding: 12px 20px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            border-radius: 8px;
+                            border: 1px solid #333;
+                            background-color: #f0f0f0;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                            z-index: 1000;
+                            transition: background-color 0.3s;
+                        "
+                        onmouseover="this.style.backgroundColor='#e0e0e0';"
+                        onmouseout="this.style.backgroundColor='#f0f0f0';"
+                >
+                    ← Back
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const pdfObjects = document.querySelectorAll(".pdf-object");
+
+    // Detect iOS Safari (cannot embed PDFs)
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    if (isIOS) {
+        pdfObjects.forEach(obj => {
+            const pdfURL = obj.getAttribute("data") || obj.getAttribute("data-src") || obj.getAttribute("src") || obj.data;
+
+            obj.outerHTML = `
+                <div style="text-align:center; padding:20px;">
+                    <p>PDF preview isn't supported on your device.</p>
+                    <br>
+                    <a href="${pdfURL}" 
+                       style="padding:10px 20px; background:#007bff; color:white; border-radius:6px; text-decoration:none;">
+                       Open PDF
+                    </a>
+                </div>
+            `;
+        });
+    }
+
+});
+</script>
+
+</body>
+</html>
