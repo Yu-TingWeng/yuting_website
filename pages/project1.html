@@ -199,29 +199,30 @@ alt: Power BI - Sales Target
       <h3 class="subheading">&#128202; DAX Techniques Deep Dive</h3>
       <section>
           <h4><b>A. Time Intelligence</b></h4>
+          <br>
           <h5><b>1. 'Calendar' Table → the Real Date Dimension Linked to Facts</b></h5>
           <p>
             To enable consistent time intelligence across all metrics, I created a Date Dimension using DAX:
           </p>
           {% include code.html snippet="calendar" %}
           <p>
-          <b>🔗 Relationships </b> <br>
-          - The Date Dimension is linked to multiple fact tables: <br>
-            •  FactSales, FactQuota, FactBooking, FactBacklog, FactTarget. <br><br>
-          - It is used for <b>multi-select slicers</b> <br>
-          - Using a single Date Dimension ensures: <br>
-            •  Consistent date filtering across all measures.<br>
-            •  Simplified DAX formulas for time intelligence calculations.<br>
+          <b>🔗 Relationships:</b><br>
+          - Linked to multiple fact tables: FactSales, FactQuota, FactBooking, FactBacklog, FactTarget.<br>
+          - Used for <b>multi-select slicers</b>.<br>
+          - Benefits of a single Date Dimension:<br>
+            • Ensures consistent date filtering across all measures.<br>
+            • Simplifies DAX calculations for time intelligence.
           </p>
           <br>
 
           <h5><b>2. '年份' table → used only for filtering year (single-select)</b></h5>
           <p>
             I created a disconnected single-select table ('年份') as a Year Selector to improve user experience. 
-            Measures use <b>TREATAS</b> to apply the selected year as a filter to the fact table, ensuring proper context transition and supporting future multi-year selection.
+            Measures use <b>TREATAS</b> to apply the selected year as a filter to the fact table, ensuring: <br> 
+            • Correct context transition <br>
+            • Support for future multi-year selection without rewriting measures
           </p>
           {% include code.html snippet="single_year" %}
-          <p>
           <br>
 
           <h5><b>3. Selected Year Sales Amount</b></h5>
@@ -229,14 +230,33 @@ alt: Power BI - Sales Target
             This measure calculates sales for the year selected in the '年份' slicer.
           </p>
           {% include code.html snippet="selected_sales" %}
-          <p>
           <br>
 
           <h5><b>4. Selected Last Year Sales Amount</b></h5>
           <p>
-            This measure calculates sales for the year prior to the one selected in the '年份' slicer.
+            This measure calculates sales for the year prior to the one selected in the '年份' slicer. <br>
+            Useful for year-over-year comparisons and growth analysis.
           </p>
           {% include code.html snippet="last_sales" %}
+          <br>
+
+          <h5><b>5. B/B Ratio (Booking ÷ Sales)</b></h5>
+          <p>
+            Calculates ratio of current bookings to current sales.<br>
+            Handles edge cases: blank/zero values return <b>BLANK</b> to avoid misleading results.
+          </p>
+          {% include code.html snippet="selected_booking" %}
+          {% include code.html snippet="bb_ratio" %}
+          <p>
+          <br>
+
+          <h5><b>6. Cumulative B/B Ratio</b></h5>
+          <p>
+            Calculates cumulative bookings ÷ cumulative sales from January to the selected month. Highlights: <br>
+            •  Uses DATESBETWEEN and EOMONTH to calculate Jan → Selected Month range <br>
+            •  Skips future months in the current year to maintain accuracy <br>
+          </p>
+          {% include code.html snippet="cum_bb" %}
           <p>
           <br>
 

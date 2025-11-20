@@ -610,6 +610,69 @@ CALCULATE(
 {% endcapture %}
 
 
+{% capture selected_booking %}
+Selected Year Booking =  
+VAR _Year = SELECTEDVALUE('年份'[年份])
+RETURN
+CALCULATE(
+    SUMX(
+        '受訂明細', 
+        [金額]
+    ),
+    TREATAS({_Year}, '受訂明細'[年])
+)
+{% endcapture %}
+
+{% capture bb_ratio %}
+B/B Ratio =
+VAR BB = DIVIDE('受訂明細'[Selected Year Booking], '銷售明細'[Selected Year Sales])
+RETURN
+IF(
+    ISBLANK('受訂明細'[Selected Year Booking]) || '受訂明細'[Selected Year Booking] = 0
+    || ISBLANK('銷售明細'[Selected Year Sales]) || '銷售明細'[Selected Year Sales] = 0,
+    BLANK(),
+    BB
+)
+{% endcapture %}
+
+
+{% capture cum_bb %}
+Cum. B/B Ratio =
+VAR CurrentYear = SELECTEDVALUE('年份'[年份])
+VAR CurrentMonth = SELECTEDVALUE('Calendar'[Month Number])
+
+VAR CurrentBookingCal =
+    CALCULATE(
+        SUM('受訂明細'[金額]),
+        DATESBETWEEN(
+            'Calendar'[Date],
+            DATE(CurrentYear, 1, 1),
+            EOMONTH(DATE(CurrentYear, CurrentMonth, 1), 0)
+        )
+    )
+
+VAR CurrentSalesCal =
+    CALCULATE(
+        SUM('銷售明細'[銷售金額]),
+        DATESBETWEEN(
+            'Calendar'[Date],
+            DATE(CurrentYear, 1, 1),
+            EOMONTH(DATE(CurrentYear, CurrentMonth, 1), 0)
+        )
+    )
+
+VAR BB = DIVIDE(CurrentBookingCal, CurrentSalesCal)
+
+RETURN
+IF(
+    CurrentBookingCal = 0
+    || CurrentSalesCal = 0
+    || (CurrentYear = YEAR(TODAY()) && CurrentMonth > MONTH(TODAY())),
+    BLANK(),
+    BB
+)
+{% endcapture %}
+
 
 <style>
 /* code block container */
