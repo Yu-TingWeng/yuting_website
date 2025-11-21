@@ -21,6 +21,12 @@ alt: Power BI - Financial Performance Comparison
       font-family: "Cambria";
     }
 
+    .subheading::before {
+      content: "";
+      display: block;
+      height: 65px; /* acts like top padding */
+    }
+
     #portfolio p {
       text-align: left;
       margin: 0 auto;
@@ -87,6 +93,7 @@ alt: Power BI - Financial Performance Comparison
                 All indicators are organized into six analytical categories: financial structure, solvency, operational efficiency, profitability, growth, and cash flow.
                 <br><br>
                 <b>Technical Approach</b>
+                <br>
                 <b>1. Data Extraction & Parsing</b>
                 <span style="margin-left:20px; display:block;">• Used <b>Selenium + BeautifulSoup</b> to navigate and extract dynamic content from MOPS.</span>
                 <span style="margin-left:20px; display:block;">• Incorporated <b>error handling, retry logic, and headless browsing</b> to ensure robustness.</span>
