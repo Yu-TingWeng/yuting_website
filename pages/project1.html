@@ -141,6 +141,7 @@ alt: Power BI - Sales Target
                   </a>
                   <ul style="list-style-type: circle;">
                     <li>Time Intelligence</li>
+                    <li>Filter Modifiers</li>
                   </ul>
                 </li>
               </ul>
@@ -346,30 +347,29 @@ alt: Power BI - Sales Target
 
                 <h5><b>1. ALL vs. ALLSELECTED</b></h5>
                 <div style="text-align: center;">
-                    <img src="img/portfolio/sales%.png" alt="Sales Percentage of Total" style="max-width: 80%; height: auto;">
+                    <img src="img/portfolio/sales_per.png" alt="Sales Percentage of Total" style="max-width: 80%; height: auto;">
                 </div>
                 <p>
-                  MY GOAL: Salesperson / Region / Country / Customer as a percentage of the total company revenue for that selected Year. <br>
-                  DESIGN: <br>
-                  • Users can apply slicers for Salesperson, Region/Country, and Customer. <br>
-                  • Because the relationship between Salespersons and Customers is managed through a <b>Bridge table</b>, selecting a Salesperson should correctly restrict the list of visible Regions/Countries/Customers to only those handled by that salesperson. <br>
-                  • However, when calculating percentage contribution, <b>the denominator must remain the total company revenue for the selected Year</b>, and must <b>not</b> be affected by any slicer filters coming from Salesperson, Region/Country, or Customer. <br>
-                  Matrix Structure: <br>
-                  • Rows: Salesperson / Region / Country / Customer <br>
-                  • Columns: Year <br>
-                  • Values: Sales Amount & Percentage of Total Company Revenue <br><br>
-
+                  <b>• MY GOAL:</b> Salesperson / Region / Country / Customer as a percentage of the total company revenue for that selected Year. <br>
+                  <b>• DESIGN: </b> <br>
+                  <span style="margin-left:20px; display:block;"> ⚬ Users can apply slicers for Salesperson, Region/Country, and Customer. </span>
+                  <span style="margin-left:20px; display:block;"> ⚬ Because the relationship between Salespersons and Customers is managed through a <b>Bridge table</b>, selecting a Salesperson should correctly restrict the list of visible Regions/Countries/Customers to only those handled by that salesperson. </span>
+                  <span style="margin-left:20px; display:block;"> ⚬ However, when calculating percentage contribution, <b>the denominator must remain the total company revenue for the selected Year</b>, and must <b>not</b> be affected by any slicer filters coming from Salesperson, Region/Country, or Customer. </span>
+                  <b>• Matrix Structure:</b> <br>
+                  <span style="margin-left:20px; display:block;"> ⚬ Rows: Salesperson / Region / Country / Customer </span>
+                  <span style="margin-left:20px; display:block;"> ⚬ Columns: Year </span>
+                  <span style="margin-left:20px; display:block;"> ⚬ Values: Sales Amount & Percentage of Total Company Revenue </span>
+                  <br>
                   Here's the code: <br>
                 </p>
                 {% include code.html snippet="sales_per_all" %}
                 <p>
-                EXPLANATION: <br>
+                <b>• EXPLANATION: </b> <br>
                 1️⃣ ALLEXCEPT — “Keep only what I specify” <br>
-                <span style="margin-left:20px; display:block;">• Year is preserved </span> <br>
-                <span style="margin-left:20px; display:block;">• All other filters (Salesperson, Area, Country, Customer) are removed</span> <br>
+                <span style="margin-left:20px; display:block;">⚬ Year is preserved </span>
+                <span style="margin-left:20px; display:block;">⚬ All other filters (Salesperson, Area, Country, Customer) are removed</span>
                 2️⃣ ALL — “Clear everything” <br>
-                <span style="margin-left:20px; display:block;">• ALL would remove all filters, in this case, Salesperson is removed, even the <b>Salesperson Slicer</b>. </span><br>
-                <br>
+                <span style="margin-left:20px; display:block;">⚬ ALL would remove all filters, in this case, Salesperson is removed, even the <b>Salesperson Slicer</b>. </span>
                 <b>👉 Result: Denominator becomes “Total Company Revenue of that Year”</b> <br>
                 <b>No matter what the user filters.</b>
                 </p>
