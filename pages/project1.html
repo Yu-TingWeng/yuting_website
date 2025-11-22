@@ -345,7 +345,7 @@ alt: Power BI - Sales Target
                 <h4><b>B. Filter Modifiers</b></h4>
                 <br>
 
-                <h5><b>1. ALL vs. ALLSELECTED</b></h5>
+                <h5><b>1. ALL vs. ALLSELECTED vs. ALLEXCEPT</b></h5>
                 <div style="text-align: center;">
                     <img src="img/portfolio/sales_all1.jpg" alt="Sales Percentage of Total" style="width: auto; height: 50vh">
                 </div>
@@ -355,39 +355,63 @@ alt: Power BI - Sales Target
                   <b>• DESIGN: </b> <br>
                   <span style="margin-left:20px; display:block;"> ⚬ Users can apply slicers for Salesperson, Region/Country, and Customer. </span>
                   <span style="margin-left:20px; display:block;"> ⚬ Because the relationship between Salespersons and Customers is managed through a <b>Bridge table</b>, selecting a Salesperson should correctly restrict the list of visible Regions/Countries/Customers to only those handled by that salesperson. </span>
-                  <span style="margin-left:20px; display:block;"> ⚬ However, when calculating percentage contribution, <b>the denominator must remain the total company revenue for the selected Year</b>, and must <b>not</b> be affected by any slicer filters coming from Salesperson, Region/Country, or Customer. </span>
+                  <!--<span style="margin-left:20px; display:block;"> ⚬ However, when calculating percentage contribution, <b>the denominator must remain the total company revenue for the selected Year</b>, and must <b>not</b> be affected by any slicer filters coming from Salesperson, Region/Country, or Customer. </span>-->
+                  <span style="margin-left:20px; display:block;"> ⚬ A denominator where Salesperson selection is removed intentionally, but other necessary filters (e.g., Year) are kept. </span>
                   <br>
                   <b>• Matrix Structure:</b> <br>
                   <span style="margin-left:20px; display:block;"> ⚬ Rows: Salesperson / Region / Country / Customer </span>
                   <span style="margin-left:20px; display:block;"> ⚬ Columns: Year </span>
                   <span style="margin-left:20px; display:block;"> ⚬ Values: Sales Amount & Percentage of Total Company Revenue </span>
                   <br>
-                  Here's the code: <br>
                 </p>
-                {% include code.html snippet="sales_per_all" %}
                 <p>
-                <b>• EXPLANATION: </b> <br>
+                <b>• Explanation of ALL, ALLSELECTED, ALLEXCEPT: </b> <br>
                 <span style="color:#000072; font-weight: 700;"><b>1️⃣ ALLEXCEPT — “Keep only what I specify” </b></span> 
                 <br>
-                <span style="margin-left:20px; display:block;">⚬ Year is preserved </span>
-                <span style="margin-left:20px; display:block;">⚬ All other filters in '銷售明細' table (Salesperson, Area, Country, Customer) are removed</span>
+                <span style="margin-left:20px; display:block;">⚬ Example: <b>ALLEXCEPT('銷售明細', '銷售明細'[Year]) </b> </span>
+                <span style="margin-left:40px; display:block;">→ Year is preserved </span>
+                <span style="margin-left:40px; display:block;">→ All other filters in '銷售明細' table (Salesperson, Area, Country, Customer) are removed</span>
                 <br>
+
                 <span style="color:#000072; font-weight: 700;"><b>2️⃣ ALL — “Clear everything” </b> </span>
                 <br>
-                <span style="margin-left:20px; display:block;">⚬ ALL would remove all filters, in this case, Salesperson(業務員) from '員工/客戶 Bridge' is removed, even the <b>Salesperson Slicer</b>. </span>
+                <span style="margin-left:20px; display:block;">⚬ Removes all filters from the specified table or column. </span>
+                <span style="margin-left:20px; display:block;">⚬ When used on <b>'員工/客戶 Bridge'[業務員]</b>, it completely removes salesperson filtering (from slicers and model relationships). </span>
+                <span style="margin-left:20px; display:block;">⚬ Use when the denominator must ignore selections entirely.</span>
                 <br>
-                <b>👉 Result: Denominator becomes “Total Company Revenue of that Year”</b> <br>
-                <b>No matter what the user filters.</b>
+
+                <span style="color:#000072; font-weight: 700;"><b>3️⃣ ALLSELECTED — “Respect user slicers, ignore only the visual’s row/column context” </b> </span> 
+                <br>
+                <span style="margin-left:20px; display:block;">⚬ Removes filters <b>except those created by the user’s selections in visuals.</b></span>
+                <span style="margin-left:20px; display:block;">⚬ Useful for % of selected group comparisons. </span>
+                <br>
+
+                <b>• DAX Code Example </b> <br>
+                <b>1️⃣ USING ALL() </b>
+                </p>
+                {% include code.html snippet="sales_per_all" %}
+
+                <p><b>2️⃣ \USING ALLSELECTED() </b><br>
+                </p>
+                {% include code.html snippet="sales_per_allselected" %}
+                
+                <p>
+                <b>• Explanation of Image Differences </b> <br>
+                👉 Image 1 — No slicer selected
+                <span style="margin-left:20px; display:block;">⚬ Matrix shows all salespersons.</span>
+                <span style="margin-left:20px; display:block;">⚬ Percentages are calculated as: Each person’s sales ÷ Full-year total</span>
+                <span style="margin-left:20px; display:block;">⚬ All rows add to 100%.</span>
+                </p> 
+
                 <div style="text-align: center;">
                     <img src="img/portfolio/sales_all2.jpg" alt="Sales Percentage of Total with User Selections" style="width: auto; height: 50vh">
                 </div>
-                <br><br>
-                <span style="color:#000072; font-weight: 700;"><b>3️⃣ ALLSELECTED — “Respect user slicers, ignore only the visual’s row/column context” </b> </span> 
                 <br>
-                <span style="margin-left:20px; display:block;">⚬ <b>USECASE:</b> IF the TOTAL should reflect whatever the slicer selected, not the entire database </span>
-                </p>
-                {% include code.html snippet="sales_per_allselected" %}
+
                 <br>
+                <div style="text-align: center;">
+                    <img src="img/portfolio/sales_allselected.jpg" alt="Sales Percentage of Total (ALLSELECTED)" style="width: auto; height: 50vh">
+                </div>
               </section>
 
             </article>
