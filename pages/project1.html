@@ -347,7 +347,7 @@ alt: Power BI - Sales Target
 
                 <h5><b>1. ALL vs. ALLSELECTED</b></h5>
                 <div style="text-align: center;">
-                    <img src="img/portfolio/sales_all1.png" alt="Sales Percentage of Total" style="width: auto; height: 50vh">
+                    <img src="img/portfolio/sales_all1.jpg" alt="Sales Percentage of Total" style="width: auto; height: 50vh">
                 </div>
                 <br>
                 <p>
@@ -367,23 +367,26 @@ alt: Power BI - Sales Target
                 {% include code.html snippet="sales_per_all" %}
                 <p>
                 <b>• EXPLANATION: </b> <br>
-                <b>1️⃣ ALLEXCEPT — “Keep only what I specify” </b> <br>
+                <span style="color:#000072; font-weight: 700;"><b>1️⃣ ALLEXCEPT — “Keep only what I specify” </b></span> 
+                <br>
                 <span style="margin-left:20px; display:block;">⚬ Year is preserved </span>
                 <span style="margin-left:20px; display:block;">⚬ All other filters in '銷售明細' table (Salesperson, Area, Country, Customer) are removed</span>
                 <br>
-                <b>2️⃣ ALL — “Clear everything” </b> <br>
+                <span style="color:#000072; font-weight: 700;"><b>2️⃣ ALL — “Clear everything” </b> </span>
+                <br>
                 <span style="margin-left:20px; display:block;">⚬ ALL would remove all filters, in this case, Salesperson(業務員) from '員工/客戶 Bridge' is removed, even the <b>Salesperson Slicer</b>. </span>
                 <br>
                 <b>👉 Result: Denominator becomes “Total Company Revenue of that Year”</b> <br>
                 <b>No matter what the user filters.</b>
                 <div style="text-align: center;">
-                    <img src="img/portfolio/sales_all2.png" alt="Sales Percentage of Total with User Selections" style="width: auto; height: 50vh">
+                    <img src="img/portfolio/sales_all2.jpg" alt="Sales Percentage of Total with User Selections" style="width: auto; height: 50vh">
                 </div>
                 <br><br>
-                <b>3️⃣ ALLSELECTED — “Respect user slicers, ignore only the visual’s row/column context” </b> <br>
+                <span style="color:#000072; font-weight: 700;"><b>3️⃣ ALLSELECTED — “Respect user slicers, ignore only the visual’s row/column context” </b> </span> 
+                <br>
                 <span style="margin-left:20px; display:block;">⚬ <b>USECASE:</b> IF the TOTAL should reflect whatever the slicer selected, not the entire database </span>
-                <span style="margin-left:20px; display:block;">⚬ <b>BEHAVIOR:</b> Keeps user slicer selections. </span>
                 </p>
+                {% include code.html snippet="sales_per_allselected" %}
                 <br>
               </section>
 

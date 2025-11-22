@@ -676,6 +676,7 @@ IF(
 
 
 {% capture sales_per_all %}
+-- ALL() example
 銷售金額% =
 VAR Amount =
     SUM('銷售明細'[金額])
@@ -692,6 +693,22 @@ DIVIDE(
 {% endcapture %}
 
 
+{% capture sales_per_allselected %}
+-- ALLSELECTED() example
+銷售金額% =
+VAR Amount =
+    SUM('銷售明細'[金額])
+
+RETURN
+DIVIDE(
+    Amount,
+    CALCULATE(
+        SUM('銷售明細'[金額]),
+        ALLEXCEPT('銷售明細', '銷售明細'[Year]),  -- 保留欄位 Year
+        ALLSELECTED('員工/客戶 Bridge'[業務員]) 
+    )
+)
+{% endcapture %}
 
 
 
@@ -821,5 +838,10 @@ function copyCode(btn) {
 <div class="code-wrapper">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <pre><code class="language-dax">{{ sales_per_all | escape }}</code></pre>
+</div>
+{% elsif include.snippet == "sales_per_allselected" %}
+<div class="code-wrapper">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code class="language-dax">{{ sales_per_allselected | escape }}</code></pre>
 </div>
 {% endif %}
