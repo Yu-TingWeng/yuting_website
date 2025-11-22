@@ -438,27 +438,32 @@ alt: Power BI - Sales Target
 
                 </p> 
 
-                <table border="1" cellspacing="0" cellpadding="5">
-                  <thead>
-                    <tr>
-                      <th>Function</th>
-                      <th>Does it respect slicer selections?</th>
-                      <th>Result when a slicer is used</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>ALL()</strong></td>
-                      <td>❌ Ignores slicers</td>
-                      <td>Percentages shrink; totals &lt; 100%</td>
-                    </tr>
-                    <tr>
-                      <td><strong>ALLSELECTED()</strong></td>
-                      <td>✔️ Keeps slicer selections</td>
-                      <td>Totals stay at 100%</td>
-                    </tr>
-                  </tbody>
-                </table>
+               <div style="text-align: center;">
+                  <table style="border-collapse: collapse; margin: auto; border: 1px solid #000;" cellspacing="0" cellpadding="8">
+                    <caption style="caption-side: top; font-weight: bold; margin-bottom: 10px;">
+                      Comparison of ALL() vs. ALLSELECTED()
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th style="border: 1px solid #000; padding: 8px;">Function</th>
+                        <th style="border: 1px solid #000; padding: 8px;">Does it respect slicer selections?</th>
+                        <th style="border: 1px solid #000; padding: 8px;">Result when a slicer is used</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="border: 1px solid #000; padding: 8px;"><strong>ALL()</strong></td>
+                        <td style="border: 1px solid #000; padding: 8px;">❌ Ignores slicers</td>
+                        <td style="border: 1px solid #000; padding: 8px;">Percentages shrink; totals &lt; 100%</td>
+                      </tr>
+                      <tr>
+                        <td style="border: 1px solid #000; padding: 8px;"><strong>ALLSELECTED()</strong></td>
+                        <td style="border: 1px solid #000; padding: 8px;">✔️ Keeps slicer selections</td>
+                        <td style="border: 1px solid #000; padding: 8px;">Totals stay at 100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
               </section>
 
