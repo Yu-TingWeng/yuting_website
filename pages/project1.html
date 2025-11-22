@@ -437,10 +437,33 @@ alt: Power BI - Sales Target
                 <span style="margin-left:20px; display:block;">⚬ Result: Percentage = 100%, because the calculation compares the salesperson against themselves. </span>
 
                 </p> 
+
+                <table border="1" cellspacing="0" cellpadding="5">
+                  <thead>
+                    <tr>
+                      <th>Function</th>
+                      <th>Does it respect slicer selections?</th>
+                      <th>Result when a slicer is used</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>ALL()</strong></td>
+                      <td>❌ Ignores slicers</td>
+                      <td>Percentages shrink; totals &lt; 100%</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ALLSELECTED()</strong></td>
+                      <td>✔️ Keeps slicer selections</td>
+                      <td>Totals stay at 100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+
               </section>
 
             </article>
-            <hr class="star-primary">
+
           </div>
         </div>
       </div>
