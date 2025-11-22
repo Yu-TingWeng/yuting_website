@@ -385,33 +385,47 @@ alt: Power BI - Sales Target
                 <span style="margin-left:20px; display:block;">⚬ Removes filters <b>except those created by the user’s selections in visuals.</b></span>
                 <span style="margin-left:20px; display:block;">⚬ Useful for % of selected group comparisons. </span>
                 <br>
+                </p>
 
                 <b>• DAX Code Example </b> <br>
                 <b>1️⃣ USING ALL() </b>
-                </p>
                 {% include code.html snippet="sales_per_all" %}
 
-                <p><b>2️⃣ \USING ALLSELECTED() </b><br>
-                </p>
+                <b>2️⃣ \USING ALLSELECTED() </b><br>
                 {% include code.html snippet="sales_per_allselected" %}
-                
-                <p>
+
                 <b>• Explanation of Image Differences </b> <br>
-                👉 Image 1 — No slicer selected
+                <figure style="text-align: center;">
+                    <img src="img/portfolio/sales_all2.jpg" alt="Sales Percentage of Total with User Selections" style="width: auto; height: 50vh">
+                    <figcaption>Image 2 — Sales Percentage of Total with ALL() applied</figcaption>
+                </figure>
+
+                <br>
+
+                <figure style="text-align: center;">
+                    <img src="img/portfolio/sales_allselected.jpg" alt="Sales Percentage of Total (ALLSELECTED)" style="width: auto; height: 50vh">
+                    <figcaption>Image 3 — Sales Percentage of Total with ALLSELECTED() applied</figcaption>
+                </figure>
+
+                <br>
+
+                <p>
+                <b>👉 Image 1 — No slicer selected </b> <br>
                 <span style="margin-left:20px; display:block;">⚬ Matrix shows all salespersons.</span>
                 <span style="margin-left:20px; display:block;">⚬ Percentages are calculated as: Each person’s sales ÷ Full-year total</span>
                 <span style="margin-left:20px; display:block;">⚬ All rows add to 100%.</span>
+                
+                <b>👉 Image 2 — Salesperson selected + ALL() </b> <br>
+                <span style="margin-left:20px; display:block;">⚬ Only the selected salesperson appears in the table.</span>
+                <span style="margin-left:20px; display:block;">⚬ But denominator still uses the full-year total, because ALL() cancels the salesperson filter.</span>
+                <span style="margin-left:20px; display:block;">⚬ Result: Percentage &lt; 100% if not all salesperson are selected</span>
+
+                <b>👉 Image 3 — Salesperson selected + ALLSELECTED() </b> <br>
+                <span style="margin-left:20px; display:block;">⚬ The denominator now respects the user’s selection.</span>
+                <span style="margin-left:20px; display:block;">⚬ Denominator = sales of the selected salesperson only.</span>
+                <span style="margin-left:20px; display:block;">⚬ Result: Percentage = 100%, because the calculation compares the salesperson against themselves. </span>
+
                 </p> 
-
-                <div style="text-align: center;">
-                    <img src="img/portfolio/sales_all2.jpg" alt="Sales Percentage of Total with User Selections" style="width: auto; height: 50vh">
-                </div>
-                <br>
-
-                <br>
-                <div style="text-align: center;">
-                    <img src="img/portfolio/sales_allselected.jpg" alt="Sales Percentage of Total (ALLSELECTED)" style="width: auto; height: 50vh">
-                </div>
               </section>
 
             </article>
